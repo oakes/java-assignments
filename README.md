@@ -18,5 +18,22 @@
   * Create scalar and compound variables in a REPL
 * Code
   * Class is not just a data structure; it can contain code (methods)
-  * Create a full project in an IDE
-  * Discuss scope (variables defined in the class vs defined in the main method)
+  * Create a blank project in the IDE
+  * Create methods that initialize data the same way we did in the REPL
+  * Discuss scope
+  * Discuss static vs non-static, public vs private
+
+## Week 2
+
+* The main method
+* Flow control
+  * Conditionals
+  * Loops
+
+## Week 3
+
+* Packages
+* Imports
+* Inheritance
+  * @Overload
+  * Casting
