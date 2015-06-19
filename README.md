@@ -48,3 +48,10 @@
 
 * Maven
 * Make projects using [Jodd](http://jodd.org/)
+
+## Week 6
+
+* Frameworks
+  * Spring
+  * Hibernate
+  * Struts
