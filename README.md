@@ -21,11 +21,12 @@
   * Create a blank project in the IDE
   * Create methods that initialize data the same way we did in the REPL
   * Discuss scope
-  * Discuss static vs non-static, public vs private
 
 ## Week 2
 
+* Discuss static vs non-static, public vs private
 * The main method
+* Console I/O (printing and reading)
 * Flow control
   * Conditionals
   * Loops
@@ -37,3 +38,13 @@
 * Inheritance
   * @Overload
   * Casting
+
+## Week 4
+
+* File I/O
+* Database I/O
+
+## Week 5
+
+* Maven
+* Make projects using [Jodd](http://jodd.org/)
