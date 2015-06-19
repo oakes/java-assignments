@@ -38,6 +38,7 @@
 * Inheritance
   * @Overload
   * Casting
+  * Interfaces and abstract classes
 
 ## Week 4
 
@@ -55,3 +56,19 @@
   * Spring
   * Hibernate
   * Struts
+
+## Week 7
+
+* Debugging
+* Testing (JUnit)
+
+## Week 8
+
+* Sorting Algorithms
+* Big-O notation
+
+## Week 9
+
+* Threads
+* Immutable data
+* Functional Java
