@@ -64,13 +64,12 @@
 
 ## Week 8
 
-* Threads
-* Immutable data
-* Functional Java
-
-## Week 9
-
-* Course review
 * Interview prep
   * Sorting Algorithms
   * Big-O notation
+
+## Week 9
+
+* Threads
+* Immutable data
+* Functional Java
