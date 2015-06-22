@@ -8,6 +8,11 @@
   * Think about the data first, and the code will follow
   * Design projects specifically around use of various data structures
 * Start with a [Java REPL](http://www.javarepl.com) instead of overwhelming students with a full project structure
+  * Starting off with a typical "Hello world" project is problematic, as it assumes the following:
+    * Knowing what a class is
+    * Knowing what `public static void` is
+    * Knowing what `String[] args` is
+  * With a REPL, we can introduce these concepts one at a time and jump into a real project later
 
 ## Week 1
 
