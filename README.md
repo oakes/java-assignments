@@ -12,10 +12,15 @@
 ## Week 1
 
 * Data
-  * Scalar (int, char, String)
-  * Compound (Class, HashMap, Array, ArrayList)
-    * Distinguish between key-value vs sequential data, static vs dynamic data
   * Create scalar and compound variables in a REPL
+  * Scalar (int, char, String)
+  * Compound (Array, Class, ArrayList, HashMap)
+    * Distinguish between sequential vs key-value data
+      * Create a primitive array (sequential)
+      * Create a class (key-value)
+    * Distinguish between static vs dynamic data
+      * Create an ArrayList (dynamic sequential)
+      * Create a HashMap (dynamic key-value)
 * Code
   * Class is not just a data structure; it can contain code (methods)
   * Create a blank project in the IDE
@@ -26,7 +31,7 @@
 
 * Discuss static vs non-static, public vs private
 * The main method
-* Console I/O (printing and reading)
+* Console I/O
 * Flow control
   * Conditionals
   * Loops
