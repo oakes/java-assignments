@@ -42,33 +42,35 @@
 
 ## Week 4
 
+* Debugging
+* Testing (JUnit)
+
+## Week 5
+
 * File I/O
 * Database I/O
 
-## Week 5
+## Week 6
 
 * Maven
 * Make projects using [Jodd](http://jodd.org/)
 
-## Week 6
+## Week 7
 
 * Frameworks
   * Spring
   * Hibernate
   * Struts
 
-## Week 7
-
-* Debugging
-* Testing (JUnit)
-
 ## Week 8
-
-* Sorting Algorithms
-* Big-O notation
-
-## Week 9
 
 * Threads
 * Immutable data
 * Functional Java
+
+## Week 9
+
+* Course review
+* Interview prep
+  * Sorting Algorithms
+  * Big-O notation
