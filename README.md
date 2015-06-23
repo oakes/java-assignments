@@ -2,12 +2,12 @@
 
 * Use industry-standard tools
   * JDK 8
-  * IntelliJ (easy to transition later to Clojure using the Cursive plugin)
+  * IntelliJ + [Java REPL](https://plugins.jetbrains.com/plugin/7215?pr=)
 * Focus on data structures
   * Emphasize the distinction between code and data
   * Think about the data first, and the code will follow
   * Design projects specifically around use of various data structures
-* Start with a [Java REPL](http://www.javarepl.com) instead of overwhelming students with a full project structure
+* Start with a Java REPL instead of overwhelming students with a full project structure
   * Starting off with a typical "Hello world" project is problematic, as it assumes the following:
     * Knowing what a class is
     * Knowing what `public static void` is
