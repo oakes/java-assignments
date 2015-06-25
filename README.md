@@ -14,7 +14,7 @@
     * Knowing what `String[] args` is
   * With a REPL, we can introduce these concepts one at a time and jump into a real project later
 
-## Week 1
+## Week 1 - "Data first, code second"
 
 * Data
   * Create scalar and compound variables in a REPL
@@ -32,7 +32,7 @@
   * Create methods that initialize data the same way we did in the REPL
   * Discuss scope
 
-## Week 2
+## Week 2 - "Writing real programs"
 
 * Discuss static vs non-static, public vs private
 * The main method
@@ -41,7 +41,7 @@
   * Conditionals
   * Loops
 
-## Week 3
+## Week 3 - "Beyond the main class"
 
 * Packages
 * Imports
@@ -50,35 +50,36 @@
   * Casting
   * Interfaces and abstract classes
 
-## Week 4
+## Week 4 - "Catching errors"
 
 * Debugging
 * Testing (JUnit)
 
-## Week 5
+## Week 5 - "Writing to the disk"
 
 * File I/O
 * Database I/O
 
-## Week 6
+## Week 6 - "Third-party libraries"
 
 * Maven
 * Make projects using [Jodd](http://jodd.org/)
 
-## Week 7
+## Week 7 - "Third-party frameworks"
 
 * Frameworks
   * Spring
   * Hibernate
   * Struts
 
-## Week 8
+## Week 8 - "Review"
 
+* Combine material from prior weeks
 * Interview prep
   * Sorting Algorithms
   * Big-O notation
 
-## Week 9
+## Week 9 - "The cutting edge"
 
 * Threads
 * Immutable data
