@@ -31,12 +31,12 @@
   * Create a blank project in the IDE
   * Create methods that initialize data the same way we did in the REPL
   * Discuss scope
+  * Discuss static vs non-static, public vs private
+  * Console I/O
 
 ## Week 2 - "Writing real programs"
 
-* Discuss static vs non-static, public vs private
 * The main method
-* Console I/O
 * Flow control
   * Conditionals
   * Loops
