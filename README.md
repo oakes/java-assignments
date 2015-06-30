@@ -56,21 +56,22 @@
 * Debugging
 * Testing (JUnit)
 
-## Week 5 - Databases
-
-* Database I/O
-
-## Week 6 - Third-party libraries
+## Week 5 - Third-party libraries
 
 * Maven
 * Make projects using [Jodd](http://jodd.org/)
 
-## Week 7 - Third-party frameworks
+## Week 6 - Third-party frameworks
 
 * Frameworks
   * Spring
   * Hibernate
   * Struts
+
+## Week 7 - Databases
+
+* Database I/O
+* [H2](http://www.h2database.com/html/main.html)
 
 ## Week 8 - Review
 
