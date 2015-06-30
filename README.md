@@ -61,17 +61,17 @@
 * Maven
 * Make projects using [Jodd](http://jodd.org/)
 
-## Week 6 - Third-party frameworks
-
-* Frameworks
-  * Spring
-  * Hibernate
-  * Struts
-
-## Week 7 - Databases
+## Week 6 - Databases
 
 * Database I/O
 * [H2](http://www.h2database.com/html/main.html)
+* Hibernate
+
+## Week 7 - Networking
+
+* Basic networking (InetAddress)
+* Tomcat
+* JSP
 
 ## Week 8 - Review
 
