@@ -73,15 +73,8 @@
 * Tomcat
 * JSP
 
-## Week 8 - Review
-
-* Combine material from prior weeks
-* Interview prep
-  * Sorting Algorithms
-  * Big-O notation
-
-## Week 9 - The cutting edge
+## Week 8 - The cutting edge
 
 * Threads
-* Immutable data
+* [Quasar](http://docs.paralleluniverse.co/quasar/)
 * Functional Java
