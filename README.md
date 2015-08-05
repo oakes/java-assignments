@@ -2,7 +2,7 @@
 
 * Use industry-standard tools
   * JDK 8
-  * IntelliJ + [Java REPL](https://plugins.jetbrains.com/plugin/7215?pr=)
+  * IntelliJ + [JREPL](https://plugins.jetbrains.com/plugin/7892)
 * Focus on data structures
   * Emphasize the distinction between code and data
   * Think about the data first, and the code will follow
