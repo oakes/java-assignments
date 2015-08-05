@@ -33,23 +33,26 @@
   * Discuss scope
   * Discuss static vs non-static, public vs private
   * Console I/O
+  * Flow control
+    * Conditionals
+    * Loops
 
 ## Week 2 - Writing real programs
 
 * The main method
-* Flow control
-  * Conditionals
-  * Loops
-* File I/O
-
-## Week 3 - Beyond the main class
-
 * Packages
 * Imports
 * Inheritance
   * @Overload
   * Casting
   * Interfaces and abstract classes
+
+## Week 3 - Exploring the standard library
+
+* java.math
+* java.io
+* java.time
+* java.swing
 
 ## Week 4 - Catching errors
 
@@ -60,6 +63,7 @@
 
 * Maven
 * Make projects using [Jodd](http://jodd.org/)
+* Use [Ratpack](http://ratpack.io/)
 
 ## Week 6 - Databases
 
@@ -67,11 +71,10 @@
 * [H2](http://www.h2database.com/html/main.html)
 * Hibernate
 
-## Week 7 - Networking
+## Week 7 - Putting it all together
 
-* Basic networking (InetAddress)
-* Tomcat
-* JSP
+* Spring
+* Deploying with Tomcat
 
 ## Week 8 - The cutting edge
 
