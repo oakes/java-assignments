@@ -25,3 +25,46 @@
   * Data structures
     * Sequential vs key-value
     * Create arrays and classes
+
+### Day 2
+
+* Data structures
+  * Review arrays and classes
+  * Static vs dynamic
+  * Create ArrayLists and HashMaps
+  * Contrast the four data structures
+    * Array (static sequential)
+    * Class (static key-value)
+    * ArrayList (dynamic sequential)
+    * HashMap (dynamic key-value)
+* Classes
+  * A class is more than just a data structure; it can contain code
+  * All code must exist inside a class
+  * Create blank project in IntelliJ
+    * Create a class
+      * Define a few fields
+      * Define a method
+      * Run it in the REPL
+      * Public vs private
+      * ArrayList and HashMap are classes
+
+### Day 3
+
+* Methods in Detail
+  * Constructor methods
+  * Static methods
+  * System class (including System.out.println)
+  * Create a static method in our project and run it in the REPL
+  * Go over examples and decide whether a method should be static or not
+* More about Strings
+  * StringBuilder
+  * Formatter
+  * System.out.printf
+
+### Day 4
+
+* Control flow
+  * Conditionals
+  * Loops
+  * Recursion
+  * Exceptions
