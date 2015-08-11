@@ -63,7 +63,6 @@
 
 * Maven
 * [Jodd](http://jodd.org/)
-* [Ratpack](http://ratpack.io/)
 * [Spark](http://sparkjava.com/)
 
 ## Week 6 - Databases
