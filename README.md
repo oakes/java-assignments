@@ -71,3 +71,7 @@
 ## Week 6-7 - Spring + Hibernate
 
 * [Spring Boot](http://projects.spring.io/spring-boot/)
+
+## Week 8-9 - Clojure
+
+* See the [Clojure curriculum](https://github.com/oakes/clojure-assignments)
