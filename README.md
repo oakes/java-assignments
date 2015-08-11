@@ -47,37 +47,27 @@
   * Casting
   * Interfaces and abstract classes
 
-## Week 3 - Exploring the standard library
+## Week 3 - Using the standard library and catching errors
 
-* java.math
-* java.io
-* java.time
-* java.swing
-
-## Week 4 - Catching errors
-
+* Standard library
+  * java.math
+  * java.io
+  * java.time
+  * java.swing
 * Debugging
 * Testing (JUnit)
 
-## Week 5 - Third-party libraries
+## Week 4 - Creating web apps with third-party libraries
 
 * Maven
 * [Jodd](http://jodd.org/)
 * [Spark](http://sparkjava.com/)
 
-## Week 6 - Databases
+## Week 5 - Databases
 
 * Database I/O
 * [H2](http://www.h2database.com/html/main.html)
-* Hibernate
 
-## Week 7 - Putting it all together
+## Week 6-7 - Spring + Hibernate
 
-* Spring (via [Spring Boot](http://projects.spring.io/spring-boot/))
-* Deploying with Tomcat
-
-## Week 8 - The cutting edge
-
-* Threads
-* [Quasar](http://docs.paralleluniverse.co/quasar/)
-* Functional Java
+* [Spring Boot](http://projects.spring.io/spring-boot/)
