@@ -20,22 +20,19 @@
   * Create scalar and compound variables in a REPL
   * Scalar (int, char, String)
   * Compound (Array, Class, ArrayList, HashMap)
-    * Distinguish between sequential vs key-value data
-      * Create a primitive array (sequential)
-      * Create a class (key-value)
-    * Distinguish between static vs dynamic data
-      * Create an ArrayList (dynamic sequential)
-      * Create a HashMap (dynamic key-value)
+    * Sequential vs key-value data
+      * Array (sequential)
+      * Class (key-value)
+    * Static vs dynamic data
+      * ArrayList (dynamic sequential)
+      * HashMap (dynamic key-value)
 * Code
   * Class is not just a data structure; it can contain code (methods)
   * Create a blank project in the IDE
   * Create methods that initialize data the same way we did in the REPL
-  * Discuss scope
-  * Discuss static vs non-static, public vs private
+  * Static vs non-static, public vs private
   * Console I/O
   * Flow control
-    * Conditionals
-    * Loops
 
 ## Week 2 - Writing real programs
 
