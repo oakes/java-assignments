@@ -62,8 +62,9 @@
 ## Week 5 - Third-party libraries
 
 * Maven
-* Make projects using [Jodd](http://jodd.org/)
-* Use [Ratpack](http://ratpack.io/)
+* [Jodd](http://jodd.org/)
+* [Ratpack](http://ratpack.io/)
+* [Spark](http://sparkjava.com/)
 
 ## Week 6 - Databases
 
@@ -73,7 +74,7 @@
 
 ## Week 7 - Putting it all together
 
-* Spring
+* Spring (via [Spring Boot](http://projects.spring.io/spring-boot/))
 * Deploying with Tomcat
 
 ## Week 8 - The cutting edge
