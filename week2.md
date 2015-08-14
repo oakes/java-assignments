@@ -5,7 +5,7 @@
 * Overview of Git
 * Fork [this repository](https://github.com/oakes/java-projects) and clone it
 * All class projects will be committed within it
-* Create our first IntelliJ project (HelloWorld) inside this repository
+* Create IntelliJ project inside this repository
 * Initially run the project inside JREPL
 * Packages
 * Imports
