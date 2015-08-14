@@ -28,6 +28,19 @@
 
 ### Day 2
 
+* Creating projects
+  * Overview of Git
+  * Fork [this repository](https://github.com/oakes/java-projects) and clone it
+  * All class projects will be committed within it
+  * Create IntelliJ project inside this repository
+  * Run the project entirely via JREPL
+* Classes
+  * A class is more than just a data structure; it can contain code
+  * All code must exist inside a class
+  * Define fields and methods
+
+### Day 3
+
 * Data structures
   * Review arrays and classes
   * Static vs dynamic
@@ -37,18 +50,8 @@
     * Class (static key-value)
     * ArrayList (dynamic sequential)
     * HashMap (dynamic key-value)
-* Classes
-  * A class is more than just a data structure; it can contain code
-  * All code must exist inside a class
-  * Create blank project in IntelliJ
-    * Create a class
-      * Define a few fields
-      * Define a method
-      * Run it in the REPL
-      * Public vs private
-      * ArrayList and HashMap are classes
 
-### Day 3
+### Day 4
 
 * Methods in Detail
   * Constructor methods
@@ -56,13 +59,6 @@
   * System class (including System.out.println)
   * Create a static method in our project and run it in the REPL
   * Go over examples and decide whether a method should be static or not
-* More about Strings
-  * StringBuilder
-  * Formatter
-  * System.out.printf
-
-### Day 4
-
 * Control flow
   * Conditionals
   * Loops
