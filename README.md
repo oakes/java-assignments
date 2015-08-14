@@ -43,14 +43,14 @@
   * @Overload
   * Casting
   * Interfaces and abstract classes
-
-## Week 3 - Using the standard library and catching errors
-
 * Standard library
   * java.math
   * java.io
   * java.time
   * java.swing
+
+## Week 3 - Catching errors
+
 * Debugging
 * Testing (JUnit)
 
