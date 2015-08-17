@@ -1,4 +1,4 @@
-## Week 2 - Writing real programs
+## Week 2 - Console programs
 
 ### Day 1
 
