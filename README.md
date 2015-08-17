@@ -31,10 +31,9 @@
   * Create a blank project in the IDE
   * Create methods that initialize data the same way we did in the REPL
   * Static vs non-static, public vs private
-  * Console I/O
   * Flow control
 
-## Week 2 - Writing real programs
+## Week 2 - Console programs
 
 * The main method
 * Packages
@@ -46,14 +45,17 @@
 * Standard library
   * java.time
   * java.io
-  * javax.swing
-
-## Week 3 - Catching errors
-
 * Debugging
 * Testing (JUnit)
 
-## Week 4 - Creating web apps with third-party libraries
+## Week 3 - Graphical programs
+
+* Desktop UI with javax.swing
+* Web UI with Google Web Toolkit
+* Android
+* Cross-platform Games with [libGDX](https://libgdx.badlogicgames.com/)
+
+## Week 4 - Web apps and third-party libraries
 
 * Maven
 * [Jodd](http://jodd.org/)
@@ -61,7 +63,6 @@
 
 ## Week 5 - Databases
 
-* Database I/O
 * [H2](http://www.h2database.com/html/main.html)
 
 ## Week 6-7 - Spring + Hibernate
