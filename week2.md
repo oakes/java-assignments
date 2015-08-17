@@ -17,15 +17,19 @@
   * The complexity of time management
   * The old way: java.util.Date
   * The new way: java.time
-
-### Day 3
-
 * File I/O
   * java.io
   * java.nio
 
+### Day 3
+
+* Debugging with IntelliJ
+  * Start a debugger session
+  * Set breakpoints
+  * Reload classes
+
 ### Day 4
 
-* User Interfaces
-  * Desktop UI: javax.swing
-  * Web UI: Google Web Toolkit
+* Testing with IntelliJ
+  * Configure JUnit
+  * Writing and running tests
