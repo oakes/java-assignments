@@ -44,10 +44,9 @@
   * Casting
   * Interfaces and abstract classes
 * Standard library
-  * java.math
-  * java.io
   * java.time
-  * java.swing
+  * java.io
+  * javax.swing
 
 ## Week 3 - Catching errors
 
