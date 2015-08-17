@@ -1,14 +1,19 @@
-## Week 3 - Catching Errors
+## Week 3 - Graphical Programs
 
 ### Day 1
 
-* Debugging with IntelliJ
-  * Start a debugger session
-  * Set breakpoints
-  * Reload classes
+* Desktop UI with javax.swing
 
 ### Day 2
 
-* Testing with IntelliJ
-  * Configure JUnit
-  * Writing and running tests
+* Web UI with Google Web Toolkit
+
+### Day 3
+
+* Android
+  * Install [Android Studio](https://developer.android.com/sdk/index.html)
+
+### Day 4
+
+* Games with libGDX
+  * Download and run [the setup app](https://libgdx.badlogicgames.com/download.html)
