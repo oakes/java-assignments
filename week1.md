@@ -20,7 +20,7 @@
     * Tools -> Start JREPL
   * Scalar variables
     * int
-    * char
+    * float
     * String
   * Data structures
     * Sequential vs key-value
