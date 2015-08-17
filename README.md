@@ -18,7 +18,7 @@
 
 * Data
   * Create scalar and compound variables in a REPL
-  * Scalar (int, float, String)
+  * Scalar (int, double, String)
   * Compound (Array, Class, ArrayList, HashMap)
     * Sequential vs key-value data
       * Array (sequential)
