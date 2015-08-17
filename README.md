@@ -53,9 +53,9 @@
 * Desktop UI with javax.swing
 * Web UI with Google Web Toolkit
 * Android
-* Cross-platform Games with [libGDX](https://libgdx.badlogicgames.com/)
+* Cross-platform games with [libGDX](https://libgdx.badlogicgames.com/)
 
-## Week 4 - Web apps and third-party libraries
+## Week 4 - Server-side web apps
 
 * Maven
 * [Jodd](http://jodd.org/)
