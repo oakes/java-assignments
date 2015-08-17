@@ -9,3 +9,22 @@
   * @Overload
   * Casting
   * Interfaces and abstract classes
+
+### Day 2
+
+* Time
+  * The complexity of time management
+  * The old way: java.util.Date
+  * The new way: java.time
+
+### Day 3
+
+* File I/O
+  * java.io
+  * java.nio
+
+### Day 4
+
+* User Interfaces
+  * Desktop UI: javax.swing
+  * Web UI: Google Web Toolkit
