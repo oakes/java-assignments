@@ -1,8 +1,8 @@
-## Week 3 - Graphical Programs
+## Week 3 - Graphical programs
 
 ### Day 1
 
-* Desktop UI with javax.swing
+* Desktop UI with Swing
 
 ### Day 2
 
