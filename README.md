@@ -55,7 +55,7 @@
 * Android
 * Cross-platform games with [libGDX](https://libgdx.badlogicgames.com/)
 
-## Week 4 - Server-side web apps
+## Week 4 - Web apps
 
 * Maven
 * [Jodd](http://jodd.org/)
