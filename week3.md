@@ -7,6 +7,7 @@
 ### Day 2
 
 * Web UI with Google Web Toolkit
+  * Install [GWT-Platform](https://plugins.jetbrains.com/plugin/7318) IntelliJ plugin
 
 ### Day 3
 
