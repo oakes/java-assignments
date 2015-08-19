@@ -1,4 +1,4 @@
-## Week 1 - Data first, code second
+## Week 1 - Intro
 
 ### Day 1
 
