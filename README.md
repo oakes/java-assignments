@@ -14,7 +14,7 @@
     * Knowing what `String[] args` is
   * With a REPL, we can introduce these concepts one at a time and jump into a real project later
 
-## Week 1 - Data first, code second
+## Week 1 - Intro
 
 * Data
   * Create scalar and compound variables in a REPL
