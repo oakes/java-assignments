@@ -29,7 +29,7 @@
 
 * Creating projects
   * Overview of Git
-  * Fork [this repository](https://github.com/oakes/java-projects) and clone it
+  * Fork this repository and clone it
   * All class projects will be committed within it
   * Create IntelliJ project inside this repository
   * Run the project entirely via JREPL
