@@ -18,14 +18,14 @@
 
 * Data
   * Create scalar and compound variables in a REPL
-  * Scalar (int, double, String)
-  * Compound (Array, Class, ArrayList, HashMap)
-    * Sequential vs key-value data
-      * Array (sequential)
+  * Scalar (int, double)
+  * Compound (Class, Array, HashMap, ArrayList)
+    * Key-value vs sequential data
       * Class (key-value)
+      * Array (sequential)
     * Static vs dynamic data
-      * ArrayList (dynamic sequential)
       * HashMap (dynamic key-value)
+      * ArrayList (dynamic sequential)
 * Code
   * Class is not just a data structure; it can contain code (methods)
   * Create a blank project in the IDE
