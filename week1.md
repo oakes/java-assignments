@@ -20,10 +20,9 @@
   * Scalar variables
     * int
     * double
-    * String
   * Data structures
-    * Sequential vs key-value
-    * Create arrays and classes
+    * Key-value vs sequential
+    * Create classes and arrays
 
 ### Day 2
 
