@@ -54,7 +54,7 @@
 ### Writing Java in a file
 
 * Go to [IDEOne](http://ideone.com/).
-* Make a simple text-base game.
+* Make a simple text-based game.
 
 ```java
 import java.util.*;
