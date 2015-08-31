@@ -48,7 +48,7 @@
   * `s.inc();`
   * `s.value`
 * There are also static methods.
-  * `Math.min` and `Math.max`
+  * `Math.min`, `Math.max`, and `Math.random`
   * `System.out.println(“HELLO!”);`
 
 ### Writing Java in a file
@@ -82,7 +82,7 @@ class Ideone
 		System.out.println(weapon + " is a fine choice!");
 		
 		Entity ogre = new Entity();
-		ogre.damage = 2;
+		ogre.damage = Math.random() * 2 + 9;
 		while (ogre.health > 0 && player.health > 0) {
 			ogre.health -= player.damage;
 			player.health -= ogre.damage;
