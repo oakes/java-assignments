@@ -4,6 +4,8 @@
 
 * Desktop UI with Java FX
   * New Project -> Java FX template
+  * Install [Scene Builder](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-1x-archive-2199384.html)
+  * Build a web browser
 
 ### Day 2
 
