@@ -2,7 +2,8 @@
 
 ### Day 1
 
-* Desktop UI with Swing
+* Desktop UI with Java FX
+  * New Project -> Java FX template
 
 ### Day 2
 
