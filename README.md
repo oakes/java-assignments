@@ -51,7 +51,6 @@
 ## Week 3 - Graphical programs
 
 * Desktop UI with Java FX
-* Web UI with Google Web Toolkit
 * Android
 * Cross-platform games with [libGDX](https://libgdx.badlogicgames.com/)
 
