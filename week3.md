@@ -9,13 +9,12 @@
 
 ### Day 2
 
-* Web UI with Google Web Toolkit
-  * Install [GWT-Platform](https://plugins.jetbrains.com/plugin/7318) IntelliJ plugin
+* Android
+  * Install [Android Studio](https://developer.android.com/sdk/index.html)
 
 ### Day 3
 
-* Android
-  * Install [Android Studio](https://developer.android.com/sdk/index.html)
+* Android (continued)
 
 ### Day 4
 
