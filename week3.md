@@ -21,3 +21,4 @@
 
 * Games with libGDX
   * Download and run [the setup app](https://libgdx.badlogicgames.com/download.html)
+  * Build Super Koalio
