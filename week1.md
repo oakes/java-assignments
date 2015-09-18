@@ -21,7 +21,7 @@
     * int
     * double
   * Data structures
-    * Sequential vs key-value
+    * Sequential vs associative
     * Create arrays and classes
 
 ### Day 2
