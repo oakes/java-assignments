@@ -26,9 +26,11 @@
       * To-do array
       * Contact class
     * Scenarios - A data structure that holds...
-      * The points scored for each player on a basketball team
+      * A tweet
       * Web browser history
       * Every keyboard code and the character it represents
+      * The points scored for each player on a team
+      * The departure time for every plane in an airline's fleet
 
 ### Day 2
 
