@@ -23,6 +23,11 @@
   * Data structures
     * Sequential vs associative
     * Create arrays and classes
+      * To-do array
+      * Contact class
+    * Scenarios - A data structure that holds...
+      * The points scored for each player on a basketball team
+      * Web browser history
 
 ### Day 2
 
