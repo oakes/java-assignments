@@ -28,6 +28,7 @@
     * Scenarios - A data structure that holds...
       * The points scored for each player on a basketball team
       * Web browser history
+      * Every keyboard code and the character it represents
 
 ### Day 2
 
