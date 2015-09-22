@@ -15,6 +15,7 @@
   * Context of Java's birth in the 90's
   * How it works (bytecode, VM, etc)
 * Intro to Java
+  * Create HelloWorld IntelliJ project inside this repository
   * Start the REPL
     * Tools -> Start JREPL
   * Scalar variables
@@ -38,7 +39,7 @@
   * Overview of Git
   * Fork this repository and clone it
   * All class projects will be committed within it
-  * Create IntelliJ project inside this repository
+  * Open the HelloWorld project
   * Run the project entirely via JREPL
 * Classes
   * A class is more than just a data structure; it can contain code
