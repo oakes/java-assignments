@@ -32,16 +32,16 @@
       * Every keyboard code and the character it represents
       * The points scored for each player on a team
       * The departure time for every plane in an airline's fleet
+ * GitHub
+   * Fork this repository and clone it
+   * Walk through how to edit file and submit PR
 
 ### Day 2
 
-* Creating projects
-  * Overview of Git
-  * Fork this repository and clone it
-  * All class projects will be committed within it
+* Overview of Git
+* Classes
   * Open the HelloWorld project
   * Run the project entirely via JREPL
-* Classes
   * A class is more than just a data structure; it can contain code
   * All code must exist inside a class
   * Define fields and methods
