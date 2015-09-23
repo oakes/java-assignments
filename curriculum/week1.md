@@ -41,10 +41,11 @@
 * Overview of Git
 * Classes
   * Open the HelloWorld project
-  * Run the project entirely via JREPL
+  * Create the Contact class from yesterday in a file
+  * Use the class in JREPL
+  * You need to add "public" to access it from JREPL
   * A class is more than just a data structure; it can contain code
   * All code must exist inside a class
-  * Define fields and methods
 
 ### Day 3
 
