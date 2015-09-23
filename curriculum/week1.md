@@ -39,13 +39,19 @@
 ### Day 2
 
 * Overview of Git
-* Classes
+* Writing code in a file
   * Open the HelloWorld project
   * Create the Contact class from yesterday in a file
   * Use the class in JREPL
   * You need to add "public" to access it from JREPL
   * A class is more than just a data structure; it can contain code
   * All code must exist inside a class
+* Methods in detail
+  * Constructor methods
+  * Static methods
+  * System class (including System.out.println)
+  * Create a static method in our project and run it in the REPL
+  * Go over examples and decide whether a method should be static or not
 
 ### Day 3
 
@@ -61,12 +67,6 @@
 
 ### Day 4
 
-* Methods in Detail
-  * Constructor methods
-  * Static methods
-  * System class (including System.out.println)
-  * Create a static method in our project and run it in the REPL
-  * Go over examples and decide whether a method should be static or not
 * Control flow
   * Conditionals
   * Loops
