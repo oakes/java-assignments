@@ -1,10 +1,14 @@
 ### Methods
 
-Write a class that allows the following to work in the REPL. Note that the comments represent what that line should output.
+Write a few classes that allow the following to work in the REPL. The purpose of this assignment is to help illustrate the difference between methods and static methods. Note that the comments represent what that line should output.
 
 ```java
-Player p = new Player(1.5, 0.5);
+Position pos = new Position();
+pos.x = 1.5;
+pos.y = 0.5;
+
+Player p = new Player(pos);
 p.movePosition(-0.5, 0.5);
 p.printPosition(); // 1.0 1.0
-Player.printPosition(p); // 1.0 1.0
+Player.printPosition(pos); // 1.0 1.0
 ```
