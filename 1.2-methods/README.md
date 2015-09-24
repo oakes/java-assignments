@@ -11,6 +11,6 @@ Player p = new Player(pos);
 p.movePosition(-0.5, 0.5);
 p.printPosition(); // 1.0 1.0
 
-Player.movePosition(pos, 0.5, -0.5); // 1.5 0.5
-Player.printPosition(pos); // 1.0 1.0
+Player.movePosition(pos, 0.5, -0.5);
+Player.printPosition(pos); // 1.5 0.5
 ```
