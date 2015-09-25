@@ -5,12 +5,12 @@ Write a few classes that allow the following to work in the REPL. The purpose of
 ```java
 Position pos = new Position();
 pos.x = 1.5;
-pos.y = 0.5;
+pos.y = 0;
 
 Player p = new Player(pos);
-p.movePosition(-0.5, 0.5);
-p.printPosition(); // 1.0 1.0
+p.movePosition(-1, 1);
+p.printPosition(); // 0.5 1.0
 
-Player.movePosition(pos, 0.5, -0.5);
-Player.printPosition(pos); // 1.5 0.5
+Player.movePosition(pos, 0.5, -1);
+Player.printPosition(pos); // 1.0 0.0
 ```
