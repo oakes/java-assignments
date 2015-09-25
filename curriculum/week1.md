@@ -24,7 +24,13 @@
     * double
   * Data structures
     * Sequential vs associative
-    * Create arrays and classes
+    * Arrays and classes
+      * Position array
+      * Position class
+    * Built-in classes
+      * Essentially the entire language consists of classes
+      * `String` is one of the most common
+    * You can make arrays of objects and objects containing arrays
       * To-do array
       * Contact class
     * Scenarios - A data structure that holds...
@@ -47,10 +53,7 @@
   * You need to add "public" to access it from JREPL
   * A class is more than just a data structure; it can contain code
   * All code must exist inside a class
-* Built-in classes
-  * Essentially the entire language consists of classes
-  * `String` is one of the most common
-  * Work through examples of using strings in the REPL
+* Work through examples of using string methods in the REPL
 * Methods in detail
   * Constructor methods
   * Static methods
