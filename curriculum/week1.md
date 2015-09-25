@@ -82,5 +82,7 @@
     * Class (static associative)
     * ArrayList (dynamic sequential)
     * HashMap (dynamic associative)
+* How do static and dynamic data structures work?
+  * Stack vs Heap
 * Extend the text-based game to use dynamic data structures
   * Maintain inventory
