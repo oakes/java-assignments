@@ -1,4 +1,4 @@
-### Methods
+## Methods
 
 Write a few classes that allow the following to work in the REPL. The purpose of this assignment is to help illustrate the difference between methods and static methods. Note that the comments represent what that line should output.
 
