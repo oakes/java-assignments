@@ -61,9 +61,9 @@
   * Create ArrayLists and HashMaps
   * Contrast the four data structures
     * Array (static sequential)
-    * Class (static key-value)
+    * Class (static associative)
     * ArrayList (dynamic sequential)
-    * HashMap (dynamic key-value)
+    * HashMap (dynamic associative)
 
 ### Day 4
 
