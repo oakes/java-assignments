@@ -1,8 +1,8 @@
-### Control Flow
+## Control Flow
 
 Create a program that mimics an ATM. From the REPL, it should be possible to start it up using `ATM.run()`.
 
-Requirements:
+### Requirements
 
 * Prompt me for my name
   * If I enter nothing, then it should continue to prompt me for my name
