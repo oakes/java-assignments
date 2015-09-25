@@ -19,6 +19,7 @@
   * Start the REPL
     * Tools -> Start JREPL
   * Scalar variables
+    * boolean
     * int
     * double
   * Data structures
@@ -46,6 +47,10 @@
   * You need to add "public" to access it from JREPL
   * A class is more than just a data structure; it can contain code
   * All code must exist inside a class
+* Built-in classes
+  * Essentially the entire language consists of classes
+  * `String` is one of the most common
+  * Work through examples of using strings in the REPL
 * Methods in detail
   * Constructor methods
   * Static methods
@@ -54,6 +59,16 @@
   * Go over examples and decide whether a method should be static or not
 
 ### Day 3
+
+* Control flow
+  * Conditionals
+  * Loops
+  * Recursion
+  * Exceptions
+* Create a text-based game
+  * Demonstrate use of arrays/classes, static methods, and control flow
+
+### Day 4
 
 * Data structures
   * Review arrays and classes
@@ -64,11 +79,5 @@
     * Class (static associative)
     * ArrayList (dynamic sequential)
     * HashMap (dynamic associative)
-
-### Day 4
-
-* Control flow
-  * Conditionals
-  * Loops
-  * Recursion
-  * Exceptions
+* Extend the text-based game to use dynamic data structures
+  * Maintain inventory
