@@ -9,7 +9,6 @@
   * @Overload
   * Casting
   * Interfaces and abstract classes
-  * Receive command line input with java.util.Scanner
 
 ### Day 2
 
