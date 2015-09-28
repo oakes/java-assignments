@@ -3,12 +3,15 @@
 ### Day 1
 
 * History and overview of object-oriented programming
-* Create a new project with the "Command Line App" template
+* Topics to cover
+  * The main method
   * Packages and imports
   * Inheritance
   * @Overload
   * Casting
   * Interfaces and abstract classes
+* What are jar files?
+* Add a main method to the text game and compile a jar file
 
 ### Day 2
 
