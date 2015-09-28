@@ -15,6 +15,9 @@ class Tweet {
 Tweet[] tweets;
 ```
 
-## Submission Instructions
+### How to submit
 
-Create an issue in this repository and include your work in the text area that it provides. You can name the issue "1.1".
+* Fork this repository.
+* Click the edit button on this file.
+* Add your stuff to the bottom of this file and commit it.
+* Submit a pull request so I get a notification.
