@@ -2,16 +2,12 @@
 
 ### Day 1
 
-* History and overview of object-oriented programming
-* Topics to cover
-  * The main method
-  * Packages and imports
-  * Inheritance
-  * @Overload
-  * Casting
-  * Interfaces and abstract classes
 * What are jar files?
 * Add a main method to the text game and compile a jar file
+* OOP
+  * History and overview of object-oriented programming
+  * Inheritance (@Overload, Casting, Interfaces)
+* Generics
 
 ### Day 2
 
