@@ -12,26 +12,30 @@
 
 ### Day 2
 
+* File I/O
+  * java.io
+  * Serializable
+  * JSON
+* Dependency management
+  * Maven
+  * Pull in the [JSON library](http://jodd.org/doc/json/)
+* Add a save feature to the game
+
+### Day 3
+
 * Time
   * The complexity of time management
   * The old way: java.util.Date
   * The new way: java.time
-* File I/O
-  * java.io
-  * java.nio
-* Serializable
-* JSON
-* Add a save feature to the game
+* Add time-based mechanics to the game (poison, sleep, etc)
 
-### Day 3
+### Day 4
 
 * Debugging with IntelliJ
   * Start a debugger session
   * Set breakpoints
   * Reload classes
-
-### Day 4
-
 * Testing with IntelliJ
   * Configure JUnit
   * Writing and running tests
+* Write tests for all the game's methods
