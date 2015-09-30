@@ -19,7 +19,6 @@
   * Start the REPL
     * Tools -> Start JREPL
   * Scalar variables
-    * boolean
     * int
     * double
   * Data structures
