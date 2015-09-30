@@ -26,12 +26,14 @@
     * Arrays and classes
       * Position array
       * Position class
-    * Built-in classes
-      * Essentially the entire language consists of classes
-      * `String` is one of the most common
     * You can make arrays of objects and objects containing arrays
       * To-do array
       * Contact class
+      * Two-dimensional array representing pixels
+    * Show example of lack of data structure usage
+    * Built-in classes
+      * Essentially the entire language consists of classes
+      * `String` is one of the most common
     * Scenarios - A data structure that holds...
       * A tweet
       * Web browser history
