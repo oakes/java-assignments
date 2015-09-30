@@ -8,6 +8,7 @@
   * History and overview of object-oriented programming
   * Inheritance (@Overload, Casting, Interfaces)
 * Generics
+* Create different types of monsters in the game
 
 ### Day 2
 
@@ -18,6 +19,9 @@
 * File I/O
   * java.io
   * java.nio
+* Serializable
+* JSON
+* Add a save feature to the game
 
 ### Day 3
 
