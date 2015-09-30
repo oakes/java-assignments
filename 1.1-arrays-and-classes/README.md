@@ -17,7 +17,4 @@ Tweet[] tweets;
 
 ### How to submit
 
-* Fork this repository.
-* Click the edit button on this file.
-* Add your stuff to the bottom of this file and commit it.
-* Submit a pull request so I get a notification.
+* Create a new issue in this repository and put your work in the text area.
