@@ -1,10 +1,12 @@
-## Control Flow
+# Control Flow
 
-![earthbound](earthbound.png)
+## Description
 
 Create a program that mimics an ATM. From the REPL, it should be possible to start it up using `ATM.run()`.
 
-### Requirements
+![earthbound](earthbound.png)
+
+## Requirements
 
 * Prompt me for my name
   * If I enter nothing, then it should continue to prompt me for my name
