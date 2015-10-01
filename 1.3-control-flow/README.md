@@ -1,5 +1,7 @@
 ## Control Flow
 
+![earthbound](earthbound.png)
+
 Create a program that mimics an ATM. From the REPL, it should be possible to start it up using `ATM.run()`.
 
 ### Requirements
