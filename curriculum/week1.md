@@ -41,9 +41,6 @@
       * Every keyboard code and the character it represents
       * The points scored for each player on a team
       * The departure time for every plane in an airline's fleet
- * GitHub
-   * Fork this repository and clone it
-   * Walk through how to edit file and submit PR
 
 ### Day 2
 
