@@ -21,6 +21,7 @@
   * Scalar variables
     * int
     * double
+    * boolean
   * Data structures
     * Sequential vs associative
     * Arrays and classes
