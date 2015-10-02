@@ -27,6 +27,7 @@
     * Arrays and classes
       * Position array
       * Position class
+    * Class vs Object (blueprint vs house)
     * Built-in classes
       * Essentially the entire language consists of classes
       * `String` is one of the most common
