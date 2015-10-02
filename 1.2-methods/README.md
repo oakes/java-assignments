@@ -1,6 +1,6 @@
 # Methods
 
-![konami](konami.jpg)
+![tetris](tetris.jpg)
 
 ## Description
 
