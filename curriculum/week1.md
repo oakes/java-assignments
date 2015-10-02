@@ -64,7 +64,7 @@
 * Methods in detail
   * Constructor methods
   * Static methods
-  * System class (including System.out.println)
+    * Use static methods from `System` and `Math`
   * Create a static method in our project and run it in the REPL
   * Go over examples and decide whether a method should be static or not
 
