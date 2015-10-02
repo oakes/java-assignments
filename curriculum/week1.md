@@ -46,6 +46,13 @@
 ### Day 2
 
 * Overview of Git
+  * Why track changes?
+    * Collaboration
+    * Revert mistakes
+    * Offsite backup
+  * History of VCSes
+  * Create a repo and clone it via IntelliJ
+  * Write code, commit, revert, etc
 * Writing code in a file
   * Open the HelloWorld project
   * Create the Contact class from yesterday in a file
