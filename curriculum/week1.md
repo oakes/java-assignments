@@ -51,6 +51,10 @@
     * Revert mistakes
     * Offsite backup
   * History of VCSes
+    * SCSS (1972)
+    * CVS (1990)
+    * SVN (2000)
+    * Git (2005)
   * Create a repo and clone it via IntelliJ
   * Write code, commit, revert, etc
 * Writing code in a file
