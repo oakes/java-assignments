@@ -50,6 +50,7 @@
     * Collaboration
     * Revert mistakes
     * Offsite backup
+  * Interesting comments from [Tarn Adams](https://www.reddit.com/r/IAmA/comments/1avszc/im_tarn_adams_of_bay_12_games_cocreator_of_dwarf/c919fo8) on version control
   * History of VCSes
     * CVS (1990)
     * SVN (2000)
@@ -65,6 +66,7 @@
   * Create a constructor that takes a name
   * Create `setName` and `getName` methods
     * Can be useful over direct field access if you want to enforce constraints
+    * Interesting comments from [Notch](http://notch.tumblr.com/post/15782716917/coding-skill-and-the-decline-of-stagnation) on getters and setters
 * Work through examples of using string methods in the REPL
 * Methods in detail
   * Static methods (look at the ones in `System` and `Math`)
