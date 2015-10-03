@@ -74,7 +74,6 @@
 
 * Control flow
   * Conditionals
-    * Enums
   * Loops
   * Recursion
   * Exceptions
