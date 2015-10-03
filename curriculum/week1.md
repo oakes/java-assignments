@@ -51,6 +51,7 @@
     * Revert mistakes
     * Offsite backup
   * Interesting comments from [Tarn Adams](https://www.reddit.com/r/IAmA/comments/1avszc/im_tarn_adams_of_bay_12_games_cocreator_of_dwarf/c919fo8) on version control
+    * Find a middle ground between good practice and getting things done
   * History of VCSes
     * CVS (1990)
     * SVN (2000)
