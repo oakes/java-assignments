@@ -27,7 +27,7 @@
     * Arrays and classes
       * Position array
       * Position class
-    * Class vs Object (blueprint vs house)
+    * Class vs object (blueprint vs house)
     * Built-in classes
       * Essentially the entire language consists of classes
       * `String` is one of the most common
@@ -54,7 +54,6 @@
   * Create a repo and clone it via IntelliJ
   * Write code, commit, revert, etc
 * Writing code in a file
-  * Open the HelloWorld project
   * Create the Contact class from yesterday in a file
   * Use the class in JREPL
   * You need to add "public" to access it from JREPL
