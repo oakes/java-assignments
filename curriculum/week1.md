@@ -85,13 +85,15 @@
 
 ### Day 3
 
+* Create a text-based game
+  * Demonstrate use of arrays/classes, static methods, and control flow
+* Use `Scanner` to read console input
+  * Unlike output, input requires creating an object
 * Control flow
   * Conditionals
   * Loops
   * Recursion
   * Exceptions
-* Create a text-based game
-  * Demonstrate use of arrays/classes, static methods, and control flow
 
 ### Day 4
 
