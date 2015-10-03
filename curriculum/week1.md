@@ -90,6 +90,7 @@
   * Demonstrate use of arrays/classes, static methods, and control flow
 * Use `Scanner` to read console input
   * Unlike output, input requires creating an object
+  * Book analogy: Reading requires a bookmark, but writing is simply appending at the end
 * Control flow
   * Conditionals
   * Loops
