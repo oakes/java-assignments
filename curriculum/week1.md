@@ -62,11 +62,12 @@
   * You need to add "public" to access it from JREPL
   * A class is more than just a data structure; it can contain code
   * All code must exist inside a class
+  * Create a constructor that takes a name
+  * Create `setName` and `getName` methods
+    * Can be useful over direct field access if you want to enforce constraints
 * Work through examples of using string methods in the REPL
 * Methods in detail
-  * Constructor methods
-  * Static methods
-    * Use static methods from `System` and `Math`
+  * Static methods (look at the ones in `System` and `Math`)
   * Create a static method in our project and run it in the REPL
   * Go over examples and decide whether a method should be static or not
 
