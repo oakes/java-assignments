@@ -7,7 +7,9 @@
 Write a few classes that allow the following to work in the REPL. The purpose of this assignment is to help illustrate the difference between methods and static methods. Note that the comments represent what that line should output.
 
 ```java
-Position pos = new Position(1.5, 0);
+Position pos = new Position();
+pos.x = 1.5;
+pos.y = 0;
 
 Player p = new Player(pos);
 p.movePosition(-1, 1);
