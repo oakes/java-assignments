@@ -81,6 +81,7 @@
 * Methods in detail
   * Static methods (look at the ones in `System` and `Math`)
   * Create a static method in our project and run it in the REPL
+  * Use static methods if it doesn't need to store anything for later
   * Go over examples and decide whether a method should be static or not
 
 ### Day 3
