@@ -1,6 +1,6 @@
 # Methods
 
-![tetris](tetris.jpg)
+![age of empires](aoe.jpg)
 
 ## Description
 
