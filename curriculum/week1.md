@@ -68,6 +68,16 @@
     * Can be useful over direct field access if you want to enforce constraints
     * Interesting comments from [Notch](http://notch.tumblr.com/post/15782716917/coding-skill-and-the-decline-of-stagnation) on getters and setters
 * Work through examples of using string methods in the REPL
+  * Look up the Java doc for `String`
+  * Call methods
+    * `charAt`
+    * `contains`
+    * `format`
+    * `indexOf`
+    * `split`
+    * `startsWith`
+    * `toUpperCase`
+    * `trim`
 * Methods in detail
   * Static methods (look at the ones in `System` and `Math`)
   * Create a static method in our project and run it in the REPL
