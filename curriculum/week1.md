@@ -51,7 +51,6 @@
     * Revert mistakes
     * Offsite backup
   * History of VCSes
-    * SCSS (1972)
     * CVS (1990)
     * SVN (2000)
     * Git (2005)
