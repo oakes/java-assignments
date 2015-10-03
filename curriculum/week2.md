@@ -8,6 +8,7 @@
   * History and overview of object-oriented programming
   * Inheritance (@Overload, Casting, Interfaces)
 * Generics
+* Enums
 * Create different types of monsters in the game
 
 ### Day 2
