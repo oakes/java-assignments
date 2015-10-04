@@ -75,7 +75,7 @@ class Ideone
 		String[] weapons = {"sword", "mallet"};
 		System.out.println("What shall your weapon be? [sword/mallet]");
 		String weapon = r.nextLine();
-		if (Arrays.binarySearch(weapons, weapon) < 0) {
+		if (Arrays.asList(weapons).contains(weapon) < 0) {
 			System.out.println("Invalid weapon!");
 			return;
 		}
