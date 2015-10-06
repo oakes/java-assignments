@@ -42,6 +42,8 @@
   * @Overload
   * Casting
   * Interfaces and abstract classes
+* File I/O
+* Maven
 * Standard library
   * java.time
   * java.io
@@ -56,7 +58,6 @@
 
 ## Week 4 - Web apps
 
-* Maven
 * [Jodd](http://jodd.org/)
 * [Spark](http://sparkjava.com/)
 
