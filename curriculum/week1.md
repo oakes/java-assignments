@@ -22,7 +22,7 @@
     * int
     * double
     * boolean
-  * Data structures
+  * Compound variables (data structures)
     * Sequential vs associative
     * Arrays and classes
       * Position array
