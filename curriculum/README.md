@@ -58,7 +58,6 @@
 
 ## Week 4 - Web apps
 
-* [Jodd](http://jodd.org/)
 * [Spark](http://sparkjava.com/)
 
 ## Week 5 - Databases
