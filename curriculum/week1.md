@@ -73,7 +73,6 @@
   * Call methods
     * `charAt`
     * `contains`
-    * `format`
     * `indexOf`
     * `split`
     * `startsWith`
