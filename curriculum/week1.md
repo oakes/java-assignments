@@ -64,10 +64,10 @@
   * You need to add "public" to access it from JREPL
   * A class is more than just a data structure; it can contain code
   * All code must exist inside a class
-  * Create a constructor that takes a name
   * Create `setName` and `getName` methods
     * Can be useful over direct field access if you want to enforce constraints
     * Interesting comments from [Notch](http://notch.tumblr.com/post/15782716917/coding-skill-and-the-decline-of-stagnation) on getters and setters
+  * Create a constructor that takes a name
 * Work through examples of using string methods in the REPL
   * Look up the Java doc for `String`
   * Call methods
