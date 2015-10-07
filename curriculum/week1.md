@@ -105,6 +105,9 @@
   * Static methods and fields (look at the ones in `Math` and `System`)
   * Create a static method `isValidName` in our project and run it in the REPL
 * Object-oriented vs procedural vs functional programming
+  * OOP: Data and methods are combined
+  * PP: Data and methods are separate
+  * FP: Data and methods are separate, and data is immutable
 
 ### Day 3
 
