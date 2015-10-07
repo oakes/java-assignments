@@ -92,12 +92,17 @@
     * `indexOf`
     * `split`
     * `startsWith`
+    * `substring`
     * `toUpperCase`
     * `trim`
-* Methods in detail
+  * Mutation
+    * Strings are immutable; their methods return a new string if necessary
+    * Mutation is a common source of bugs; a variable can contain something you didn't expect
+* Static methods and fields
+  * They're stored in the class rather than in each object
+  * Use static methods if it is "standalone" (no need to access fields)
   * Static methods and fields (look at the ones in `Math` and `System`)
   * Create a static method `isValidName` in our project and run it in the REPL
-  * Use static methods if it doesn't need to store anything for later
 * Object-oriented vs procedural vs functional programming
 
 ### Day 3
