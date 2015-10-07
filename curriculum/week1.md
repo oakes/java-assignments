@@ -98,6 +98,7 @@
   * Mutation
     * Strings are immutable; their methods return a new string if necessary
     * Mutation is a common source of bugs; a variable can contain something you didn't expect
+  * Create `getFirstName` and `getLastName`
 * Static methods and fields
   * They're stored in the class rather than in each object
   * Use static methods if it is "standalone" (no need to access fields)
