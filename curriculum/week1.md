@@ -57,7 +57,23 @@
     * SVN (2000)
     * Git (2005)
   * Create a repo and clone it via IntelliJ
-  * Write code, commit, revert, etc
+  * Write code, commit, and push
+  * Show diff
+  * Three ways to revert
+    * If not committed yet
+      * Right-click the file under Local Changes
+      * Click "Revert..."
+    * If committed but not pushed
+      * Right-click an older commit
+      * Click "Reset Current Branch to Here..."
+      * Choose "Hard"
+    * If committed and pushed
+      * Right-click the commit
+      * Click "Create Patch..."
+      * Check "Reverse patch" and create it
+      * Under the VCS menu, choose "Apply Patch..."
+      * Delete the patch file
+      * Commit your changes
 * Writing code in a file
   * Create the Contact class from yesterday in a file
   * Use the class in JREPL
