@@ -79,10 +79,10 @@
     * `toUpperCase`
     * `trim`
 * Methods in detail
-  * Static methods (look at the ones in `System` and `Math`)
-  * Create a static method in our project and run it in the REPL
+  * Static methods and fields (look at the ones in `Math` and `System`)
+  * Create a static method `isValidName` in our project and run it in the REPL
   * Use static methods if it doesn't need to store anything for later
-  * Go over examples and decide whether a method should be static or not
+* Object-oriented vs procedural vs functional programming
 
 ### Day 3
 
