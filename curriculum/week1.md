@@ -59,16 +59,16 @@
   * Create a repo and clone it via IntelliJ
   * Write code, commit, and push
   * Show diff
-  * Three ways to revert
+  * Three ways to revert your changes
     * If not committed yet
-      * Right-click the file under Local Changes
+      * Under Local Changes, right-click the file you want to revert
       * Click "Revert..."
     * If committed but not pushed
-      * Right-click an older commit
+      * Under Log, right-click the commit you want to go back to
       * Click "Reset Current Branch to Here..."
       * Choose "Hard"
     * If committed and pushed
-      * Right-click the commit
+      * Under Log, right-click the commit you want to revert
       * Click "Create Patch..."
       * Check "Reverse patch" and create it
       * Under the VCS menu, choose "Apply Patch..."
