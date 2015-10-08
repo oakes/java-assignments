@@ -19,4 +19,4 @@ Create a program that mimics an ATM. From the REPL, it should be possible to sta
   * Withdraw Funds
     * Prompt for how much money to withdraw
       * If the amount is greater than 100, throw an exception
-      * If all is well, tell them to please take their money and then tell them their new balance
+      * If all is well, tell them to please take their money
