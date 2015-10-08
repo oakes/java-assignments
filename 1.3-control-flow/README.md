@@ -12,7 +12,6 @@ Create a program that mimics an ATM. From the REPL, it should be possible to sta
   * If I enter nothing, throw an exception
 * Prompt me for what I would like to do
   * 1. Check my balance, 2. Withdraw Funds or 3. Cancel
-  * If I enter a number that is not within this list, throw an exception
   * Check Balance
     * Print to the console `"Your balance is $__"`
   * Cancel
