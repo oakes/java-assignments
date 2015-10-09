@@ -111,7 +111,7 @@
 
 ### Day 3
 
-* Create a text-based game
+* Create a text adventure game
   * Demonstrate use of arrays/classes, static methods, and control flow
 * Use `Scanner` to read console input
   * Unlike output, input requires creating an object
@@ -124,6 +124,10 @@
 
 ### Day 4
 
+* Text adventure
+  * Refactor code into `Player` class
+  * Add command system
+  * Use `ArrayList` to store inventory
 * Data structures
   * Review arrays and classes
   * Static vs dynamic
@@ -135,5 +139,3 @@
     * HashMap (dynamic associative)
 * How do static and dynamic data structures work?
   * Stack vs Heap
-* Extend the text-based game to use dynamic data structures
-  * Maintain inventory
