@@ -5,6 +5,11 @@
 * Running Java code the normal way
   * Main method
   * Jar files
+    * File -> Project Structure...
+    * Click "Artifacts" and then the plus button
+    * JAR -> From modules with dependencies...
+    * Choose the main class and click OK
+    * Build -> Build Artifacts...
 * Review last week's material
   * Static data: arrays and classes
   * Methods and constructors
