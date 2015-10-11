@@ -4,6 +4,10 @@
 
 * What are jar files?
 * Add a main method to the text game and compile a jar file
+* Review last week's material
+
+## Day 2
+
 * OOP
   * History and overview of object-oriented programming
   * Inheritance (@Overload, Casting, Interfaces)
@@ -11,7 +15,7 @@
 * Enums
 * Create different types of monsters in the game
 
-### Day 2
+### Day 3
 
 * File I/O
   * java.io
@@ -22,16 +26,13 @@
   * Pull in the [JSON library](http://jodd.org/doc/json/)
 * Add a save feature to the game
 
-### Day 3
+### Day 4
 
 * Time
   * The complexity of time management
   * The old way: java.util.Date
   * The new way: java.time
 * Add time-based mechanics to the game (poison, sleep, etc)
-
-### Day 4
-
 * Debugging with IntelliJ
   * Start a debugger session
   * Set breakpoints
