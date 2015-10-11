@@ -11,11 +11,10 @@
     * Choose the main class and click OK
     * Build -> Build Artifacts...
 * Review last week's material
-  * Static data: arrays and classes
-  * Methods and constructors
-  * Static fields and methods
-  * Control flow
-  * Dynamic data: ArrayLists and HashMaps
+  * Arrays and classes
+  * Methods
+  * Control flow (if, while, for, throw)
+  * ArrayLists and HashMaps
 
 ### Day 2
 
