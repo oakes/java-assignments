@@ -2,16 +2,22 @@
 
 ### Day 1
 
-* What are jar files?
-* Add a main method to the text game and compile a jar file
+* Running Java code the normal way
+  * Main method
+  * Jar files
 * Review last week's material
+  * Static data: arrays and classes
+  * Methods and constructors
+  * Static fields and methods
+  * Control flow
+  * Dynamic data: ArrayLists and HashMaps
 
 ### Day 2
 
 * OOP
   * History and overview of object-oriented programming
   * Inheritance (@Overload, Casting, Interfaces)
-* Generics
+* Generics and casting
 * Enums
 * Create different types of monsters in the game
 
