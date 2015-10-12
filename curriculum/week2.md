@@ -20,7 +20,7 @@
 
 * OOP
   * History and overview of object-oriented programming
-  * Inheritance (@Overload, Casting, Interfaces)
+  * Inheritance (@Overload, Interfaces)
 * Generics and casting
 * Enums
 * Create different types of monsters in the game
