@@ -1,6 +1,6 @@
 # Control Flow
 
-![earthbound](earthbound.png)
+![screenshot](screenshot.png)
 
 ## Description
 

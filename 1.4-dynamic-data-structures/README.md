@@ -1,6 +1,6 @@
 # Dynamic Data Structures
 
-![balamb garden](balambgarden.jpg)
+![screenshot](screenshot.jpg)
 
 ## Description
 

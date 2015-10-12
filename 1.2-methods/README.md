@@ -1,6 +1,6 @@
 # Methods
 
-![age of empires](aoe.jpg)
+![screenshot](screenshot.jpg)
 
 ## Description
 

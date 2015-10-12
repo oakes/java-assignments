@@ -1,6 +1,6 @@
 # Arrays and Classes
 
-![lunar](lunar.jpg)
+![screenshot](screenshot.jpg)
 
 ## Description
 
