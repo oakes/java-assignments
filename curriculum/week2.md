@@ -18,11 +18,14 @@
 
 ### Day 2
 
-* OOP
-  * History and overview of object-oriented programming
-  * Inheritance (extending a class)
-* Generics and casting
-* Create different types of monsters in the game
+* Text adventure
+  * Create a `Player` constructor to set health/damage defaults
+  * Create an `Enemy` class
+  * Create a `Character` class that they extend
+  * Create a `battle` method in `Character`
+* Topics of discussion
+  * Review constructors
+  * Extending a class (inheritance)
 
 ### Day 3
 
