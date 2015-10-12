@@ -20,9 +20,8 @@
 
 * OOP
   * History and overview of object-oriented programming
-  * Inheritance (@Overload, Interfaces)
+  * Inheritance (extending a class)
 * Generics and casting
-* Enums
 * Create different types of monsters in the game
 
 ### Day 3
@@ -35,11 +34,6 @@
 * Dependency management
   * Maven
   * Pull in the [JSON library](http://jodd.org/doc/json/)
-* Time
-  * The complexity of time management
-  * The old way: java.util.Date
-  * The new way: java.time
-  * Add time-based mechanics to the game (poison, sleep, etc)
 
 ### Day 4
 
