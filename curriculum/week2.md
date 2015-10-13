@@ -23,7 +23,7 @@
   * Create a `Player` constructor
   * Create an `Enemy` class
   * Create a `Character` class that they extend
-  * Create a `printStats` method in `Character`
+  * Create a `printDescription` method in `Character`
   * Create a `battle` method in `Character`
 * Topics of discussion
   * Review constructors
