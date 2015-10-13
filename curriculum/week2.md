@@ -18,6 +18,8 @@
 
 ### Day 2
 
+* Finding the item in an `ArrayList` that matches a certain condition
+  * Search an `ArrayList<Contact>` for someone with a particular name
 * Use `String.format` in the ToDo project
 * Text adventure
   * Add health and damage to `Player`
