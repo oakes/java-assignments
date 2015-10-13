@@ -18,7 +18,12 @@
 
 ### Day 2
 
-* Finding the item in an `ArrayList` that matches a certain condition
+* Contact project
+  * Create a constructor for `Contact`
+  * Create `Contact` objects
+  * Change their fields
+  * Add them to an `ArrayList<Contact>`
+  * Get a contact out of the list
   * Search an `ArrayList<Contact>` for someone with a particular name
 * Use `String.format` in the ToDo project
 * Text adventure
