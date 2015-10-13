@@ -22,6 +22,7 @@
   * Create a `Player` constructor to set health/damage defaults
   * Create an `Enemy` class
   * Create a `Character` class that they extend
+  * Create a `printStats` method in `Character`
   * Create a `battle` method in `Character`
 * Topics of discussion
   * Review constructors
