@@ -49,7 +49,6 @@
   * Review constructors
   * Extending a class (inheritance)
   * The `Object` class
-  * Generics and casting
 
 ### Day 3
 
