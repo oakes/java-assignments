@@ -26,6 +26,17 @@
   * Create a `battle` method in `Character`
   * Create a `printDescription` method in `Character`
   * Discuss `@Override`
+* Contrived example of inheritance
+  * Animal
+    * Mammal
+      * Dog
+      * Human
+    * Reptile
+      * Alligator
+      * Turtle
+    * Bird
+      * Hawk
+      * Parrot
 * Topics of discussion
   * Review constructors
   * Extending a class (inheritance)
