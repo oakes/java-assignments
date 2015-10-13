@@ -19,7 +19,8 @@
 ### Day 2
 
 * Text adventure
-  * Create a `Player` constructor to set health/damage defaults
+  * Add health and damage to `Player`
+  * Create a `Player` constructor
   * Create an `Enemy` class
   * Create a `Character` class that they extend
   * Create a `printStats` method in `Character`
