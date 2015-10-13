@@ -8,7 +8,7 @@ For the purposes of this prework, all you need is a browser; we generally use [G
 
 ### Java
 
-Java will be the main language we work with during the class. Being such a popular language, there are a lot of tutorials online, though many of them are varying degrees of crap. One that I've found fairly good is [Learn Java Online](http://www.learnjavaonline.org/). Please work through all the pages listed under "Learn the Basics".
+Java will be the main language we work with during the class. Being such a popular language, there are a lot of tutorials online, though many of them are varying degrees of crap. One that I've found fairly good is [KTByte Interactive Textbook in Java](https://www.ktbyte.com/java-tutorial/book). Please work through parts one and two.
 
 ### Clojure
 
