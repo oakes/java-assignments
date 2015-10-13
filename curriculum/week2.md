@@ -25,6 +25,7 @@
   * Create a `Character` class that they extend
   * Create a `battle` method in `Character`
   * Create a `printDescription` method in `Character`
+  * Discuss `@Override`
 * Topics of discussion
   * Review constructors
   * Extending a class (inheritance)
