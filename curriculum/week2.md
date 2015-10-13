@@ -18,13 +18,14 @@
 
 ### Day 2
 
+* Use `String.format` in the ToDo project
 * Text adventure
   * Add health and damage to `Player`
   * Create a `Player` constructor
   * Create an `Enemy` class
   * Create a `Character` class that they extend
   * Create a `battle` method in `Character`
-  * Create a `printDescription` method in `Character`
+  * Create a `toString` method in `Character`
   * Discuss `@Override`
 * Contrived example of inheritance
   * Animal
