@@ -83,6 +83,12 @@
       * Can't reload method if it's in the middle of execution
       * Can't reload method if its signature has changed
 * Testing with IntelliJ
+  * Create test folder
+    * File -> Project Structure...
+    * Click "Modules"
+    * Right-click the "src" folder and click "New Folder"
+    * Call it "test"
+    * Right-click the "test" folder and click "Tests" to mark it as a test folder
   * Add JUnit 4 to project
     * File -> Project Structure...
     * Click "Libraries" and then the plus button
