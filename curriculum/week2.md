@@ -52,9 +52,16 @@
 
 ### Day 3
 
+* Exercise
+  * Loop over string array
+  * Use `ArrayList` instead of a primitive array
+  * Use `Contact` class instead of strings
+* Text advanture
+  * Store weapon in `Character` and create `Weapon` class
+  * Add weapon's damage in `battle` method
+  * Add save feature
 * File I/O
   * JSON
-  * Add a save feature to the game
   * `File`, `FileWriter`, `FileReader`
 * Dependency management
   * Maven
