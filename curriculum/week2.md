@@ -66,6 +66,11 @@
 * Dependency management
   * Maven
   * Pull in the [JSON library](http://jodd.org/doc/json/)
+  * Add to project
+    * File -> Project Structure...
+    * Click "Libraries" and then the plus button
+    * Click "From Maven..."
+    * Search for "jodd json"
 
 ### Day 4
 
@@ -78,5 +83,11 @@
       * Can't reload method if it's in the middle of execution
       * Can't reload method if its signature has changed
 * Testing with IntelliJ
-  * Configure JUnit
-  * Writing and running tests
+  * Add JUnit 4 to project
+    * File -> Project Structure...
+    * Click "Libraries" and then the plus button
+    * Click "From Maven..."
+    * Search for "junit"
+  * Create a test
+    * Select a class you want to write tests for
+    * View -> Test
