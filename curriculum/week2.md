@@ -70,9 +70,13 @@
 ### Day 4
 
 * Debugging with IntelliJ
-  * Start a debugger session
-  * Set breakpoints
-  * Reload classes
+  * Simplest form of debugging: printing variables
+  * Better form of debugging: IntelliJ's debugger
+    * Set breakpoint
+    * See what variables contain at that moment in time
+    * Reload changed classes
+      * Can't reload method if it's in the middle of execution
+      * Can't reload method if its signature has changed
 * Testing with IntelliJ
   * Configure JUnit
   * Writing and running tests
