@@ -56,7 +56,7 @@
   * Loop over string array
   * Use `ArrayList` instead of a primitive array
   * Use `Contact` class instead of strings
-* Text advanture
+* Text adventure
   * Store weapon in `Character` and create `Weapon` class
   * Add weapon's damage in `battle` method
   * Add save feature
@@ -80,4 +80,3 @@
 * Testing with IntelliJ
   * Configure JUnit
   * Writing and running tests
-* Write tests for all the game's methods
