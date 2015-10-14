@@ -55,7 +55,7 @@
 * File I/O
   * JSON
   * Add a save feature to the game
-  * `FileWriter`, `File`, and `FileReader`
+  * `File`, `FileWriter`, `FileReader`
 * Dependency management
   * Maven
   * Pull in the [JSON library](http://jodd.org/doc/json/)
