@@ -74,14 +74,20 @@
 
 ### Day 4
 
+* Text adventure
+  * Set breakpoint in `main` to see contents of objects
+  * Create bug in `findItem` and set breakpoint
+  * Hotswap values
+  * Write test for `battle` method
 * Debugging with IntelliJ
-  * Simplest form of debugging: printing variables
+  * Primitive form of debugging: printing variables
   * Better form of debugging: IntelliJ's debugger
     * Set breakpoint
     * See what variables contain at that moment in time
     * Reload changed classes
       * Can't reload method if it's in the middle of execution
       * Can't reload method if its signature has changed
+      * [Notch using this feature](https://www.youtube.com/watch?v=BES9EKK4Aw4)
 * Testing with IntelliJ
   * Create test folder
     * File -> Project Structure...
