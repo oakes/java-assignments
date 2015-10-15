@@ -75,6 +75,9 @@
 
 ### Day 4
 
+* Exercise
+  * Keep asking for input until valid input is received
+  * As a group, create a `HashMap<String, ArrayList<String>>`
 * `switch` statements
   * Use in the Zoo project
 * Text adventure
