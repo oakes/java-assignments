@@ -75,8 +75,6 @@
 
 ### Day 4
 
-* Exercise
-  * 
 * `switch` statements
   * Use in the Zoo project
 * Text adventure
