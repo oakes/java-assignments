@@ -103,7 +103,7 @@
     * File -> Project Structure...
     * Click "Libraries" and then the plus button
     * Click "From Maven..."
-    * Search for "junit"
+    * Type in "junit:junit:4.12"
   * Create a test
     * Select a class you want to write tests for
     * View -> Test
