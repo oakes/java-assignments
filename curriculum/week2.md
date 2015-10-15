@@ -56,6 +56,7 @@
   * Loop over string array
   * Use `ArrayList` instead of a primitive array
   * Use `Contact` class instead of strings
+  * Generics and casting
 * Text adventure
   * Store weapon in `Character` and create `Weapon` class
   * Add weapon's damage in `battle` method
