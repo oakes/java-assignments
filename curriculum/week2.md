@@ -75,7 +75,12 @@
 
 ### Day 4
 
+* Exercise
+  * 
+* `switch` statements
+  * Use in the Zoo project
 * Text adventure
+  * Save file name constant as `static final`
   * Set breakpoint in `main` to see contents of objects
   * Create bug in `findItem` and set breakpoint
   * Hotswap values
@@ -104,3 +109,10 @@
   * Create a test
     * Select a class you want to write tests for
     * View -> Test
+* Forum
+  * Create console-based forum with custom file format
+  * Create `Post` and `ArrayList<Post>`
+  * Create file and read its contents into the arraylist
+  * Loop over posts and print the top ones out
+  * Break the loop out into `printPosts`
+  * Create an infinite loop that listens for a post # to jump to
