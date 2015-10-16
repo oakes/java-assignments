@@ -4,7 +4,7 @@
 
 ## Description
 
-Fork the [Countries](https://github.com/TIY-Charleston-Back-End-Oct2015/Countries) project. Parse each line and store the contents in an ArrayList of objects. Ask the user to type a letter and save a file that lists only the countries starting with it.
+Create a project and put "countries.txt" in its root. Parse each line and store the contents in an ArrayList of objects. Ask the user to type a letter and save a file that lists only the countries starting with it.
 
 ## Requirements
 
