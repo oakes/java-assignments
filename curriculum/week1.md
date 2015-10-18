@@ -45,6 +45,7 @@
 
 ### Day 2
 
+* Review assignment (arrays and classes)
 * Overview of Git
   * Why track changes?
     * Collaboration
@@ -111,6 +112,7 @@
 
 ### Day 3
 
+* Review assignment (methods)
 * Create a text adventure game
   * Demonstrate use of arrays/classes, static methods, and control flow
 * Use `Scanner` to read console input
@@ -124,6 +126,7 @@
 
 ### Day 4
 
+* Review assignment (control flow)
 * Text adventure
   * Refactor code into `Player` class
   * Add command system
