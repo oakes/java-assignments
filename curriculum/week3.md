@@ -2,6 +2,7 @@
 
 ### Day 1
 
+* Review assignment (file I/O continued - countries)
 * Review
   * Loops
   * Nested data structures
