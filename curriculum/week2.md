@@ -10,7 +10,7 @@
     * JAR -> From modules with dependencies...
     * Choose the main class and click OK
     * Build -> Build Artifacts...
-* Review last week's material
+* Review
   * Arrays and classes
   * Methods
   * Control flow (if, while, for, throw)
@@ -95,21 +95,6 @@
       * Can't reload method if it's in the middle of execution
       * Can't reload method if its signature has changed
       * [Notch using this feature](https://www.youtube.com/watch?v=BES9EKK4Aw4)
-* Testing with IntelliJ
-  * Create test folder
-    * File -> Project Structure...
-    * Click "Modules"
-    * Right-click the "src" folder and click "New Folder"
-    * Call it "test"
-    * Right-click the "test" folder and click "Tests" to mark it as a test folder
-  * Add JUnit 4 to project
-    * File -> Project Structure...
-    * Click "Libraries" and then the plus button
-    * Click "From Maven..."
-    * Type in "junit:junit:4.12"
-  * Create a test
-    * Select a class you want to write tests for
-    * View -> Test
 * Forum
   * Create console-based forum with custom file format
   * Create `Post` and `ArrayList<Post>`
