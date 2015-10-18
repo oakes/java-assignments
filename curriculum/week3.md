@@ -5,6 +5,7 @@
 * Review assignment (file I/O continued - countries)
   * Loops
   * Nested data structures
+* Exercise
 * More review
   * Casting
     * Cast a `long` to an `int`
