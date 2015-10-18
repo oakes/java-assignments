@@ -6,8 +6,8 @@
 * Review
   * Loops
   * Nested data structures
-  * Inheritance
   * Casting
+  * Inheritance
 * Sort an `ArrayList<String>` in JREPL using `Collections.sort`
 * In the `Contacts` class, sort `ArrayList<Contact>` by implmenting `Comparable`
 * Interfaces
