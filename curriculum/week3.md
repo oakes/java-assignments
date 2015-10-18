@@ -8,7 +8,7 @@
   * Nested data structures
   * Inheritance
   * Casting
-* Sort an `ArrayList` in JREPL using `Collections.sort(names)`
+* Sort an `ArrayList<String>` in JREPL using `Collections.sort`
 * In the `Contacts` class, sort `Contact` objects by implmenting `Comparable`
 * Interfaces
   * A list of one or more methods that a class must have
