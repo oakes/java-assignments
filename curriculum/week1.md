@@ -126,7 +126,7 @@
 
 ### Day 4
 
-* Review assignment (control flow)
+* Review assignment (control flow - ATM)
 * Text adventure
   * Refactor code into `Player` class
   * Add command system
