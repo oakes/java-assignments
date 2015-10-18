@@ -3,8 +3,9 @@
 ### Day 1
 
 * Review
-  * Inheritance
+  * Loops
   * Nested data structures
+  * Inheritance
 
 ### Day 2
 
