@@ -3,20 +3,21 @@
 ### Day 1
 
 * Review assignment (file I/O continued - countries)
-* Review
   * Loops
   * Nested data structures
+* More review
   * Casting
     * Cast a `long` to an `int`
     * Cast an `Object` (from a raw `ArrayList`) to a `String`
   * Inheritance
     * The `Character` class in the text adventure
-* Sort an `ArrayList<String>` in JREPL using `Collections.sort`
-* In the `Contacts` class, sort `ArrayList<Contact>` by implmenting `Comparable`
 * Interfaces
-  * A list of one or more methods that a class must have
-  * Allows code to call methods on objects even if they don't know what those objects are
-  * Used all the time in Java itself as well as libraries/frameworks
+  * Sort an `ArrayList<String>` in JREPL using `Collections.sort`
+  * In the `Contacts` class, sort `ArrayList<Contact>` by implementing `Comparable`
+  * Definition
+    * A list of one or more methods that a class must have
+    * Allows code to call methods on objects even if they don't know what those objects are
+    * Used all the time in Java itself as well as libraries/frameworks
 
 ### Day 2
 
