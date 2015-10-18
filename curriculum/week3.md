@@ -9,7 +9,7 @@
   * Inheritance
   * Casting
 * Sort an `ArrayList<String>` in JREPL using `Collections.sort`
-* In the `Contacts` class, sort `Contact` objects by implmenting `Comparable`
+* In the `Contacts` class, sort `ArrayList<Contact>` by implmenting `Comparable`
 * Interfaces
   * A list of one or more methods that a class must have
   * Allows code to call methods on objects even if they don't know what those objects are
