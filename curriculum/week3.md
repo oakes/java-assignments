@@ -7,7 +7,10 @@
   * Loops
   * Nested data structures
   * Casting
+    * Cast a `long` to an `int`
+    * Cast an `Object` (from a raw `ArrayList`) to a `String`
   * Inheritance
+    * The `Character` class in the text adventure
 * Sort an `ArrayList<String>` in JREPL using `Collections.sort`
 * In the `Contacts` class, sort `ArrayList<Contact>` by implmenting `Comparable`
 * Interfaces
