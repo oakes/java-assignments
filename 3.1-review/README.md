@@ -4,7 +4,7 @@
 
 ## Description
 
-Read the csv file into a `HashMap<String, ArrayList<Person>>` that maps country name to a list of people who are from that country. Then loop over the lists in your `HashMap` and sort them by last name.
+Create a project based on [People](../projects/People). Read the csv file into a `HashMap<String, ArrayList<Person>>` that maps country name to a list of people who are from that country. Then loop over the lists in your `HashMap` and sort them by last name.
 
 ## Requirements
 
