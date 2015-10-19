@@ -6,6 +6,8 @@
   * Loops
   * Nested data structures
 * Exercise
+  * Print name combos
+  * Create `HashMap` that maps names to lists of `Email` objects
 * More review
   * Casting
     * Cast a `long` to an `int`
