@@ -41,6 +41,7 @@
 
 * Android
   * Install [Android Studio](https://developer.android.com/sdk/index.html)
+  * Build a to-do app
   * Build a web browser
 
 ### Day 4
