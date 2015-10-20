@@ -37,13 +37,13 @@
       * Implement `Initializable`
       * Implement an action method
       * Bring in controls using `@FXML`
+      * Make all buttons set min size to USE_PREF_SIZE
       * To-do app
         * Create an `ObservableList`
         * Set the `ListView` to use it
         * Wire up the "Add", "Toggle", and "Remove" buttons
       * Web browser
         * Wire up the "Go" button
-        * Make all buttons set min size to USE_PREF_SIZE
         * Allow hitting enter in URL textfield
         * Create a `ChangeListener` to update the URL textfield
         * Wire up the back and forward buttons
