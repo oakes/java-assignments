@@ -4,7 +4,7 @@
 
 ## Description
 
-Create a graphical program for managing contacts.
+Create a desktop app for managing contacts.
 
 ## Requirements
 
