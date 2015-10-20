@@ -45,7 +45,7 @@
       * Web browser
         * Wire up the "Go" button
         * Allow hitting enter in URL textfield
-        * Create a `ChangeListener` to update the URL textfield
+        * Implement `ChangeListener` to update the URL textfield
         * Wire up the back and forward buttons
   * Build as a JAR file
     * File -> Project Structure...
