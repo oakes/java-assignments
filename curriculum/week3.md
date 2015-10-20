@@ -26,9 +26,20 @@
 
 * Desktop UI with Java FX
   * Install [Scene Builder](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-1x-archive-2199384.html)
-  * New Project -> Java FX template
-  * Build a to-do app
-  * Build a web browser
+  * Build a to-do app and a web browser
+    * New Project -> Java FX template
+    * Run blank project
+    * Look at the three files you start with
+    * Edit title and window size in Main.java
+    * Use Scene Builder to change sample.fxml
+    * Edit Controller.java
+      * Implement `Initializable`
+      * Implement an action method
+      * Bring in controls using `@FXML`
+      * To-do app
+        * Create an `ObservableList`
+        * Set the `ListView` to use it
+        * Wire up the "Add" and "Remove" buttons
   * Build as a JAR file
     * File -> Project Structure...
     * Click on "JavaFXApp.jar"
@@ -41,8 +52,7 @@
 
 * Android
   * Install [Android Studio](https://developer.android.com/sdk/index.html)
-  * Build a to-do app
-  * Build a web browser
+  * Build a to-do app and a web browser
 
 ### Day 4
 
