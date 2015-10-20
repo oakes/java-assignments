@@ -40,7 +40,7 @@
       * To-do app
         * Create an `ObservableList`
         * Set the `ListView` to use it
-        * Wire up the "Add" and "Remove" buttons
+        * Wire up the "Add", "Toggle", and "Remove" buttons
       * Web browser
         * Wire up the "Go" button
         * Make all buttons set min size to USE_PREF_SIZE
