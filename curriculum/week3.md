@@ -40,6 +40,12 @@
         * Create an `ObservableList`
         * Set the `ListView` to use it
         * Wire up the "Add" and "Remove" buttons
+      * Web browser
+        * Wire up the "Go" button
+        * Make all buttons set min size to USE_PREF_SIZE
+        * Allow hitting enter in URL textfield
+        * Create a `ChangeListener` to update the URL textfield
+        * Wire up the back and forward buttons
   * Build as a JAR file
     * File -> Project Structure...
     * Click on "JavaFXApp.jar"
