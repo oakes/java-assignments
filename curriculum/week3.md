@@ -60,6 +60,26 @@
 * Android
   * Install [Android Studio](https://developer.android.com/sdk/index.html)
   * Build a to-do app and a web browser
+  * Download the latest SDK
+    * At the main screen, go to: Configure -> SDK Manager
+    * Download the SDK for Android 6.0
+  * Install Intel HAXM (allows Android emulators to run faster)
+    * Go to `~/Library/Android/sdk/extras/intel/Hardware_Accelerated_Execution_Manager`
+    * Double-click "IntelHAXM.dmg" and run the installer
+  * Create a project
+    * At the main screen, go to: Start a new Android Studio project
+    * Give it a name and type "theironyard.com" as the company domain, and click "Next"
+    * Select Android 6.0 and click "Next"
+    * Select "Empty Activity" and click "Next"
+    * Click "Finish"
+  * Configure an emulator
+    * In your project, click the "Android Virtual Device Manager" button
+    * Click on "Create Virtual Device..."
+    * Select a device and click "Next..."
+    * Select an Android version and click "Next..."
+    * Make sure "Use Host GPU" is checked
+    * Click "Show Advanced Settings"
+    * Set the RAM to 1GB (so Intel HAXM will work)
 
 ### Day 4
 
