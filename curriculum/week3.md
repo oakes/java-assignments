@@ -27,7 +27,15 @@
 * Desktop UI with Java FX
   * Install [Scene Builder](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-1x-archive-2199384.html)
   * New Project -> Java FX template
+  * Build a to-do app
   * Build a web browser
+  * Build as a JAR file
+    * File -> Project Structure...
+    * Click on "JavaFXApp.jar"
+    * Click on "Create Manifest..."
+    * Click OK
+    * Build -> Build Artifacts...
+    * Click on "Build"
 
 ### Day 3
 
