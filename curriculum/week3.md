@@ -24,6 +24,7 @@
 
 ### Day 2
 
+* Review assignment (review - people)
 * Desktop UI with Java FX
   * Install [Scene Builder](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-1x-archive-2199384.html)
   * Build a to-do app and a web browser
