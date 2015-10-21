@@ -19,5 +19,6 @@ Create an Android app for managing contacts.
 * Implement `View.OnClickListener`.
 * In `onClick`, pull the name and phone strings from the text fields, combine them into one string, and add them to the adapter. Then make it clear the text fields.
 * Implement `AdapterView.OnItemLongClickListener` and make `onItemLongClick` remove the item that was long-clicked.
+* Optional: When you tap on a list item, make it open a new activity which displays that contact individually.
 
 ![screenshot](screenshot.png)
