@@ -79,6 +79,23 @@
   * Make sure "Use Host GPU" is checked
   * Click "Show Advanced Settings"
   * Set the RAM to 1GB (so Intel HAXM will work)
+* To-do app
+  * Add listview, text field, and button
+  * Set listview width/height to `match_parent`
+  * Create variables for all controls and use `findViewById` in `onCreate`
+  * Create an `ArrayAdapter` and connect it to the listview
+  * Implement `View.OnClickListener` and connect it to the button
+  * Implement `AdapterView.OnItemLongClickListener` and connect it to the listview
+* Web browser
+  * Remove action bar
+    * Edit `res/values/styles.xml`
+    * Change "DarkActionBar" to "NoActionBar"
+  * Add text field, three buttons, and webview
+  * Create variables for all controls and use `findViewById` in `onCreate`
+  * Create and set a `WebViewClient`
+  * Implement `View.OnClickListener` and connect it to all the buttons
+  * Add internet permission to AndroidManifest.xml
+    * `<uses-permission android:name="android.permission.INTERNET" />`
 
 ### Day 4
 
