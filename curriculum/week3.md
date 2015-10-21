@@ -35,17 +35,17 @@
     * Make all buttons set min size to USE_PREF_SIZE
   * Edit Controller.java
     * Implement `Initializable`
-    * Implement an action method
+    * Implement action/keyboard methods
     * Bring in controls using `@FXML`
-  * To-do app
-    * Create an `ObservableList`
-    * Set the `ListView` to use it
-    * Wire up the "Add", "Toggle", and "Remove" buttons
-  * Web browser
-    * Wire up the "Go" button
-    * Allow hitting enter in URL textfield
-    * Implement `ChangeListener` to update the URL textfield
-    * Wire up the back and forward buttons
+* To-do app
+  * Create an `ObservableList`
+  * Set the `ListView` to use it
+  * Wire up the "Add", "Toggle", and "Remove" buttons
+* Web browser
+  * Wire up the "Go" button
+  * Allow hitting enter in URL textfield
+  * Implement `ChangeListener` to update the URL textfield
+  * Wire up the back and forward buttons
 * Build as a JAR file
   * File -> Project Structure...
   * Click on "JavaFXApp.jar"
