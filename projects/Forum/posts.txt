@@ -1,0 +1,5 @@
+-1|alice|I like apples!
+-1|bob|I like pears!
+0|charlie|Me too.
+1|charlie|I disagree.
+3|bob|Go fuck yourself.
