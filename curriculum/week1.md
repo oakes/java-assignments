@@ -113,7 +113,7 @@
 ### Day 3
 
 * Review assignment (methods)
-* Create a text adventure game
+* Create a [text adventure game](../projects/TextAdventure)
   * Demonstrate use of arrays/classes, static methods, and control flow
 * Use `Scanner` to read console input
   * Unlike output, input requires creating an object
