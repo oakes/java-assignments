@@ -95,6 +95,8 @@
   * Implement `View.OnClickListener` and connect it to all the buttons
   * Add internet permission to AndroidManifest.xml
     * `<uses-permission android:name="android.permission.INTERNET" />`
+  * Create an anonymous class based on `WebViewClient`
+    * Override the `onPageStarted` method to update the address bar
 
 ### Day 4
 
