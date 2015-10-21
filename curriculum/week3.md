@@ -104,6 +104,7 @@
 * Download and run [the setup app](https://libgdx.badlogicgames.com/download.html)
 * Setup a project
   * Uncheck everything except "Desktop"
+  * Open the project in IntelliJ
   * Run -> Edit Configurations...
   * Change the "Working directory" to point to the `core/assets` subfolder
 * Build HelloGame
