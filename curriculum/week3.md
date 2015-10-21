@@ -37,11 +37,11 @@
     * Implement `Initializable`
     * Implement action/keyboard methods
     * Bring in controls using `@FXML`
-* To-do app
+* Create a [to-do desktop app](../projects/ToDoDesktop)
   * Create an `ObservableList`
   * Set the `ListView` to use it
   * Wire up the "Add", "Toggle", and "Remove" buttons
-* Web browser
+* Create a [web browser desktop app](../projects/BrowserDesktop)
   * Wire up the "Go" button
   * Allow hitting enter in URL textfield
   * Implement `ChangeListener` to update the URL textfield
@@ -78,14 +78,14 @@
   * Make sure "Use Host GPU" is checked
   * Click "Show Advanced Settings"
   * Set the RAM to 1GB (so Intel HAXM will work)
-* To-do app
+* Create a [to-do Android app](../projects/ToDoAndroid)
   * Add listview, text field, and button
   * Set listview width/height to `match_parent`
   * Create variables for all controls and use `findViewById` in `onCreate`
   * Create an `ArrayAdapter` and connect it to the listview
   * Implement `View.OnClickListener` and connect it to the button
   * Implement `AdapterView.OnItemLongClickListener` and connect it to the listview
-* Web browser
+* Create a [web browser Android app](../projects/BrowserAndroid)
   * Remove action bar
     * Edit `res/values/styles.xml`
     * Change "DarkActionBar" to "NoActionBar"
