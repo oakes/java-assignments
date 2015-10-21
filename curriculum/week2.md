@@ -16,6 +16,7 @@
   * Methods
   * Control flow (if, while, for, throw)
   * ArrayLists and HashMaps
+* Create a [ToDo project](../projects/ToDo)
 
 ### Day 2
 
