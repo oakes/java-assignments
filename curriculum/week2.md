@@ -115,7 +115,7 @@
   * Create a test
     * Select a class you want to write tests for
     * View -> Test 
-* Forum
+* Create a [Forum project](../projects/Forum)
   * Create console-based forum with custom file format
   * Create `Post` and `ArrayList<Post>`
   * Create file and read its contents into the arraylist
