@@ -37,7 +37,7 @@
   * Create a `battle` method in `Character`
   * Create a `toString` method in `Character`
   * Discuss `@Override`
-* Contrived example of inheritance
+* Create a [Zoo project](../projects/Zoo)
   * Animal
     * Mammal
       * Dog
