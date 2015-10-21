@@ -9,7 +9,7 @@ Create an Android app for managing contacts.
 ## Requirements
 
 * Create a UI that looks like the screenshot below.
-  * To make the two text boxes take up an event amount of space, click on each of them and set `layout:width` to 0 and `layout:weight` to 1.
+  * To make the two text boxes take up an even amount of space, click on each of them and set `layout:width` to 0 and `layout:weight` to 1.
 * Create variables for each of the controls in `MainActivity`.
 * In `onCreate`, use `findViewById` to connect the variables to their respective views.
 * Create an `ArrayAdapter<String>` and connect the listview to it.
