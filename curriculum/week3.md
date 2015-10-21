@@ -58,7 +58,6 @@
 
 * Review assignment (javafx - contacts)
 * Install [Android Studio](https://developer.android.com/sdk/index.html)
-* Build a to-do app and a web browser
 * Download the latest SDK
   * At the main screen, go to: Configure -> SDK Manager
   * Download the SDK for Android 4.0.3
