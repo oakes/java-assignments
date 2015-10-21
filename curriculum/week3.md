@@ -107,8 +107,8 @@
   * Open the project in IntelliJ
   * Run -> Edit Configurations...
   * Change the "Working directory" to point to the `core/assets` subfolder
-* Build HelloGame
-* Build SuperKoalio
+* Create HelloGame
+* Create SuperKoalio
 * Build as a JAR file
   * Click the "Gradle" tab on the right side of the IntelliJ window
   * :desktop -> Tasks -> other -> dist
