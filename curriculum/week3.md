@@ -101,8 +101,8 @@
 ### Day 4
 
 * Review assignment (android - contacts)
-* Download and run [the setup app](https://libgdx.badlogicgames.com/download.html)
-* Setup a project
+* Create a project
+  * Download and run [the setup app](https://libgdx.badlogicgames.com/download.html)
   * Uncheck everything except "Desktop"
   * Open the project in IntelliJ
   * Run -> Edit Configurations...
