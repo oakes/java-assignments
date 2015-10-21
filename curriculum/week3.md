@@ -110,9 +110,6 @@
 * Build HelloGame
 * Build SuperKoalio
 * Build as a JAR file
-  * File -> Project Structure...
-  * Click "Artifacts" and then the plus button
-  * JAR -> From modules with dependencies...
-  * Choose the main class and click OK
-  * Build -> Build Artifacts...
-  * Click on "Build"
+  * Click the "Gradle" tab on the right side of the IntelliJ window
+  * :desktop -> Tasks -> other -> dist
+  * The JAR file will be in `desktop/build/libs`
