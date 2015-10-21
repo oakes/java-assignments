@@ -100,6 +100,11 @@
 
 ### Day 4
 
-* Games with libGDX
-  * Download and run [the setup app](https://libgdx.badlogicgames.com/download.html)
-  * Build Super Koalio
+* Review assignment (android - contacts)
+* Download and run [the setup app](https://libgdx.badlogicgames.com/download.html)
+* Setup a project
+  * Uncheck everything except "Desktop"
+  * Run -> Edit Configurations...
+  * Change the "Working directory" to point to the `core/assets` subfolder
+* Build HelloGame
+* Build SuperKoalio
