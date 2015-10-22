@@ -108,6 +108,12 @@
   * Run -> Edit Configurations...
   * Change the "Working directory" to point to the `core/assets` subfolder
 * Create HelloGame
+  * Store `x` and `y` in variables
+  * Continuously increment `x`
+  * Create `if` statements that use `Gdx.input.isKeyPressed` to change the position
+  * Set `xVelocity` and `yVelocity` to `MAX_VELOCITY` in the `if` statements
+  * Change `x` and `y` by the `xVelocity` and `yVelocity` multiplied by `Gdx.graphics.getDeltaTime()`
+  * Dampen `xVelocity` and `yVelocity`
 * Create SuperKoalio
 * Build as a JAR file
   * Click the "Gradle" tab on the right side of the IntelliJ window
