@@ -25,8 +25,9 @@ public class Minicraft extends ApplicationAdapter {
         TextureRegion[][] grid = TextureRegion.split(tiles, 16, 16);
         down = grid[6][0];
         up = grid[6][1];
-        right = grid[6][2];
-        left = grid[6][3];
+        right = grid[6][3];
+        left = new TextureRegion(right);
+        left.flip(true, false);
     }
 
     @Override
