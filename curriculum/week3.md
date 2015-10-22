@@ -108,13 +108,21 @@
   * Run -> Edit Configurations...
   * Change the "Working directory" to point to the `core/assets` subfolder
 * Create HelloGame
-  * Store `x` and `y` in variables
+  * Create `x` and `y`
   * Continuously increment `x`
-  * Create `if` statements that use `Gdx.input.isKeyPressed` to change the position
-  * Set `xVelocity` and `yVelocity` to `MAX_VELOCITY` in the `if` statements
-  * Change `x` and `y` by the `xVelocity` and `yVelocity` multiplied by `Gdx.graphics.getDeltaTime()`
-  * Dampen `xVelocity` and `yVelocity`
+  * Create `move` method
+    * Create `if` statements that use `Gdx.input.isKeyPressed` to change the position
+    * Set `xVelocity` and `yVelocity` to `MAX_VELOCITY` in the `if` statements
+    * Change `x` and `y` by the `xVelocity` and `yVelocity` multiplied by `Gdx.graphics.getDeltaTime()`
+    * Dampen `xVelocity` and `yVelocity`
 * Create SuperKoalio
+  * Create `x`, `y`, `xVelocity`, and `yVelocity`
+  * Load the koala `Texture` and split it by width (18) and height (26)
+  * Set `stand` texture to `grid[0][0]`
+  * Copy the `move` method from HelloGame
+  * Add gravity and jump velocity
+  * Set `jump` texture to `grid[0][1]`
+  * Add `walk` animation
 * Build as a JAR file
   * Click the "Gradle" tab on the right side of the IntelliJ window
   * :desktop -> Tasks -> other -> dist
