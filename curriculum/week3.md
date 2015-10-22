@@ -122,6 +122,7 @@
   * Copy the `move` method from HelloGame
   * Add gravity and jump velocity
   * Set `jump` texture to `grid[0][1]`
+  * Use a `FitViewport` so the screen scales as the window is resized
   * Add `walk` animation
 * Build as a JAR file
   * Click the "Gradle" tab on the right side of the IntelliJ window
