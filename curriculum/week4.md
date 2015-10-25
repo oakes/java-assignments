@@ -3,9 +3,10 @@
 ### Day 1
 
 * Review assignment (libgdx - minicraft)
+* Exercise (parse a sentence and calculate word frequency)
 * Review terminology
-  * Functions vs methods
   * Libraries vs frameworks
+  * Functions vs methods
 * Review language features
   * Inheritance
     * Extending a class
@@ -23,8 +24,22 @@
       * Run code in a `Runnable`
       * Run code in an anonymous function
 * Layers of the internet
-* Intro to [Spark](http://sparkjava.com/)
-* Create initial web app
+  * Physical layer
+    * Wireless
+    * Electrical (ethernet, coaxial)
+    * Fiber optics
+  * Internet layer
+    * Packet switching
+    * IPv4 (1981) and IPv6 (1998)
+  * Transport layer
+    * Checksum
+    * Retransmission
+    * UDP and TCP
+  * Application layer
+    * Application-specific protocols
+    * HTTP (1991)
+* Create a web app
+  * [Spark](http://sparkjava.com/)
 
 ### Day 2
 
