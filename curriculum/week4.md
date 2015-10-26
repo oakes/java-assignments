@@ -24,6 +24,7 @@
       * Run code in a `Runnable`
       * Run code in an anonymous function
 * HTTP
+  * GET vs POST requests
 * Create a web app
   * Create a new project and use the command line template
   * Project Structure -> Libraries -> Add [Spark](http://sparkjava.com/)
