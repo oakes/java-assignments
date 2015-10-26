@@ -51,6 +51,22 @@
 ### Day 2
 
 * Review assignment (spark - microblog)
+* Exercise
+* Layers of the Internet
+  * Physical layer
+    * Wireless
+    * Electrical (ethernet, coaxial)
+    * Fiber optics
+  * Internet layer (packet switching)
+    * IPv4
+    * IPv6
+  * Transport layer (reliability)
+    * UDP
+      * Checksum
+    * TCP
+      * Checksum and retransmission
+  * Application layer (end users)
+    * HTTP
 * Add multi-user support to HelloSpark
   * Store users in `HashMap<String, User>`
   * Change "Create Account" to "Login or Create Account"
@@ -62,6 +78,10 @@
   * Store the current user in a `Session`
   * If current user is null, send down `please-login.html`
   * Otherwise, send down `my-account.html`
+* Cookies
+  * The `Session` works by storing a cookie with a session ID
+  * Cookies are small pieces of data sent from a web server
+  * Browsers send them back each time they talk to the server afterwards
 
 ### Day 3
 
