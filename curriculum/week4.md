@@ -39,7 +39,21 @@
     * Application-specific protocols
     * HTTP (1991)
 * Create a web app
-  * [Spark](http://sparkjava.com/)
+  * Create a new project and use the command line template
+  * Project Structure -> Libraries -> Add [Spark](http://sparkjava.com/)
+    * com.sparkjava:spark-core:2.3
+  * Project Structure -> Modules -> New Folder...
+    * Call it "resources" and mark it as such
+  * Create `resources/public/index.html` and write the code to start it
+  * Create a GET route
+  * Difference between serving static files and creating routes
+  * Project Structure -> Libraries -> Add the Mustache library
+    * com.sparkjava:spark-template-mustache:2.3
+  * Create `resources/templates/account.html`
+  * Return the template in the GET route
+  * Add create account form to `index.html`
+  * Create a POST route that saves the username/password into an object
+  * Display the name on the account page
 
 ### Day 2
 
