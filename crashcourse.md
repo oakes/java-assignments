@@ -72,8 +72,7 @@ class Ideone
 		String name = sc.nextLine();
 		System.out.println("Greetings, " + name);
 		
-		String[] weapons = {"sword", "mallet"};
-		System.out.println("What shall your weapon be? [sword/mallet]");
+		System.out.println("What shall your weapon be?");
 		String weapon = sc.nextLine();
 		System.out.println(weapon + " is a fine choice!");
 		
