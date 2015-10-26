@@ -79,7 +79,7 @@ class Ideone
 		Entity ogre = new Entity();
 		
 		while (ogre.health > 0) {
-			ogre.health = ogre.health - 10;
+			ogre.health -= 10;
 		}
 		
 		System.out.println("The ogre has been killed!");
