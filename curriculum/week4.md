@@ -61,10 +61,8 @@
     * IPv4
     * IPv6
   * Transport layer (reliability)
-    * UDP
-      * Checksum
-    * TCP
-      * Checksum and retransmission
+    * UDP (checksum)
+    * TCP (checksum and retransmission)
   * Application layer (end users)
     * HTTP
 * Add multi-user support to HelloSpark
