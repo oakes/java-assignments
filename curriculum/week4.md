@@ -23,21 +23,7 @@
       * Run code in a separate method
       * Run code in a `Runnable`
       * Run code in an anonymous function
-* Layers of the internet
-  * Physical layer
-    * Wireless
-    * Electrical (ethernet, coaxial)
-    * Fiber optics
-  * Internet layer
-    * Packet switching
-    * IPv4 (1981) and IPv6 (1998)
-  * Transport layer
-    * Checksum
-    * Retransmission
-    * UDP and TCP
-  * Application layer
-    * Application-specific protocols
-    * HTTP (1991)
+* HTTP
 * Create a web app
   * Create a new project and use the command line template
   * Project Structure -> Libraries -> Add [Spark](http://sparkjava.com/)
