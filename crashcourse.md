@@ -66,34 +66,24 @@ class Ideone
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		Entity player = new Entity();
-		Scanner r = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("What is your name?");
-		String name = r.nextLine();
+		String name = sc.nextLine();
 		System.out.println("Greetings, " + name);
 		
 		String[] weapons = {"sword", "mallet"};
 		System.out.println("What shall your weapon be? [sword/mallet]");
-		String weapon = r.nextLine();
-		if (Arrays.asList(weapons).contains(weapon) < 0) {
-			System.out.println("Invalid weapon!");
-			return;
-		}
+		String weapon = sc.nextLine();
 		System.out.println(weapon + " is a fine choice!");
 		
 		Entity ogre = new Entity();
-		ogre.damage = Math.random() * 2 + 9;
-		while (ogre.health > 0 && player.health > 0) {
-			ogre.health -= player.damage;
-			player.health -= ogre.damage;
+		
+		while (ogre.health > 0) {
+			ogre.health = ogre.health - 10;
 		}
 		
-		if (ogre.health <= 0) {
-			System.out.println("The ogre has been killed!");
-		}
-		if (player.health <= 0) {
-			System.out.println("You have been killed!");
-		}
+		System.out.println("The ogre has been killed!");
 	}
 }
 
