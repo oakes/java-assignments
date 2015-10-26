@@ -41,6 +41,12 @@
   * Add create account form to `index.html`
   * Create a POST route that saves the username/password into an object
   * Display the name on the account page
+* Build as a JAR file
+  * File -> Project Structure...
+  * Click "Artifacts" and then the plus button
+  * JAR -> From modules with dependencies...
+  * Choose the main class and click OK
+  * Build -> Build Artifacts...
 
 ### Day 2
 
