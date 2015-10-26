@@ -50,7 +50,18 @@
 
 ### Day 2
 
-* Spark (continued)
+* Review assignment (spark - microblog)
+* Add multi-user support to HelloSpark
+  * Store users in `HashMap<String, User>`
+  * Change "Create Account" to "Login or Create Account"
+  * Change the `/create-account` route to `/login-or-create-account` and make it login as well
+  * Change the `/accounts` route to use `users.values()`
+  * Create `resources/templates/my-account.html`
+  * Create `resources/templates/please-login.html`
+  * Create the `/my-account` route
+  * Store the current user in a `Session`
+  * If current user is null, send down `please-login.html`
+  * Otherwise, send down `my-account.html`
 
 ### Day 3
 
