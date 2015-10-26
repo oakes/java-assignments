@@ -22,19 +22,9 @@
   * `double health = 100;`
   * `health = health * 0.75;`
   * `health *= 0.75;`
-* Create an array to represent position.
-  * `double[] position = {0, 0};`
-  * `position[0]`
-  * `position[0] = 1;`
-  * `position[1] = 1;`
 * Create a class to bundle all these values.
-  * `class Entity { int score = 0; double health = 100; double[] position = {0, 0}; }`
+  * `class Entity { int score = 0; double health = 100; }`
   * `Entity p1 = new Entity();`
-* Contrast arrays with classes (indexing by number or by name).
-  * `class Position { double x = 0; double y = 0; }`
-  * `Position p = new Position();`
-  * `p.x = 1;`
-  * `p.y = 1;`
 * There are many built-in Java classes.
   * `String s = “Hello, world!”;`
 * You can make arrays of classes too.
