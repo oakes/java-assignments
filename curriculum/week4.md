@@ -101,7 +101,9 @@
   * Create `HashMap<String, User>` and `ArrayList<Message>`
   * Write `addTestData` method and make the aforementioned variables static
   * Create `/` route that returns `threads.html`
-  * In `threads.html`, use the mustache if-else to determine whether to show the login form
+  * In `threads.html`
+    * Use the mustache if-else to determine whether to show the login form
+    * Turn the thread text into links
   * Create `/comments` route that returns `comments.html`
 
 ### Day 4
