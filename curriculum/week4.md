@@ -96,12 +96,13 @@
     * HTTP
 * Forum
   * Set up the libraries and `resources` directory
-  * Create `Message` (replyId, username and text) with a constructor
+  * Create `Message` (id, replyId, username and text) with a constructor
   * Create `User` (password and messages)
   * Create `HashMap<String, User>` and `ArrayList<Message>`
   * Write `addTestData` method and make the aforementioned variables static
-  * Create `/` route that returns `threads.html` and displays only top-level threads
+  * Create `/` route that returns `threads.html`
   * In `threads.html`, use the mustache if-else to determine whether to show the login form
+  * Create `/comments` route that returns `comments.html`
 
 ### Day 4
 
