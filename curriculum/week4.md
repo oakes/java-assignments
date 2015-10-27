@@ -78,7 +78,7 @@
 
 ### Day 3
 
-* Review assignment
+* Review assignment (spark - microblog continued)
 * Layers of the Internet
   * Physical layer
     * Wireless
