@@ -31,7 +31,7 @@
 * Classes don't just hold variables; they also hold methods.
   * `s.toUpperCase()`
   * `s.startsWith("Hello")`
-* There are also static methods.
+* One common method lets you print text to the console.
   * `System.out.println(“HELLO!”);`
 
 ### Writing Java in a file
