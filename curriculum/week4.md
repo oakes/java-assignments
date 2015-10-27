@@ -81,19 +81,8 @@
 * Review assignment (spark - microblog continued)
 * Exercise (change shape of collection)
 * Streams
-* Layers of the Internet
-  * Physical layer
-    * Wireless
-    * Electrical (ethernet, coaxial)
-    * Fiber optics
-  * Internet layer (packet switching)
-    * IPv4
-    * IPv6
-  * Transport layer (reliability)
-    * UDP (checksum)
-    * TCP (checksum and retransmission)
-  * Application layer (end users)
-    * HTTP
+  * filter
+  * map
 * Forum
   * Set up the libraries and `resources` directory
   * Create `Message` (id, replyId, username and text) with a constructor
@@ -130,4 +119,17 @@
 ### Day 4
 
 * Review assignment
+* Layers of the Internet
+  * Physical layer
+    * Wireless
+    * Electrical (ethernet, coaxial)
+    * Fiber optics
+  * Internet layer (packet switching)
+    * IPv4
+    * IPv6
+  * Transport layer (reliability)
+    * UDP (checksum)
+    * TCP (checksum and retransmission)
+  * Application layer (end users)
+    * HTTP
 * Spark (continued)
