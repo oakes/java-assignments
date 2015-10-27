@@ -79,6 +79,7 @@
 ### Day 3
 
 * Review assignment (spark - microblog continued)
+* Exercise (change shape of collection)
 * Layers of the Internet
   * Physical layer
     * Wireless
@@ -93,6 +94,11 @@
   * Application layer (end users)
     * HTTP
 * Forum
+  * Set up the libraries and `resources` directory
+  * Create `Message` (username and text)
+  * Create `User` (password and messages)
+  * Create `HashMap<String, User>`
+  * Create `/` route that returns `threads.html`
 
 ### Day 4
 
