@@ -124,6 +124,8 @@
     * Add username to session
     * Redirect to `/`
   * Create `header.html` to prevent duplication
+  * Create create-message form in `header.html`
+    * Use `<input type="hidden" id="{{replyId}}">` to pass the reply id to the server
 
 ### Day 4
 
