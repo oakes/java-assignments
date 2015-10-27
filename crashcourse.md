@@ -24,12 +24,10 @@
   * `health = health * 0.75;`
   * `health *= 0.75;`
 * Create a class to bundle all these values.
-  * `class Entity { int score = 0; double health = 100; }`
-  * `Entity p1 = new Entity();`
+  * `class Player { int score = 0; double health = 100; }`
+  * `Player p = new Player();`
 * There are many built-in Java classes.
   * `String s = “Hello, world!”;`
-* You can make arrays of classes too.
-  * `String[] names = {“Alice”, “Bob”, “Charlie”};`
 * Classes don't just hold variables; they also hold methods.
   * `s.toUpperCase()`
   * `s.startsWith("Hello")`
@@ -39,7 +37,6 @@
   * `s.inc();`
   * `s.value`
 * There are also static methods.
-  * `Math.min`, `Math.max`, and `Math.random`
   * `System.out.println(“HELLO!”);`
 
 ### Writing Java in a file
