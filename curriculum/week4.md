@@ -51,7 +51,7 @@
 ### Day 2
 
 * Review assignment (spark - microblog)
-* Exercise
+* Exercise (parse string, remove duplicate words, build new string)
 * Add multi-user support to HelloSpark
   * Store users in `HashMap<String, User>`
   * Change "Create Account" to "Login or Create Account"
