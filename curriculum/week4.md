@@ -76,6 +76,8 @@
   * Create `/login` route
   * Create `Beer` and the `/create-beer` route
   * Add beers to the `logged-in.html` template
+  * Add an `id` to `Beer`
+  * Create `/delete-beer` route and form
 
 ### Day 3
 
