@@ -31,11 +31,6 @@
 * Classes don't just hold variables; they also hold methods.
   * `s.toUpperCase()`
   * `s.startsWith("Hello")`
-* Create our own method.
-  * `class Score { int value = 0; public void inc() { value += 1; } }`
-  * `Score s = new Score();`
-  * `s.inc();`
-  * `s.value`
 * There are also static methods.
   * `System.out.println(“HELLO!”);`
 
