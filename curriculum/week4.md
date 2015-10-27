@@ -25,7 +25,7 @@
       * Run code in an anonymous function
 * HTTP
   * GET vs POST requests
-* Create a web app
+* Create [HelloSpark](../projects/HelloSpark)
   * Create a new project and use the command line template
   * Project Structure -> Libraries -> Add [Spark](http://sparkjava.com/)
     * `com.sparkjava:spark-core:2.3`
@@ -54,15 +54,12 @@
 * Exercise (parse string, remove duplicate words, build new string)
 * Add multi-user support to HelloSpark
   * Store users in `HashMap<String, User>`
-  * Change "Create Account" to "Login or Create Account"
-  * Change the `/create-account` route to `/login-or-create-account` and make it login as well
+  * Change the `/create-account` route to login as well
   * Change the `/accounts` route to use `users.values()`
-  * Create `resources/templates/my-account.html`
-  * Create `resources/templates/please-login.html`
-  * Create the `/my-account` route
-  * Store the current user in a `Session`
-  * If current user is null, send down `please-login.html`
-  * Otherwise, send down `my-account.html`
+  * Rename `accounts.html` to `logged-in.html`
+  * Rename `index.html` to `not-logged-in.html` and move it into `resources/templates`
+  * Remove the `/accounts` route
+  * Create a `/` route that sends down either template based on whether the user is logged in or not
 * Cookies
   * The `Session` works by storing a cookie with a session ID
   * Cookies are small pieces of data sent from a web server
