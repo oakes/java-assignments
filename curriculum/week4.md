@@ -80,6 +80,7 @@
 
 * Review assignment (spark - microblog continued)
 * Exercise (change shape of collection)
+* Streams
 * Layers of the Internet
   * Physical layer
     * Wireless
@@ -95,10 +96,12 @@
     * HTTP
 * Forum
   * Set up the libraries and `resources` directory
-  * Create `Message` (username and text)
+  * Create `Message` (replyId, username and text) with a constructor
   * Create `User` (password and messages)
-  * Create `HashMap<String, User>`
-  * Create `/` route that returns `threads.html`
+  * Create `HashMap<String, User>` and `ArrayList<Message>`
+  * Write `addTestData` method and make the aforementioned variables static
+  * Create `/` route that returns `threads.html` and displays only top-level threads
+  * In `threads.html`, use the mustache if-else to determine whether to show the login form
 
 ### Day 4
 
