@@ -100,12 +100,30 @@
   * Create `User` (password and messages)
   * Create `HashMap<String, User>` and `ArrayList<Message>`
   * Write `addTestData` method and make the aforementioned variables static
-  * Create `/` route that returns `threads.html`
-  * In `threads.html`
+  * Create `threads.html`
     * Use the mustache if-else to determine whether to show the login form
     * Turn the thread text into links
-  * Create `/replies` route that returns `replies.html`
+  * Create `/` route
+    * Get username from session
+    * Create `HashMap` and add username/threads to it
+  * Create `replies.html`
     * GET routes can receive parameters too, but they are passed via the URL rather than via an HTML form
+    * Add permalinks so you can drill down reply threads
+  * Create `/replies` route
+    * Get username from session
+    * Create `HashMap` and add username to it
+    * Get id from `request.queryParams`
+    * In try/catch, put the message and replies into the `HashMap`
+  * Create login form in `threads.html`
+  * Create `/login` route
+    * Get username/password via `request.queryParams`
+    * If either is empty, run `Spark.halt(500)`
+    * Get `User` object for the given username
+    * If null, create a new user object
+    * If password isn't equal, run `Spark.halt(500)`
+    * Add username to session
+    * Redirect to `/`
+  * Create `header.html` to prevent duplication
 
 ### Day 4
 
