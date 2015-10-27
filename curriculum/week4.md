@@ -52,19 +52,6 @@
 
 * Review assignment (spark - microblog)
 * Exercise
-* Layers of the Internet
-  * Physical layer
-    * Wireless
-    * Electrical (ethernet, coaxial)
-    * Fiber optics
-  * Internet layer (packet switching)
-    * IPv4
-    * IPv6
-  * Transport layer (reliability)
-    * UDP (checksum)
-    * TCP (checksum and retransmission)
-  * Application layer (end users)
-    * HTTP
 * Add multi-user support to HelloSpark
   * Store users in `HashMap<String, User>`
   * Change "Create Account" to "Login or Create Account"
@@ -80,11 +67,35 @@
   * The `Session` works by storing a cookie with a session ID
   * Cookies are small pieces of data sent from a web server
   * Browsers send them back each time they talk to the server afterwards
+* BeerTracker
+  * Add the Spark and Mustache libraries
+  * Create `resources/templates`
+  * Create `resources/templates/logged-in.html`
+  * Create `/` route
+  * Create `resources/templates/not-logged-in.html`
+  * Create `/login` route
+  * Create `Beer` and the `/create-beer` route
+  * Add beers to the `logged-in.html` template
 
 ### Day 3
 
-* Spark (continued)
+* Review assignment
+* Layers of the Internet
+  * Physical layer
+    * Wireless
+    * Electrical (ethernet, coaxial)
+    * Fiber optics
+  * Internet layer (packet switching)
+    * IPv4
+    * IPv6
+  * Transport layer (reliability)
+    * UDP (checksum)
+    * TCP (checksum and retransmission)
+  * Application layer (end users)
+    * HTTP
+* Forum
 
 ### Day 4
 
+* Review assignment
 * Spark (continued)
