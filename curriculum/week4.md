@@ -104,7 +104,7 @@
   * In `threads.html`
     * Use the mustache if-else to determine whether to show the login form
     * Turn the thread text into links
-  * Create `/comments` route that returns `comments.html`
+  * Create `/replies` route that returns `replies.html`
     * GET routes can receive parameters too, but they are passed via the URL rather than via an HTML form
 
 ### Day 4
