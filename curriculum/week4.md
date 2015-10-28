@@ -111,16 +111,6 @@
 
 * Review assignment
 * Exercise (turn array into hashmap)
-* Forum
-  * Create `header.html` to prevent duplication
-  * Create create-message form in `header.html`
-    * Use `<input type="hidden" name="replyId" value="{{replyId}}" />` to pass the reply id to the server
-  * Create `/create-message` route
-    * Get username from session
-    * If username is null, run `Spark.halt(403)`
-    * Get replyId and text from `request.queryParams`
-    * In a try/catch, create `Message` and add it to the `ArrayList<Message>`
-    * Redirect to `/`
 * Layers of the Internet
   * Physical layer
     * Wireless
@@ -134,6 +124,16 @@
     * TCP (checksum and retransmission)
   * Application layer (end users)
     * HTTP
+* Forum
+  * Create `header.html` to prevent duplication
+  * Create create-message form in `header.html`
+    * Use `<input type="hidden" name="replyId" value="{{replyId}}" />` to pass the reply id to the server
+  * Create `/create-message` route
+    * Get username from session
+    * If username is null, run `Spark.halt(403)`
+    * Get replyId and text from `request.queryParams`
+    * In a try/catch, create `Message` and add it to the `ArrayList<Message>`
+    * Redirect to `/`
 * CRUD (create, read, update, delete)
 * Build as a JAR file
   * File -> Project Structure...
