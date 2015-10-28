@@ -106,10 +106,10 @@
   * Create login form in `threads.html`
   * Create `/login` route
     * Get username/password via `request.queryParams`
-    * If either is empty, run `Spark.halt(500)`
+    * If either is empty, run `Spark.halt(403)`
     * Get `User` object for the given username
     * If null, create a new user object
-    * If password isn't equal, run `Spark.halt(500)`
+    * If password isn't equal, run `Spark.halt(403)`
     * Add username to session
     * Redirect to `/`
   * Create `header.html` to prevent duplication
@@ -117,7 +117,7 @@
     * Use `<input type="hidden" id="{{replyId}}">` to pass the reply id to the server
   * Create `/create-message` route
     * Get username from session
-    * If username is null, run `Spark.halt(500)`
+    * If username is null, run `Spark.halt(403)`
     * Get replyId and text from `request.queryParams`
     * In a try/catch, create `Message` and add it to the `ArrayList<Message>`
     * Redirect to `/`
