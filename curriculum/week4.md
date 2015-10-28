@@ -73,10 +73,10 @@
 ### Day 3
 
 * Review assignment (spark - microblog continued)
-* Exercise (change shape of collection)
+* Exercise (with arraylist of names, take the first 5, map uppercase, filter those starting with "A")
 * Streams
-  * filter
   * map
+  * filter
 * Forum
   * Set up the libraries and `resources` directory
   * Create `Message` (id, replyId, username and text) with a constructor
@@ -119,6 +119,7 @@
 ### Day 4
 
 * Review assignment
+* Exercise (turn array into hashmap)
 * Layers of the Internet
   * Physical layer
     * Wireless
