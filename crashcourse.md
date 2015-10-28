@@ -36,7 +36,7 @@
 
 ### Writing Java in a file
 
-* Go to [IDEOne](http://ideone.com/).
+* Go to [IDEOne](http://ideone.com/) or [Compile Java](http://www.compilejava.net/).
 * Make a simple text-based game.
 
 ```java
