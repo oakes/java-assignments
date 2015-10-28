@@ -82,7 +82,7 @@
   * Create `Message` (id, replyId, username and text) with a constructor
   * Create `User` (password and messages)
   * Create `HashMap<String, User>` and `ArrayList<Message>`
-  * Write `addTestData` method and make the aforementioned variables static
+  * Write `addTestUsers` and `addTestMessages` method and make the aforementioned variables static
   * Create `threads.html`
     * Use the mustache if-else to determine whether to show the login form
     * Turn the thread text into links
@@ -106,6 +106,12 @@
     * If password isn't equal, run `Spark.halt(403)`
     * Add username to session
     * Redirect to `/`
+
+### Day 4
+
+* Review assignment
+* Exercise (turn array into hashmap)
+* Forum
   * Create `header.html` to prevent duplication
   * Create create-message form in `header.html`
     * Use `<input type="hidden" name="replyId" value="{{replyId}}" />` to pass the reply id to the server
@@ -115,11 +121,6 @@
     * Get replyId and text from `request.queryParams`
     * In a try/catch, create `Message` and add it to the `ArrayList<Message>`
     * Redirect to `/`
-
-### Day 4
-
-* Review assignment
-* Exercise (turn array into hashmap)
 * Layers of the Internet
   * Physical layer
     * Wireless
