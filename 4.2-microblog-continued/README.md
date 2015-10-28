@@ -1,4 +1,4 @@
-# Microblog continued
+# Microblog Continued
 
 ![screenshot](screenshot.jpg)
 
