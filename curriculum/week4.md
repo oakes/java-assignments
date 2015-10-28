@@ -124,6 +124,7 @@
     * TCP (checksum and retransmission)
   * Application layer (end users)
     * HTTP
+    * Unicode
 * Forum
   * Create `header.html` to prevent duplication
   * Create create-message form in `header.html`
