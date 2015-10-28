@@ -114,7 +114,7 @@
     * Redirect to `/`
   * Create `header.html` to prevent duplication
   * Create create-message form in `header.html`
-    * Use `<input type="hidden" id="{{replyId}}">` to pass the reply id to the server
+    * Use `<input type="hidden" name="replyId" value="{{replyId}}" />` to pass the reply id to the server
   * Create `/create-message` route
     * Get username from session
     * If username is null, run `Spark.halt(403)`
