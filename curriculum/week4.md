@@ -112,11 +112,11 @@
 * Review assignment
 * Exercise (turn array into hashmap)
 * Layers of the Internet
-  * Physical layer
+  * Physical layer (hardware)
     * Wireless
     * Electrical (ethernet, coaxial)
     * Fiber optics
-  * Internet layer (packet switching)
+  * Internet layer (packets)
     * IPv4
     * IPv6
   * Transport layer (reliability)
