@@ -73,7 +73,6 @@
 ### Day 3
 
 * Review assignment (spark - microblog continued)
-* CRUD (create, read, update, delete)
 * Exercise (change shape of collection)
 * Streams
   * filter
@@ -116,13 +115,6 @@
     * Get replyId and text from `request.queryParams`
     * In a try/catch, create `Message` and add it to the `ArrayList<Message>`
     * Redirect to `/`
-* Build as a JAR file
-  * File -> Project Structure...
-  * Click "Artifacts" and then the plus button
-  * JAR -> From modules with dependencies...
-  * Choose the main class and click OK
-  * Build -> Build Artifacts...
-* Upload JAR file to the "Releases" section on Github
 
 ### Day 4
 
@@ -140,4 +132,11 @@
     * TCP (checksum and retransmission)
   * Application layer (end users)
     * HTTP
-* Spark (continued)
+* CRUD (create, read, update, delete)
+* Build as a JAR file
+  * File -> Project Structure...
+  * Click "Artifacts" and then the plus button
+  * JAR -> From modules with dependencies...
+  * Choose the main class and click OK
+  * Build -> Build Artifacts...
+* Upload JAR file to the "Releases" section on Github
