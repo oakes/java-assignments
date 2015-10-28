@@ -10,8 +10,8 @@ Create a project based on [PeopleWeb](../projects/PeopleWeb). In this project, w
 
 * Create a GET route for `/` and make a template for it that simply displays the name of each person in the `ArrayList<Person>`.
 * Make it only display the first 20 names.
-* Add a link to the bottom called "Next" which loads the same page but with a "page" parameter that causes it to load the *next* 20 names.
-  * Note: You can pass parameters to GET routes by simply adding a question mark after it, like this: `/?page=2`.
+* Add a link to the bottom called "Next" which loads the same page but with a "offset" parameter that causes it to load the *next* 20 names.
+  * Note: You can pass parameters to GET routes by simply adding a question mark after it, like this: `/?offset=20`.
 * Create another GET route called `/person` which displays all the data about a single person.
   * It should take a GET parameter which is the index for that person in the `ArrayList<Person>`, like this: `/person?id=0`
 * Make all the people shown on the main page link to their `/person` page, so I can click on their names for additional information.
