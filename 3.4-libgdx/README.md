@@ -4,7 +4,7 @@
 
 ## Description
 
-Create a project based on [Minicraft](../projects/Minicraft). Write the necessary code to make the player walk around and stuff.
+Fork the [Minicraft](../projects/Minicraft) project. Write the necessary code to make the player walk around and stuff.
 
 ## Requirements
 
