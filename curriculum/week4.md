@@ -109,7 +109,7 @@
 
 ### Day 4
 
-* Review assignment
+* Review assignment (paging - people web)
 * Exercise (turn array into hashmap)
 * Layers of the Internet
   * Physical layer (hardware)
