@@ -111,13 +111,13 @@
 
 * Review assignment (paging - people web)
 * Review mustache
-  * String name;
+  * `String name;`
     * Welcome, {{name}}!
-  * ArrayList<String> names;
+  * `ArrayList<String> names;`
     * {{#names}} {{.}} {{/names}}
-  * Message msg;
+  * `Message msg;`
     * {{#message}} {{text}} by {{username}} {{/message}}
-  * ArrayList<Message> messages;
+  * `ArrayList<Message> messages;`
     * {{#messages}} {{text}} by {{username}} {{/messages}}
   * Conditional (truthy)
     * {{#name}}Welcome, {{name}}!{{/name}}
@@ -151,7 +151,7 @@
     * In a try/catch, create `Message` and add it to the `ArrayList<Message>`
     * Redirect to `/`
   * You can make it refresh the current page rather than take you home
-    * `response.redirect(request.headers("Referer"));`
+    * `response.redirect(request.headers("Referer"))`
 * Build as a JAR file
   * File -> Project Structure...
   * Click "Artifacts" and then the plus button
