@@ -110,6 +110,19 @@
 ### Day 4
 
 * Review assignment (paging - people web)
+* Review mustache
+  * String name;
+    * Welcome, {{name}}!
+  * ArrayList<String> names;
+    * {{#names}} {{.}} {{/names}}
+  * Message msg;
+    * {{#message}} {{text}} by {{username}} {{/message}}
+  * ArrayList<Message> messages;
+    * {{#messages}} {{text}} by {{username}} {{/messages}}
+  * Conditional (truthy)
+    * {{#name}}Welcome, {{name}}!{{/name}}
+  * Conditional (falsey)
+    * {{^name}}Please login.{{/name}}
 * Exercise (reverse array, turn array into hashmap)
 * Layers of the Internet
   * Physical layer (hardware)
