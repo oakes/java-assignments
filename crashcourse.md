@@ -9,7 +9,7 @@
   * Languages like C and C++ will compile your code into machine code.
   * Scripting languages read the code, compile it into machine code in memory and execute it.
   * Java compiles to bytecode, which is compiled into machine code in memory and executed.
-* Discuss what we're covering in our course and show off projects we've done so far
+* Discuss what we're covering in our course and show off projects we've done so far.
 
 ### Writing Java in a REPL
 
