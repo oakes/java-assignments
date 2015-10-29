@@ -137,6 +137,8 @@
     * Get replyId and text from `request.queryParams`
     * In a try/catch, create `Message` and add it to the `ArrayList<Message>`
     * Redirect to `/`
+  * You can make it refresh the current page rather than take you home
+    * `response.redirect(request.headers("Referer"));`
 * CRUD (create, read, update, delete)
 * Build as a JAR file
   * File -> Project Structure...
