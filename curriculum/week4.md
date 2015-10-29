@@ -139,7 +139,6 @@
     * Redirect to `/`
   * You can make it refresh the current page rather than take you home
     * `response.redirect(request.headers("Referer"));`
-* CRUD (create, read, update, delete)
 * Build as a JAR file
   * File -> Project Structure...
   * Click "Artifacts" and then the plus button
@@ -147,3 +146,4 @@
   * Choose the main class and click OK
   * Build -> Build Artifacts...
 * Upload JAR file to the "Releases" section on Github
+* CRUD (create, read, update, delete)
