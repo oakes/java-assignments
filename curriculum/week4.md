@@ -123,8 +123,10 @@
     * UDP (checksum)
     * TCP (checksum and retransmission)
   * Application layer (end users)
-    * ASCII, UTF-8
-    * HTTP, HTTP/2
+    * ASCII
+    * UTF-8
+    * HTTP
+    * HTTP/2
 * Forum
   * Create `header.html` to prevent duplication
   * Create create-message form in `header.html`
