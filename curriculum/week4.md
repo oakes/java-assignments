@@ -77,7 +77,7 @@
 * Streams
   * map
   * filter
-* Forum
+* Create [ForumWeb](../projects/ForumWeb)
   * Set up the libraries and `resources` directory
   * Create `Message` (id, replyId, username and text) with a constructor
   * Create `User` (password and messages)
