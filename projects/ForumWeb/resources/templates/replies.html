@@ -1,0 +1,13 @@
+<html>
+<body>
+{{> header}}
+
+{{#message}}
+<b>{{text}}</b> by {{username}}
+{{/message}}<br><br>
+
+{{#replies}}
+{{text}} by {{username}} <a href="replies?id={{id}}">permalink</a><br><br>
+{{/replies}}
+</body>
+</html>
