@@ -110,7 +110,7 @@
 ### Day 4
 
 * Review assignment (paging - people web)
-* Exercise (turn array into hashmap)
+* Exercise (reverse array, turn array into hashmap)
 * Layers of the Internet
   * Physical layer (hardware)
     * Wireless
