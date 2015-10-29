@@ -140,7 +140,7 @@
     * UTF-8
     * HTTP
     * HTTP/2
-* Forum
+* ForumWeb
   * Create `header.html` to prevent duplication
   * Create create-message form in `header.html`
     * Use `<input type="hidden" name="replyId" value="{{replyId}}" />` to pass the reply id to the server
