@@ -63,6 +63,7 @@
 ## Week 5 - Databases
 
 * [H2](http://www.h2database.com/html/main.html)
+* [PostgreSQL](http://postgresapp.com/)
 
 ## Week 6-7 - Spring + Hibernate
 
