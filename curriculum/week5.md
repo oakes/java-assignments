@@ -12,8 +12,9 @@
 
 ### Day 3
 
-* H2 (continued)
+* PostgreSQL
 
 ### Day 4
 
-* H2 (continued)
+* Guest Lecture
+* PostgreSQL (continued)
