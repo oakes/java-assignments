@@ -12,7 +12,7 @@
 
 ### Day 3
 
-* PostgreSQL
+* [PostgreSQL](http://postgresapp.com/)
 
 ### Day 4
 
