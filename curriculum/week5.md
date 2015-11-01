@@ -84,7 +84,14 @@
 
 ### Day 3
 
-* H2 (continued)
+* Review assignment
+* [JOOQ](http://www.jooq.org/)
+* HelloDatabase
+  * Duplicate the functionality using JOOQ
+* Time
+  * Create timestamps with java.time
+  * Save timestamps to the database
+  * Select date ranges
 
 ### Day 4
 
