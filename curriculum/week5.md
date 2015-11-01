@@ -15,7 +15,15 @@
     * Users table: id, name, password
     * Todos table: id, user_id, text, is_done
 * Embedded vs external databases (SQLite/H2 vs MySQL/PostgreSQL)
-* Start project with [H2](http://www.h2database.com/html/main.html)
+* HelloDatabase
+  * Download and add [H2](http://www.h2database.com/html/main.html) JAR file to project
+  * Work with the database directly (by running the JAR file from the Terminal tab)
+    * Use `jdbc:h2:./main` as the JDBC URL
+  * Work with the database from Java (by writing code in `Main.java`)
+    * Create a `Connection`
+      * `Connection conn = DriverManager.getConnection("jdbc:h2:./main")`
+    * Create a `Statement`
+      * Create a table called `users`
 
 ### Day 2
 
