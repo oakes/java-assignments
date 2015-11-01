@@ -27,7 +27,7 @@
   * Player example
     * `CREATE TABLE players (name VARCHAR, is_alive BOOLEAN, score INT, health DECIMAL)`
 * Embedded vs external databases (SQLite/H2 vs MySQL/PostgreSQL)
-* HelloDatabase
+* Create HelloDatabase
   * Download and add [H2](http://www.h2database.com/html/main.html) JAR file to project
   * Work with the database directly (by running the JAR file from the Terminal tab)
     * Use `jdbc:h2:./main` as the JDBC URL
@@ -51,6 +51,20 @@
     * `SELECT * FROM players`
     * `DELETE FROM players WHERE name='Alice'`
     * `SELECT * FROM players`
+* Create ToDoDatabase (based on the original ToDo project)
+  * Add the H2 JAR
+  * Create `Connection` and `Statement`
+  * `CREATE TABLE IF NOT EXISTS todos (id INT, text VARCHAR, is_done BOOLEAN)`
+  * Create `insertTodo` with `PreparedStatement`
+    * `INSERT INTO todos VALUES (?, false)`
+  * Call `insertTodo` when `optionNum == 1`
+  * Create `selectTodos` that returns `ArrayList<ToDoItem>`
+    * `SELECT * FROM todos`
+  * Remove the original `ArrayList<ToDoItem> todos` declaration
+  * Call `selectTodos` at the top of the while loop
+  * Create `toggleTodo`
+    * `UPDATE todos SET is_done = NOT is_done WHERE ROWNUM = ?`
+  * Call `toggleTodo` when `optionNum == 2`
 
 ### Day 2
 
