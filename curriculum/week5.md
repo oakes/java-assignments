@@ -2,6 +2,8 @@
 
 ### Day 1
 
+* Review assignment (crud)
+* Exercise
 * Saving data to the disk
   * Serialize to JSON vs using a database
   * JSON files can't be updated incrementally
@@ -19,6 +21,11 @@
   * Download and add [H2](http://www.h2database.com/html/main.html) JAR file to project
   * Work with the database directly (by running the JAR file from the Terminal tab)
     * Use `jdbc:h2:./main` as the JDBC URL
+    * `CREATE TABLE`
+    * `INSERT`
+    * `SELECT`
+    * `UPDATE`
+    * `DELETE`
   * Work with the database from Java (by writing code in `Main.java`)
     * Create a `Connection`
       * `Connection conn = DriverManager.getConnection("jdbc:h2:./main")`
@@ -27,7 +34,9 @@
 
 ### Day 2
 
-* H2 (continued)
+* Review assignment
+* Joins
+  * The `IDENTITY` data type
 
 ### Day 3
 
