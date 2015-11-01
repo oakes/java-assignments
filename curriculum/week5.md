@@ -92,7 +92,9 @@
   * Create timestamps with java.time
   * Save timestamps to the database
   * Select date ranges
+* Use JOOQ's `groupBy` and `orderBy`
+* Paging
 
 ### Day 4
 
-* H2 (continued)
+* H2 + JOOQ (continued)
