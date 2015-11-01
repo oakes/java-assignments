@@ -76,6 +76,7 @@
 * Using multiple tables
   * Can't use `ROWNUM` to refer to rows in other tables, since it can change
   * Use an `id IDENTITY` column instead
+  * `PRIMARY KEY` and `FOREIGN KEY`
 * Joins
   * Most common type is `INNER JOIN`
   * There is also `LEFT JOIN`, `RIGHT JOIN`, and `FULL JOIN`
