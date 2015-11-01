@@ -31,10 +31,12 @@
   * Download and add [H2](http://www.h2database.com/html/main.html) JAR file to project
   * Work with the database directly (by running the JAR file from the Terminal tab)
     * Use `jdbc:h2:./main` as the JDBC URL
+    * Make the user name blank
   * Work with the database from Java (by writing code in `Main.java`)
     * Create a `Connection`
       * `Connection conn = DriverManager.getConnection("jdbc:h2:./main")`
     * Create a `Statement`
+    * When creating a table, you should use `CREATE TABLE IF NOT EXISTS`
   * For both methods, execute the following commands
     * `CREATE TABLE players (name VARCHAR, is_alive BOOLEAN, score INT, health DECIMAL)`
     * `INSERT INTO players VALUES ('Alice', true, 10, 90.5)`
