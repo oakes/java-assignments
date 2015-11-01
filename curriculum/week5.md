@@ -11,8 +11,8 @@
 
 ### Day 3
 
-* [PostgreSQL](http://postgresapp.com/)
+* H2 (continued)
 
 ### Day 4
 
-* PostgreSQL (continued)
+* H2 (continued)
