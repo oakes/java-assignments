@@ -35,13 +35,22 @@
     * Create a `Connection`
       * `Connection conn = DriverManager.getConnection("jdbc:h2:./main")`
     * Create a `Statement`
+  * For both methods, execute the following commands
     * `CREATE TABLE players (name VARCHAR, is_alive BOOLEAN, score INT, health DECIMAL)`
+    * `INSERT INTO players VALUES ('Alice', true, 10, 90.5)`
+    * `INSERT INTO players VALUES ('Bob', true, 9, 95)`
+    * `SELECT * FROM players`
+    * `SELECT * FROM players WHERE name = 'Bob'`
+    * `SELECT * FROM players WHERE health > 0`
+    * `UPDATE players SET score=20 WHERE name='Alice'`
+    * `SELECT * FROM players`
+    * `DELETE FROM players WHERE name='Alice'`
+    * `SELECT * FROM players`
 
 ### Day 2
 
 * Review assignment
-* The `id` column
-  * The `IDENTITY` data type
+* The `id IDENTITY` column
 * Joins
 
 ### Day 3
