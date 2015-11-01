@@ -42,11 +42,8 @@
   * @Overload
   * Casting
   * Interfaces and abstract classes
-* File I/O
+* File I/O and JSON
 * Maven
-* Standard library
-  * java.time
-  * java.io
 * Debugging
 * Testing (JUnit)
 
@@ -64,7 +61,7 @@
 
 * [H2](http://www.h2database.com/html/main.html)
 
-## Week 6-7 - Spring + Hibernate
+## Week 6-7 - Spring
 
 * [Spring Boot](http://projects.spring.io/spring-boot/)
 * [PostgreSQL](http://postgresapp.com/)
