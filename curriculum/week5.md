@@ -23,9 +23,9 @@
     * `VARCHAR`
     * `BOOLEAN`
     * `INT`
-    * `DECIMAL`
+    * `DOUBLE`
   * Player example
-    * `CREATE TABLE players (name VARCHAR, is_alive BOOLEAN, score INT, health DECIMAL)`
+    * `CREATE TABLE players (name VARCHAR, is_alive BOOLEAN, score INT, health DOUBLE)`
 * Embedded vs external databases (SQLite/H2 vs MySQL/PostgreSQL)
 * Create HelloDatabase
   * Download and add [H2](http://www.h2database.com/html/main.html) JAR file to project
@@ -45,7 +45,7 @@
         * SQL injection: `', true, 0, 0); DROP TABLE players; --`
       * The good way: `PreparedStatement`
   * For both methods, execute the following commands
-    * `CREATE TABLE players (name VARCHAR, is_alive BOOLEAN, score INT, health DECIMAL)`
+    * `CREATE TABLE players (name VARCHAR, is_alive BOOLEAN, score INT, health DOUBLE)`
     * `INSERT INTO players VALUES ('Alice', true, 10, 90.5)`
     * `INSERT INTO players VALUES ('Bob', true, 9, 95)`
     * `SELECT * FROM players`
