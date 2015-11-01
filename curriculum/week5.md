@@ -37,6 +37,9 @@
       * `Connection conn = DriverManager.getConnection("jdbc:h2:./main")`
     * Create a `Statement`
     * When creating a table, you should use `CREATE TABLE IF NOT EXISTS`
+    * When selecting, use the `executeQuery` method, loop over the `ResultSet`, and print each column
+    * Update and delete before the select statement
+    * Run `DROP TABLE players` at the end
   * For both methods, execute the following commands
     * `CREATE TABLE players (name VARCHAR, is_alive BOOLEAN, score INT, health DECIMAL)`
     * `INSERT INTO players VALUES ('Alice', true, 10, 90.5)`
