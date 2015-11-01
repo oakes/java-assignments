@@ -54,7 +54,7 @@
 * Create ToDoDatabase (based on the original ToDo project)
   * Add the H2 JAR
   * Create `Connection` and `Statement`
-  * `CREATE TABLE IF NOT EXISTS todos (id INT, text VARCHAR, is_done BOOLEAN)`
+  * `CREATE TABLE IF NOT EXISTS todos (text VARCHAR, is_done BOOLEAN)`
   * Create `insertTodo` with `PreparedStatement`
     * `INSERT INTO todos VALUES (?, false)`
   * Call `insertTodo` when `optionNum == 1`
