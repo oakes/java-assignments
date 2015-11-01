@@ -31,7 +31,7 @@
   * Create a blank project in the IDE
   * Create methods that initialize data the same way we did in the REPL
   * Static vs non-static, public vs private
-  * Flow control
+  * Control flow (conditionals, loops, recursion, exceptions)
 
 ## Week 2 - Console programs
 
