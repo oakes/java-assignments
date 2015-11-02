@@ -3,7 +3,7 @@
 ### Day 1
 
 * Review assignment (crud)
-* Exercise
+* Exercise (read people.csv via `Scanner` into arraylist and run case-insensitive search)
 * Saving data to the disk
   * Serialize to JSON vs using a database
   * JSON files can't be updated incrementally
