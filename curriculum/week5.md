@@ -72,14 +72,25 @@
 
 ### Day 2
 
-* Review assignment
-* Using multiple tables
-  * `id IDENTITY`
-  * `PRIMARY KEY` and `FOREIGN KEY`
+* Review assignment (sql basics - beer tracker database)
 * Joins
   * Most common type is `INNER JOIN`
   * There is also `LEFT JOIN`, `RIGHT JOIN`, and `FULL JOIN`
   * [Visual Representation of SQL Joins](http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins)
+* Create ForumWebDatabase
+  * Create `users` and `messages` tables
+  * Add `id` to `User` class
+  * Delete the global `users` and `messages` collections
+  * Remove the test methods
+  * Create `static void insertUser(Connection conn, String username, String password)`
+  * Create `static User selectUser(Connection conn, String username)`
+  * Use `insertUser` and `selectUser` in `/login`
+  * Create `static void insertMessage(Connection conn, int replyId, int userId, String text)`
+  * User `insertMessage` in `/create-message`
+  * Create `static Message selectMessage(Connection conn, int id)`
+  * Use `selectMessage` in `/replies`
+  * Create `static ArrayList<Message> selectMessages(Connection conn)` (use an `INNER JOIN`)
+  * Use `selectMessages` in `/` and `/replies`
 
 ### Day 3
 
