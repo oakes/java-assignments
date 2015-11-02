@@ -19,9 +19,10 @@ public class ToDo {
         }
     }
 
-    static void insertTodo(Connection conn, String text) throws SQLException {
-        PreparedStatement stmt = conn.prepareStatement("INSERT INTO todos VALUES (?, false)");
-        stmt.setString(1, text);
+    static void insertTodo(Connection conn, int id, String text) throws SQLException {
+        PreparedStatement stmt = conn.prepareStatement("INSERT INTO todos VALUES (?, ?, false)");
+        stmt.setInt(1, id);
+        stmt.setString(2, text);
         stmt.execute();
     }
 
@@ -39,7 +40,7 @@ public class ToDo {
     }
 
     static void toggleTodo(Connection conn, int selectNum) throws SQLException {
-        PreparedStatement stmt = conn.prepareStatement("UPDATE todos SET is_done = NOT is_done WHERE ROWNUM = ?");
+        PreparedStatement stmt = conn.prepareStatement("UPDATE todos SET is_done = NOT is_done WHERE id = ?");
         stmt.setInt(1, selectNum);
         stmt.execute();
     }
@@ -47,7 +48,7 @@ public class ToDo {
     public static void main(String[] args) throws SQLException {
         Connection conn = DriverManager.getConnection("jdbc:h2:./main");
         Statement stmt = conn.createStatement();
-        stmt.execute("CREATE TABLE IF NOT EXISTS todos (text VARCHAR, is_done BOOLEAN)");
+        stmt.execute("CREATE TABLE IF NOT EXISTS todos (id INT, text VARCHAR, is_done BOOLEAN)");
 
         Scanner scanner = new Scanner(System.in);
 
@@ -65,7 +66,7 @@ public class ToDo {
             if (optionNum == 1) {
                 System.out.println("Type a todo and hit enter");
                 String todo = scanner.nextLine();
-                insertTodo(conn, todo);
+                insertTodo(conn, todos.size() + 1, todo);
             }
             else if (optionNum == 2) {
                 System.out.println("Type the number of the todo you want to toggle");
