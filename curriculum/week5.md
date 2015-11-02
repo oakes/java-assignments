@@ -85,6 +85,7 @@
 ### Day 3
 
 * Review assignment
+* Review serializing to JSON
 * [JOOQ](http://www.jooq.org/)
 * HelloDatabase
   * Duplicate the functionality using JOOQ
@@ -92,8 +93,7 @@
   * Create timestamps with java.time
   * Save timestamps to the database
   * Select date ranges
-* Use JOOQ's `groupBy` and `orderBy`
-* Paging
+* Paging with `OFFSET` and `LIMIT`
 
 ### Day 4
 
