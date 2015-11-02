@@ -58,7 +58,7 @@
 * Create [ToDoDatabase](../projects/ToDoDatabase) (based on the original ToDo project)
   * Add the H2 JAR
   * Create `Connection` and `Statement`
-  * `CREATE TABLE IF NOT EXISTS todos (id INT, text VARCHAR, is_done BOOLEAN)`
+  * `CREATE TABLE IF NOT EXISTS todos (id IDENTITY, text VARCHAR, is_done BOOLEAN)`
   * Create `insertTodo` with `PreparedStatement`
     * `INSERT INTO todos VALUES (?, ?, false)`
   * Call `insertTodo` when `optionNum == 1`
@@ -74,8 +74,7 @@
 
 * Review assignment
 * Using multiple tables
-  * Can't use `ROWNUM` to refer to rows in other tables, since it can change
-  * Use an `id IDENTITY` column instead
+  * `id IDENTITY`
   * `PRIMARY KEY` and `FOREIGN KEY`
 * Joins
   * Most common type is `INNER JOIN`
