@@ -41,7 +41,7 @@
 * Inheritance
   * @Overload
   * Casting
-  * Interfaces and abstract classes
+  * Interfaces
 * File I/O and JSON
 * Maven
 * Debugging
@@ -49,9 +49,9 @@
 
 ## Week 3 - Graphical programs
 
-* Desktop UI with Java FX
-* Android
-* Cross-platform games with [libGDX](https://libgdx.badlogicgames.com/)
+* Desktop: [JavaFX](http://docs.oracle.com/javase/8/javase-clienttechnologies.htm)
+* Mobile: [Android](http://developer.android.com/index.html)
+* Games: [libGDX](https://libgdx.badlogicgames.com/)
 
 ## Week 4 - Web apps
 
