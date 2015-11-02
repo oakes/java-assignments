@@ -41,7 +41,7 @@
     * Update and delete before the select statement
     * Run `DROP TABLE players` at the end
     * Demonstrate injecting values into query after the `DELETE` statement
-      * The bad way: `String.format("INSERT INTO players VALUES ('%s', true, 10, 90.5)", scannerName)`
+      * The bad way: `String.format("INSERT INTO players VALUES ('%s', true, 10, 90.5)", inputName)`
         * SQL injection: `', true, 0, 0); DROP TABLE players; --`
       * The good way: `PreparedStatement`
   * For both methods, execute the following commands
