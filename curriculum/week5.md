@@ -27,7 +27,7 @@
   * Player example
     * `CREATE TABLE players (name VARCHAR, is_alive BOOLEAN, score INT, health DOUBLE)`
 * Embedded vs external databases (SQLite/H2 vs MySQL/PostgreSQL)
-* Create HelloDatabase
+* Create [HelloDatabase](../projects/HelloDatabase)
   * Download and add [H2](http://www.h2database.com/html/main.html) JAR file to project
   * Work with the database directly (by running the JAR file from the Terminal tab)
     * Use `jdbc:h2:./main` as the JDBC URL
@@ -55,7 +55,7 @@
     * `SELECT * FROM players`
     * `DELETE FROM players WHERE name='Alice'`
     * `SELECT * FROM players`
-* Create ToDoDatabase (based on the original ToDo project)
+* Create [ToDoDatabase](../projects/ToDoDatabase) (based on the original ToDo project)
   * Add the H2 JAR
   * Create `Connection` and `Statement`
   * `CREATE TABLE IF NOT EXISTS todos (text VARCHAR, is_done BOOLEAN)`
