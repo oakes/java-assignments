@@ -4,7 +4,7 @@
 
 ## Description
 
-Create a project based on [Countries](../projects/Countries). Parse each line and store the contents into a data structure. Ask the user to type a letter and save a file that lists only the countries starting with it.
+Fork the [Countries](../projects/Countries) project. Parse each line and store the contents into a data structure. Ask the user to type a letter and save a file that lists only the countries starting with it.
 
 ## Requirements
 
