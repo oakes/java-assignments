@@ -78,7 +78,8 @@
   * There is also `LEFT JOIN`, `RIGHT JOIN`, and `FULL JOIN`
   * [Visual Representation of SQL Joins](http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins)
 * Create ForumWebDatabase
-  * Create `users` and `messages` tables
+  * Create `Connection`
+  * Create `createTables` tables which defines the `users` and `messages` tables
   * Add `id` to `User` class
   * Create `static void insertUser(Connection conn, String username, String password)`
   * Create `static User selectUser(Connection conn, String username)`
