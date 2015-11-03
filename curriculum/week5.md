@@ -77,6 +77,7 @@
   * Most common type is `INNER JOIN`
   * There is also `LEFT JOIN`, `RIGHT JOIN`, and `FULL JOIN`
   * [Visual Representation of SQL Joins](http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins)
+* Test-Driven Development (TDD)
 * Create ForumWebDatabase
   * Create `Connection`
   * Create `createTables` tables which defines the `users` and `messages` tables
