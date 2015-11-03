@@ -60,7 +60,7 @@
   * Create `Connection` and `Statement`
   * `CREATE TABLE IF NOT EXISTS todos (id IDENTITY, text VARCHAR, is_done BOOLEAN)`
   * Create `insertTodo` with `PreparedStatement`
-    * `INSERT INTO todos VALUES (?, ?, false)`
+    * `INSERT INTO todos VALUES (NULL, ?, false)`
   * Call `insertTodo` when `optionNum == 1`
   * Create `selectTodos` that returns `ArrayList<ToDoItem>`
     * `SELECT * FROM todos`
