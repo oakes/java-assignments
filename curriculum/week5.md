@@ -104,6 +104,9 @@
 
 * Review assignment (sql joins and tdd - crud)
 * [JOOQ](http://www.jooq.org/)
+  * Why use JOOQ instead of direct SQL queries?
+    * Java code shows syntax errors
+    * The same methods can output different SQL for each database
 * HelloDatabase
   * Download JOOQ zip and drag the main JAR file into project
   * Right-click it and choose "Add as Library..."
