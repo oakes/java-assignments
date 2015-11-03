@@ -83,16 +83,15 @@
   * Add `id` to `User` class
   * Create `static void insertUser(Connection conn, String username, String password)`
   * Create `static User selectUser(Connection conn, String username)`
-  * Create tests for `insertUser` and `selectUser`
+  * Create a test for `insertUser` and `selectUser` called `testUser`
     * Add junit from Maven
     * Create `src/test` and mark it as a test dir
     * Create `startConnection` and `endConnection`
-    * Create `testInsertUser` and `testSelectUser`
   * Create `static void insertMessage(Connection conn, int replyId, int userId, String text)`
   * Create `static Message selectMessage(Connection conn, int id)`
-  * Create tests for `insertMessage` and `selectMessage`
+  * Create a test for `insertMessage` and `selectMessage` called `testMessage`
   * Create `static ArrayList<Message> selectMessages(Connection conn, int replyId)`
-  * Create test for `selectMessages`
+  * Create a test for `selectMessages` called `testMessages`
   * Delete the global `users` and `messages` collections and the test methods
   * Use new methods
     * Use `insertUser` and `selectUser` in `/login`
