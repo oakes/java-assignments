@@ -1,6 +1,6 @@
 # CRUD
 
-![screenshot](screenshot.png)
+[![screenshot](screenshot.png)](https://www.youtube.com/watch?v=6tgWH-qXpv8&list=PLoUHkRwnRH-KTCH3tJ9WvsWWPEgUu-y6d)
 
 ## Description
 
