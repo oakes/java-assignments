@@ -102,7 +102,7 @@
 
 ### Day 3
 
-* Review assignment
+* Review assignment (sql joins and tdd - crud)
 * [JOOQ](http://www.jooq.org/)
   * In HelloDatabase, duplicate the functionality using JOOQ
 * Review serializing to JSON
