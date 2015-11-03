@@ -104,7 +104,10 @@
 
 * Review assignment (sql joins and tdd - crud)
 * [JOOQ](http://www.jooq.org/)
-  * In HelloDatabase, duplicate the functionality using JOOQ
+* HelloDatabase
+  * Download JOOQ zip and drag the main JAR file into project
+  * Right-click it and choose "Add as Library..."
+  * In `Main.java`, duplicate the functionality using JOOQ
 * Review serializing to JSON
 * Paging with `OFFSET` and `LIMIT`
 
