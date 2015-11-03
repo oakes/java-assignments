@@ -1,0 +1,16 @@
+{{#username}}
+Welcome, {{username}}!<br>
+<form action="create-message" method="post">
+    <input type="hidden" name="replyId" value="{{replyId}}"/>
+    <input type="text" name="text" placeholder="Write a message" size="50"/>
+    <button type="submit">Submit</button>
+</form>
+{{/username}}
+
+{{^username}}
+<form action="login" method="post">
+    <input type="text" placeholder="Username" name="username"/>
+    <input type="password" placeholder="Password" name="password"/>
+    <button type="submit">Login or Create Account</button>
+</form>
+{{/username}}
