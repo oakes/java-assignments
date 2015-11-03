@@ -20,3 +20,4 @@ Add a database to the CRUD app you built last weekend. Just worry about creating
 * Create a test for `selectEntries`.
 * Remove your global arraylist/hashmap that stores users and entries.
 * Use your five new methods to your project so it now is backed by a database.
+* Optional: Make editing and deleting work with the database as well.
