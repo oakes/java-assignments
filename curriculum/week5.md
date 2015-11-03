@@ -89,7 +89,7 @@
   * User `insertMessage` in `/create-message`
   * Create `static Message selectMessage(Connection conn, int id)`
   * Use `selectMessage` in `/replies`
-  * Create `static ArrayList<Message> selectMessages(Connection conn, int replyIdNum)`
+  * Create `static ArrayList<Message> selectMessages(Connection conn, int replyId)`
   * Use `selectMessages` in `/` and `/replies`
 
 ### Day 3
