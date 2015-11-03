@@ -13,7 +13,7 @@ Fork the [BeerTrackerDatabase](../projects/BeerTrackerDatabase) project. It is a
 * Write a static method `deleteBeer` and run it in the `/delete-beer` route. It should remove the correct row using `id`.
 * Write a static method `selectBeers` that returns an `ArrayList<Beer>` containing all the beers in the database.
 * Remove the global `ArrayList<Beer>` and instead just call `selectBeers` inside the "/" route.
-* Add a form to edit the beer name and type, and create an `/edit-beer` route that executes the necessary `UPDATE` query to edit it in the database. Then redirect to "/".
+* Add a form to edit the beer name and type, and create an `/edit-beer` route. Write a static method `updateBeer` and use it in that route. Then redirect to "/".
 * Optional: Add a search form which filters the beer list to only those beers whose name contains the (case-insensitive) search string.
 
 ![screenshot](screenshot.png)
