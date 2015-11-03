@@ -80,17 +80,24 @@
 * Create ForumWebDatabase
   * Create `users` and `messages` tables
   * Add `id` to `User` class
-  * Delete the global `users` and `messages` collections
-  * Remove the test methods
   * Create `static void insertUser(Connection conn, String username, String password)`
   * Create `static User selectUser(Connection conn, String username)`
-  * Use `insertUser` and `selectUser` in `/login`
+  * Create tests for `insertUser` and `selectUser`
+    * Add junit from Maven
+    * Create `src/test` and mark it as a test dir
+    * Create `startConnection` and `endConnection`
+    * Create `testInsertUser` and `testSelectUser`
   * Create `static void insertMessage(Connection conn, int replyId, int userId, String text)`
-  * User `insertMessage` in `/create-message`
   * Create `static Message selectMessage(Connection conn, int id)`
-  * Use `selectMessage` in `/replies`
+  * Create tests for `insertMessage` and `selectMessage`
   * Create `static ArrayList<Message> selectMessages(Connection conn, int replyId)`
-  * Use `selectMessages` in `/` and `/replies`
+  * Create test for `selectMessages`
+  * Delete the global `users` and `messages` collections and the test methods
+  * Use new methods
+    * Use `insertUser` and `selectUser` in `/login`
+    * Use `insertMessage` in `/create-message`
+    * Use `selectMessage` in `/replies`
+    * Use `selectMessages` in `/` and `/replies`
 
 ### Day 3
 
