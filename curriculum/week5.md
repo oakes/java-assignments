@@ -103,6 +103,9 @@
 ### Day 3
 
 * Review assignment (sql joins and tdd - crud)
+* Time
+  * Old way: `java.util.Date`
+  * New way: `java.time.LocalDateTime`
 * Calendar
   * Add Spark, Mustache, JUnit, and H2 via Maven
     * `com.sparkjava:spark-core:2.3`
