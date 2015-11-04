@@ -145,4 +145,24 @@
 ### Day 4
 
 * Review assignment (sql paging - people web)
-* Review serializing to JSON
+* AjaxTracker
+  * Create project and add three libraries
+    * `com.h2database:h2:1.4.190`
+    * `com.sparkjava:spark-core:2.3`
+    * `org.jodd:jodd-json:3.6.6`
+  * Open database
+    * Create `Connection`
+    * Create a table
+    * Define `insertCountry` and `selectCountries`
+  * Serve files in the current directory
+    * `Spark.externalStaticFileLocation();`
+    * `Spark.init();`
+  * Create routes for AJAX queries
+    * POST `/add-country`
+    * GET `/get-countries`
+  * Build JAR file
+    * File -> Project Structure...
+    * Click "Artifacts" and then the plus button
+    * JAR -> From modules with dependencies...
+    * Choose the main class and click OK
+    * Build -> Build Artifacts...
