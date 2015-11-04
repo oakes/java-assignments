@@ -130,10 +130,17 @@
   * Add `selectEvents` to `/` route
   * Create POST route for `/create-event`
   * Use a disabled `input` field to display the date of each event
-  * Modify `selectEvents` to take `boolean isAscending` and use `String.format` to inject `ASC` or `DESC`
-    * Create an overloaded version of `selectEvents` that keeps one argument
-  * In `events.html`, add links based on `isAscending`
-  * In the `/` route, get the query param and create an `isAscending` variable
+  * Support changing the display order
+    * Modify `selectEvents` to take `boolean isAscending` and use `String.format` to inject `ASC` or `DESC`
+      * Create an overloaded version of `selectEvents` that keeps one argument
+    * In `events.html`, add links based on `isAscending`
+    * In the `/` route, get the query param and create an `isAscending` variable
+  * Support paging
+    * Create `LIMIT`
+    * Add `int offset` to `selectEvents`
+    * Get `offset` from `request.queryParams` in `/`
+    * Pass `nextOffset` into the template
+    * In `events.html`, create the "Next" link
 
 ### Day 4
 
