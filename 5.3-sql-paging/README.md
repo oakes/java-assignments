@@ -17,7 +17,6 @@ Add database support to your `People Web` project. Create a database with a tabl
 * Set up your `test` directory and write a test called `testPerson` which tests both of the aforementioned methods.
 * Write a method called `populateDatabase` which takes the database connection, then parses the CSV file and inserts each row into the database.
   * You already have code that parses it (the for loop), so just re-use that.
-  * Make the method run `DROP TABLE people` before inserting everything, so we don't end up continuously adding duplicates when we run the program multiple times.
 * Write a method called `selectPeople` which takes the database connection and returns an `ArrayList<Person>` of everything from the database.
 * Write a test called `testPeople` that tests `selectPeople`.
 * Modify `selectPeople` to accept an `int offset` as an argument. Use `LIMIT 20 OFFSET ?` in your SQL query and pass the `offset` to your `PreparedStatement`.
