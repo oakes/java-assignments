@@ -103,10 +103,28 @@
 ### Day 3
 
 * Review assignment (sql joins and tdd - crud)
-* 
-* Paging with `OFFSET` and `LIMIT`
+* Calendar
+  * Add Spark, Mustache, JUnit, and H2 via Maven
+    * `com.sparkjava:spark-core:2.3`
+    * `com.sparkjava:spark-template-mustache:2.3`
+    * `junit:junit:4.12`
+    * `com.h2database:h2:1.4.190`
+  * Create `Event` class (id, description, startdate)
+  * Create `resources/templates`
+  * Create `resources/templates/events.html`
+  * Create GET route for `/`
+  * Inject `LocalDateTime.now()` into template to set default time
+  * Create `Connection` and `createTables`
+  * Create `insertEvent` and `selectEvents`
+  * Add test for these methods
+    * Create `test` dir and add `MainTest`
+    * `startConnection` and `endConnection`
+    * `testEvents`
+  * Add `selectEvents` to `/` route
+  * Create POST route for `/create-event`
 * Review serializing to JSON
 
 ### Day 4
 
-* H2 (continued)
+* Review assignment
+* Search
