@@ -144,6 +144,5 @@
 
 ### Day 4
 
-* Review assignment
+* Review assignment (sql paging - people web)
 * Review serializing to JSON
-* Search
