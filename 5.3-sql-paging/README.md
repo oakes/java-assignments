@@ -22,5 +22,5 @@ Add database support to your `People Web` project. Create a database with a tabl
 * Write a test called `testPeople` that tests `selectPeople`.
 * Modify `selectPeople` to accept an `int offset` as an argument. Use `LIMIT 20 OFFSET ?` in your SQL query and pass the `offset` to your `PreparedStatement`.
 * Remove the global `ArrayList<Person>`.
-* Make the `/` route use `selectPeople(conn, offsetNum)` to get the `ArrayList<Person>`. No need to the `subList` stuff anymore.
+* Make the `/` route use `selectPeople(conn, offsetNum)` to get the `ArrayList<Person>`. No need to use the `subList` stuff anymore.
 * Make the `/person` route use `selectPerson(conn, idNum)` to get the `Person`.
