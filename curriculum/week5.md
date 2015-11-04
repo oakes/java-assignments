@@ -136,7 +136,7 @@
     * In `events.html`, add links based on `isAscending`
     * In the `/` route, get the query param and create an `isAscending` variable
   * Support paging
-    * Create `LIMIT`
+    * Create `LIMIT` constant
     * Add `int offset` to `selectEvents`
     * Get `offset` from `request.queryParams` in `/`
     * Pass `nextOffset` into the template
