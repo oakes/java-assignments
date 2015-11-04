@@ -103,6 +103,7 @@
 ### Day 3
 
 * Review assignment (sql joins and tdd - crud)
+* Exercise (manually sort an array of strings)
 * Time
   * Old way: `java.util.Date` and `java.util.Calendar`
   * New way: `java.time.LocalDateTime`
