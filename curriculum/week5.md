@@ -122,6 +122,9 @@
     * `testEvents`
   * Add `selectEvents` to `/` route
   * Create POST route for `/create-event`
+  * Modify `selectEvents` to take `boolean isAscending` and use `String.format` to inject `ASC` or `DESC`
+  * In `events.html`, add links based on `isAscending`
+  * In the `/` route, get the query param and create an `isAscending` variable
 
 ### Day 4
 
