@@ -111,7 +111,7 @@
     * Sane API
     * Immutable
     * Supports ISO-8601
-* Create Calendar
+* Create [Calendar](../projects/Calendar)
   * Add Spark, Mustache, JUnit, and H2 via Maven
     * `com.sparkjava:spark-core:2.3`
     * `com.sparkjava:spark-template-mustache:2.3`
