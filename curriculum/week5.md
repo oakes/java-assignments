@@ -106,6 +106,10 @@
 * Time
   * Old way: `java.util.Date` and `java.util.Calendar`
   * New way: `java.time.LocalDateTime`
+  * Advantages of `LocalDateTime`
+    * Sane API
+    * Immutable
+    * Supports ISO-8601
 * Calendar
   * Add Spark, Mustache, JUnit, and H2 via Maven
     * `com.sparkjava:spark-core:2.3`
