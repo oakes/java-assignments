@@ -122,9 +122,9 @@
     * `testEvents`
   * Add `selectEvents` to `/` route
   * Create POST route for `/create-event`
-* Review serializing to JSON
 
 ### Day 4
 
 * Review assignment
+* Review serializing to JSON
 * Search
