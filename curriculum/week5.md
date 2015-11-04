@@ -111,7 +111,7 @@
     * Sane API
     * Immutable
     * Supports ISO-8601
-* Calendar
+* Create Calendar
   * Add Spark, Mustache, JUnit, and H2 via Maven
     * `com.sparkjava:spark-core:2.3`
     * `com.sparkjava:spark-template-mustache:2.3`
@@ -130,7 +130,6 @@
     * `testEvents`
   * Add `selectEvents` to `/` route
   * Create POST route for `/create-event`
-  * Use a disabled `input` field to display the date of each event
   * Support changing the display order
     * Modify `selectEvents` to take `boolean isAscending` and use `String.format` to inject `ASC` or `DESC`
       * Create an overloaded version of `selectEvents` that keeps one argument
