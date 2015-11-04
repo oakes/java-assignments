@@ -145,7 +145,7 @@
 ### Day 4
 
 * Review assignment (sql paging - people web)
-* CountriesDatabase
+* CountriesAjax
   * Create project and add three libraries
     * `com.h2database:h2:1.4.190`
     * `com.sparkjava:spark-core:2.3`
