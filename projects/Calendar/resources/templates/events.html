@@ -1,0 +1,29 @@
+<html>
+<body>
+<form action="create-event" method="post">
+    <input type="text" placeholder="Describe event" name="description"/>
+    <input type="datetime-local" value="{{now}}" name="startDate"/>
+    <button type="submit">Submit</button>
+</form>
+
+<br><br>
+
+{{#isAsc}}
+<a href="/?isAsc=false">Show in descending order</a>
+{{/isAsc}}
+
+{{^isAsc}}
+<a href="/?isAsc=true">Show in ascending order</a>
+{{/isAsc}}
+
+<br><br>
+
+{{#events}}
+{{description}} {{startDate}}<br>
+{{/events}}
+
+<br><br>
+
+<a href="/?offset={{nextOffset}}&isAsc={{isAsc}}">Next</a>
+</body>
+</html>
