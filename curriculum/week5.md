@@ -124,6 +124,7 @@
   * Create POST route for `/create-event`
   * Use a disabled `input` field to display the date of each event
   * Modify `selectEvents` to take `boolean isAscending` and use `String.format` to inject `ASC` or `DESC`
+    * Create an overloaded version of `selectEvents` that keeps one argument
   * In `events.html`, add links based on `isAscending`
   * In the `/` route, get the query param and create an `isAscending` variable
 
