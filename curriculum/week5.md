@@ -104,7 +104,7 @@
 
 * Review assignment (sql joins and tdd - crud)
 * Time
-  * Old way: `java.util.Date`
+  * Old way: `java.util.Date` and `java.util.Calendar`
   * New way: `java.time.LocalDateTime`
 * Calendar
   * Add Spark, Mustache, JUnit, and H2 via Maven
