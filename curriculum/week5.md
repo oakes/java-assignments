@@ -155,7 +155,7 @@
     * Create a table
     * Define `insertCountry`, `selectCountry`, and `selectCountries`
   * Serve files in the current directory
-    * `Spark.externalStaticFileLocation();`
+    * `Spark.externalStaticFileLocation("public");`
     * `Spark.init();`
   * Create routes for AJAX queries
     * POST `/add-country`
