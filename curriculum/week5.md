@@ -153,12 +153,13 @@
   * Open database
     * Create `Connection`
     * Create a table
-    * Define `insertCountry` and `selectCountries`
+    * Define `insertCountry`, `selectCountry`, and `selectCountries`
   * Serve files in the current directory
     * `Spark.externalStaticFileLocation();`
     * `Spark.init();`
   * Create routes for AJAX queries
     * POST `/add-country`
+    * GET `/get-country`
     * GET `/get-countries`
   * Build JAR file
     * File -> Project Structure...
