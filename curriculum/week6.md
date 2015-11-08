@@ -18,18 +18,23 @@
     * Can use Maven libraries
     * Uses `.idea`
 * Create HelloSpring
-  * Go to [Spring Initializr](https://start.spring.io/)
-  * Choose "Gradle Project"
-  * Group is `com.theironyard` and artifcat is `HelloSpring`
-  * Click "Switch to the full version"
-  * Check the following options:
-    * Web
-    * Mustache
-    * PostgreSQL
-  * Download and unzip the project
-  * Import into IntelliJ
-  * Choose "Import project from external model" and select Gradle
-  * Click Next and Finish
+  * Create project from template
+    * Go to [Spring Initializr](https://start.spring.io/)
+    * Choose "Gradle Project"
+    * Group is `com.theironyard` and artifcat is `HelloSpring`
+    * Click "Switch to the full version"
+    * Check the following options:
+      * Web
+      * Mustache
+      * PostgreSQL
+    * Download and unzip the project
+    * Import into IntelliJ
+    * Choose "Import project from external model" and select Gradle
+    * Click Next and Finish
+  * MVC
+    * Model (SQL)
+    * View (HTML)
+    * Controller (Java)
   * Return HTML at the `/person` route
     * `src/main/resources/templates/person.html`
     * `src/main/java/com/theironyard/HelloSpringController.java`
