@@ -30,11 +30,11 @@
   * Import into IntelliJ
   * Choose "Import project from external model" and select Gradle
   * Click Next and Finish
-  * Return HTML
+  * Return HTML at the `/person` route
     * `src/main/resources/templates/person.html`
     * `src/main/java/com/theironyard/HelloSpringController.java`
     * Add arguments for name and city, and use `@RequestParam` to set default values
-  * Return JSON
+  * Return JSON at the `/person.json` route
     * `src/main/java/com/theironyard/Person.java`
     * `src/main/java/com/theironyard/HelloSpringJsonController.java`
     * Add arguments for name and city, and use `@RequestParam` to set default values
