@@ -46,11 +46,11 @@
   * `\du`
   * `CREATE DATABASE hellodb;`
   * `\c hellodb`
-  * `CREATE TABLE test (id SERIAL, stuf VARCHAR);`
+  * `CREATE TABLE test (id SERIAL, stuff VARCHAR);`
   * `INSERT INTO test VALUES (DEFAULT, 'hello world');`
   * `SELECT * FROM test;`
   * `DROP TABLE test;`
 * HelloDatabase
-  * Download and add [PostgreSQL JDBC Driver](https://jdbc.postgresql.org/download/postgresql-9.4-1205.jdbc42.jar)
+  * Download and add library: [PostgreSQL Driver](https://jdbc.postgresql.org/download/postgresql-9.4-1205.jdbc42.jar)
   * Change connection URL to `"jdbc:postgresql://localhost:5432/hellodb"`
   * Use `DECIMAL` instead of `DOUBLE`
