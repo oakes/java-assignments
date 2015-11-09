@@ -38,11 +38,11 @@
   * Create `/person` route that returns HTML
     * `src/main/resources/templates/person.html`
     * `src/main/java/com/theironyard/HelloSpringController.java`
-    * Add arguments for name and city, and use `@RequestParam` to set default values
+    * Add arguments for name, city and age, and use `@RequestParam` to set default values
   * Create `/person.json` route that returns JSON
     * `src/main/java/com/theironyard/Person.java`
     * `src/main/java/com/theironyard/HelloSpringJsonController.java`
-    * Add arguments for name and city, and use `@RequestParam` to set default values
+    * Add arguments for name, city, and age, and use `@RequestParam` to set default values
   * Create `/` route that returns HTML
     * `src/main/resources/templates/home.html`
     * Add `home` method to `HelloSpringController`
