@@ -35,14 +35,18 @@
     * Model (SQL)
     * View (HTML)
     * Controller (Java)
-  * Return HTML at the `/person` route
+  * Create `/person` route that returns HTML
     * `src/main/resources/templates/person.html`
     * `src/main/java/com/theironyard/HelloSpringController.java`
     * Add arguments for name and city, and use `@RequestParam` to set default values
-  * Return JSON at the `/person.json` route
+  * Create `/person.json` route that returns JSON
     * `src/main/java/com/theironyard/Person.java`
     * `src/main/java/com/theironyard/HelloSpringJsonController.java`
     * Add arguments for name and city, and use `@RequestParam` to set default values
+  * Create `/` route that returns HTML
+    * `src/main/resources/templates/home.html`
+    * Add `home` method to `HelloSpringController`
+    * Add `login` method to `HelloSpringController`
 * Build JAR file
   * Click the Gradle tab on the right edge of the window
   * HelloSpring -> Tasks -> build -> build
