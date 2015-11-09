@@ -40,13 +40,13 @@ Make a web application that allows you write and delete short messages. When you
 * Create an `ArrayList<Message>` in your controller to store submitted messages
 * In your controller, create a route for `/add-message`
   * It should take the message text as an argument
-  * It should create a `Message` object and add it to the arraylist
+  * It should create a `Message` object and add it to the arraylist (for the id, do something like `messages.size() + 1`)
   * It should return a redirect to `/`
 * In `home.html`, add a button or link called "Delete" next to each message
   * It will need to send the id as a parameter
 * In your controller, create a route for `/delete-message`
   * It should take the message id as an argument (the type should be `Integer`)
-  * It should remove the message with the given id (you'll probably need to do something like `messages.remove(id - 1)`)
+  * It should remove the message with the given id (do something like `messages.remove(id - 1)`)
   * It should return a redirect to `/`
 
 ![screenshot 1](screenshot1.png)
