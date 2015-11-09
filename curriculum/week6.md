@@ -2,26 +2,11 @@
 
 ### Day 1
 
-* Java build tools
-  * Ant (2000)
-    * First major Java build tool
-    * Uses `build.xml`
-  * Maven (2004)
-    * Introduced downloadable dependencies
-    * Uses `pom.xml`
-  * Gradle (2012)
-    * Customizable, uses a real programming language
-    * Can use Maven libraries
-    * Uses `build.gradle`
-  * IntelliJ's internal build system
-    * Good for simple projects
-    * Can use Maven libraries
-    * Uses `.idea`
 * Create HelloSpring
   * Create project from template
     * Go to [Spring Initializr](https://start.spring.io/)
     * Choose "Gradle Project"
-    * Group is `com.theironyard` and artifcat is `HelloSpring`
+    * Group is `com.theironyard` and artifact is `HelloSpring`
     * Click "Switch to the full version"
     * Check the following options:
       * Web
@@ -47,6 +32,21 @@
     * `src/main/resources/templates/home.html`
     * Add `home` method to `HelloSpringController`
     * Add `login` method to `HelloSpringController`
+* Java build tools
+  * Ant (2000)
+    * First major Java build tool
+    * Uses `build.xml`
+  * Maven (2004)
+    * Introduced downloadable dependencies
+    * Uses `pom.xml`
+  * Gradle (2012)
+    * Customizable, uses a real programming language
+    * Can use Maven libraries
+    * Uses `build.gradle`
+  * IntelliJ's internal build system
+    * Good for simple projects
+    * Can use Maven libraries
+    * Uses `.idea`
 * Build JAR file
   * Click the Gradle tab on the right edge of the window
   * HelloSpring -> Tasks -> build -> build
