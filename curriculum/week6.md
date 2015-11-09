@@ -32,6 +32,13 @@
     * `src/main/resources/templates/home.html`
     * Add `home` method to `HelloSpringController`
     * Add `login` method to `HelloSpringController`
+* Build JAR file
+  * Click the Gradle tab on the right edge of the window
+  * HelloSpring -> Tasks -> build -> build
+  * It will be in `build/libs`
+
+### Day 2
+
 * Java build tools
   * Ant (2000)
     * First major Java build tool
@@ -47,13 +54,6 @@
     * Good for simple projects
     * Can use Maven libraries
     * Uses `.idea`
-* Build JAR file
-  * Click the Gradle tab on the right edge of the window
-  * HelloSpring -> Tasks -> build -> build
-  * It will be in `build/libs`
-
-### Day 2
-
 * PostgreSQL
   * Download and run [Postgres.app](http://postgresapp.com/)
   * Open `psql`
