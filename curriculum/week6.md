@@ -2,7 +2,7 @@
 
 ### Day 1
 
-* Create HelloSpring
+* Create [HelloSpring](../projects/HelloSpring)
   * Create project from template
     * Go to [Spring Initializr](https://start.spring.io/)
     * Choose "Gradle Project"
