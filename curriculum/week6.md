@@ -75,20 +75,11 @@
     * SQL wrapper libraries: JOOQ
     * Object-Relational Mapping libraries: JPA
 * Create BeerTrackerSpring
-  * Create project from template
-    * Go to [Spring Initializr](https://start.spring.io/)
-    * Choose "Gradle Project"
-    * Group is `com.theironyard` and artifact is `HelloSpring`
-    * Click "Switch to the full version"
-    * Check the following options:
-      * Web
-      * JPA
-      * Mustache
-      * PostgreSQL
-    * Download and unzip the project
-    * Import into IntelliJ
-    * Choose "Import project from external model" and select Gradle
-    * Click Next and Finish
+  * Create project from template with the following options
+    * Web
+    * JPA
+    * Mustache
+    * PostgreSQL
   * Create `beertracker` database in psql
   * In `src/main/resources/application.properties` add:
     * `spring.datasource.url=jdbc:postgresql://localhost:5432/beertracker`
