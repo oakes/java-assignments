@@ -10,9 +10,7 @@
     * Click "Switch to the full version"
     * Check the following options:
       * Web
-      * JPA
       * Mustache
-      * PostgreSQL
     * Download and unzip the project
     * Import into IntelliJ
     * Choose "Import project from external model" and select Gradle
