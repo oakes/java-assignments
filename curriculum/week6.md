@@ -66,3 +66,37 @@
   * Download and add library: [PostgreSQL Driver](https://jdbc.postgresql.org/download/postgresql-9.4-1205.jdbc42.jar)
   * Change connection URL to `"jdbc:postgresql://localhost:5432/hellodb"`
   * Use `DECIMAL` instead of `DOUBLE`
+* Writing direct SQL queries
+  * Problems
+    * Dialects differ between databases
+    * Easy to make typos
+    * Going between the database and Java objects is busy work
+  * Solutions
+    * SQL wrapper libraries: JOOQ
+    * Object-Relational Mapping libraries: JPA
+* Create BeerTrackerSpring
+  * Create project from template
+    * Go to [Spring Initializr](https://start.spring.io/)
+    * Choose "Gradle Project"
+    * Group is `com.theironyard` and artifact is `HelloSpring`
+    * Click "Switch to the full version"
+    * Check the following options:
+      * Web
+      * JPA
+      * Mustache
+      * PostgreSQL
+    * Download and unzip the project
+    * Import into IntelliJ
+    * Choose "Import project from external model" and select Gradle
+    * Click Next and Finish
+  * Create `beertracker` database in psql
+  * In `src/main/resources/application.properties` add:
+    * `spring.datasource.url=jdbc:postgresql://localhost:5432/beertracker`
+    * `spring.jpa.generate-ddl=true`
+  * Create `Beer` class that uses `@Entity`, `@Id`, and `@GeneratedValue`
+  * Create `src/main/resources/templates/home.html`
+  * Create `BeerTrackerController` with a `/` and `/add-beer` route
+  * Create `BeerRepository` interface that extends `CrudRepository`
+  * Use `@Autowired` to bring the repo into the controller
+  * In `/add-beer`, create a `Beer` object and save it to the repo
+  * In `/`, add the beers to the `Model`
