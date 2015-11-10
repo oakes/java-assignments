@@ -38,6 +38,7 @@
 
 ### Day 2
 
+* Review assignment (microblog spring)
 * Java build systems
   * Ant (2000)
     * First major Java build tool
