@@ -38,7 +38,7 @@
 
 ### Day 2
 
-* Review assignment (microblog spring)
+* Review assignment (spring - microblog)
 * Exercise (reverse number)
 * Java build systems
   * Ant (2000)
@@ -92,3 +92,7 @@
   * Use `@Autowired` to bring the repo into the controller
   * In `/add-beer`, create a `Beer` object and save it to the repo
   * In `/`, add the beers to the `Model`
+
+### Day 3
+
+* Review assignment (spring - microblog continued)
