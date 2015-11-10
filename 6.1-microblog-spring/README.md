@@ -15,6 +15,7 @@ Make a web application that allows you write and delete short messages. When you
   * Click "Switch to the full version"
   * Check the following options:
     * Web
+    * JPA
     * Mustache
     * PostgreSQL
   * Download and unzip the project
