@@ -39,6 +39,7 @@
 ### Day 2
 
 * Review assignment (microblog spring)
+* Exercise (reverse number)
 * Java build systems
   * Ant (2000)
     * First major Java build tool
