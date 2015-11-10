@@ -39,7 +39,7 @@
 
 ### Day 2
 
-* Java build tools
+* Java build systems
   * Ant (2000)
     * First major Java build tool
     * Uses `build.xml`
@@ -50,10 +50,7 @@
     * Customizable, uses a real programming language
     * Can use Maven libraries
     * Uses `build.gradle`
-  * IntelliJ's internal build system
-    * Good for simple projects
-    * Can use Maven libraries
-    * Uses `.idea`
+  * IDE-specific projects (IntelliJ and Eclipse)
 * PostgreSQL
   * Download and run [Postgres.app](http://postgresapp.com/)
   * Open `psql`
