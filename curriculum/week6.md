@@ -73,7 +73,7 @@
     * Going between the database and Java objects is busy work
   * Solutions
     * SQL wrapper libraries: JOOQ
-    * Object-Relational Mapping libraries: JPA
+    * Object-Relational Mapping libraries: Hibernate
 * Create BeerTrackerSpring
   * Create project from template with the following options
     * Web
