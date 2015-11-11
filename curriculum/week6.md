@@ -112,10 +112,15 @@
   * Add type and calories filter
     * Add `findByTypeAndCalories` to `BeerRepository`
     * Modify the `/` route to use it if the `type` and `calories` parameters aren't null
+  * More query methods
+    * `findFirstByType`
+    * `countByType`
+    * `findByTypeOrderByNameAsc`
+    * `findByCaloriesIsGreaterThanEqual`
+    * [Tutorial](http://www.petrikainulainen.net/programming/spring-framework/spring-data-jpa-tutorial-creating-database-queries-from-method-names/)
   * Add search form
     * In `home.html`, add search form
     * Add `searchByName` to `BeerRepository` with `@Query`
-* [Query method tutorial](http://www.petrikainulainen.net/programming/spring-framework/spring-data-jpa-tutorial-creating-database-queries-from-method-names/)
 * Spring Security
   * Add the following to `application.properties`:
     * `security.basic.enabled=false`
