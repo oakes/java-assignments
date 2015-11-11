@@ -9,8 +9,11 @@
     * Group is `com.theironyard` and artifact is `HelloSpring`
     * Click "Switch to the full version"
     * Check the following options:
+      * Security
       * Web
+      * JPA
       * Mustache
+      * PostgreSQL
     * Download and unzip the project
     * Import into IntelliJ
     * Choose "Import project from external model" and select Gradle
@@ -77,6 +80,7 @@
     * Object-Relational Mapping libraries: Hibernate
 * Create [BeerTrackerSpring](../projects/BeerTrackerSpring)
   * Create project from template with the following options
+    * Security
     * Web
     * JPA
     * Mustache
@@ -96,3 +100,11 @@
 ### Day 3
 
 * Review assignment (spring - microblog continued)
+* Spring Security
+  * Add the following to `application.properties`:
+    * `security.basic.enabled=false`
+  * Add the following to the main class:
+    * `@EnableGlobalMethodSecurity(securedEnabled = true)`
+  * Add the following to the `addBeer` method:
+    * `@Secured("USER")`
+  * Create `src/main/resources/templates/login.html` and a `/login` route
