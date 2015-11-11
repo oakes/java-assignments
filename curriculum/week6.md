@@ -122,7 +122,8 @@
     * In `home.html`, add search form
     * Add `searchByName` to `BeerRepository` with `@Query`
   * Add a user class and do joins
-    * Create `User` with id and name
+    * Create `User` with `@Table(name = "users")`
+    * Add `User` to `Beer` with `@ManyToOne`
     * Create `src/main/resources/templates/login.html`
     * Create `/login` route and return the template in the `/` route
     * Create `/logout` route and add link in `home.html`
