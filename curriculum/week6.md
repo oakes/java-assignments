@@ -9,11 +9,8 @@
     * Group is `com.theironyard` and artifact is `HelloSpring`
     * Click "Switch to the full version"
     * Check the following options:
-      * Security
       * Web
-      * JPA
       * Mustache
-      * PostgreSQL
     * Download and unzip the project
     * Import into IntelliJ
     * Choose "Import project from external model" and select Gradle
@@ -137,9 +134,15 @@
 
 ### Day 4
 
-* Review assignment
-* Spring Security
-  * Add the following to `application.properties`:
-    * `security.basic.enabled=false`
-  * Add the following to the main class:
-    * `@EnableGlobalMethodSecurity(securedEnabled = true)`
+* Review assignment (spring - orm omg)
+* BeerTrackerSpring
+  * Refactor into separate subpackages
+    * Make the fields in `Beer` and `User` public
+    * Move `Beer` and `User` into a `entities` subpackage
+    * Move the controller into a `controllers` subpackage
+    * Move `BeerRepository` and `UserRepository` into a `services` subpackage
+  * Spring Security
+    * Add the following to `application.properties`:
+      * `security.basic.enabled=false`
+    * Add the following to the main class:
+      * `@EnableGlobalMethodSecurity(securedEnabled = true)`
