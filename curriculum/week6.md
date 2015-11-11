@@ -100,6 +100,7 @@
 ### Day 3
 
 * Review assignment (spring - microblog continued)
+* Exercise (palindrome detector)
 * BeerTrackerSpring
   * Add a column
     * Add `Integer calories` to `Beer`
