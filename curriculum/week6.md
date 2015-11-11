@@ -105,11 +105,16 @@
     * Add `Integer calories` to `Beer`
     * Add support for calories in `home.html`
     * Add calories in the `/add-beer` route
-  * Use more complex queries
+  * Add type filter
+    * In `home.html`, add links for each beer type
     * Add `findByType` to `BeerRepository`
     * Modify the `/` route to use it if the `type` parameter isn't null
+  * Add type and calories filter
     * Add `findByTypeAndCalories` to `BeerRepository`
     * Modify the `/` route to use it if the `type` and `calories` parameters aren't null
+  * Add search form
+    * In `home.html`, add search form
+    * Add `searchByName` to `BeerRepository` with `@Query`
 * Spring Security
   * Add the following to `application.properties`:
     * `security.basic.enabled=false`
