@@ -121,9 +121,19 @@
   * Add search form
     * In `home.html`, add search form
     * Add `searchByName` to `BeerRepository` with `@Query`
+  * Add a user class and do joins
+    * Create `User` with id and name
+    * Create `src/main/resources/templates/login.html`
+    * Create `/login` route and return the template in the `/` route
+    * Create `/logout` route and add link in `home.html`
+    * Create `UserRepository` interface with `findOneByName`
+    * Add `UserRepository` to the controller and use it in the `/login` route
+
+### Day 4
+
+* Review assignment
 * Spring Security
   * Add the following to `application.properties`:
     * `security.basic.enabled=false`
   * Add the following to the main class:
     * `@EnableGlobalMethodSecurity(securedEnabled = true)`
-  * Create `src/main/resources/templates/login.html` and a `/login` route
