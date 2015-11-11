@@ -129,6 +129,9 @@
     * Create `/logout` route and add link in `home.html`
     * Create `UserRepository` interface with `findOneByName`
     * Add `UserRepository` to the controller and use it in the `/login` route
+    * Edit `home.html` to show the username next to each item
+    * Add `List<Beer>` to `User` with `@OneToMany(mappedBy = "user")`
+    * Add a `showMine` parameter to the `/login` route and a link to `home.html`
 
 ### Day 4
 
