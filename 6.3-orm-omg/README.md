@@ -38,6 +38,6 @@ Parse the two csv files and store them PostgreSQL via Spring Data. Then display 
   * In `PurchaseRepository`, add a method that finds `Purchase` objects by category
   * Modify your `/` route to take a `category` parameter
   * If the parameter isn't null, call the method you made instead of `findAll`
-  * For example, if I go to `http://localhost:8080/?category=Jewelry` I should only see the jewelry results
+  * Displays links at the top that allow you to filter by each category
 
-![screenshot](screenshot.png)
+![screenshot](screenshot2.png)
