@@ -105,6 +105,4 @@
     * `security.basic.enabled=false`
   * Add the following to the main class:
     * `@EnableGlobalMethodSecurity(securedEnabled = true)`
-  * Add the following to the `addBeer` method:
-    * `@Secured("USER")`
   * Create `src/main/resources/templates/login.html` and a `/login` route
