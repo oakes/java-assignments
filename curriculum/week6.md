@@ -100,6 +100,9 @@
 ### Day 3
 
 * Review assignment (spring - microblog continued)
+* BeerTracker
+  * Add `findByType` to `BeerRepository`
+  * Modify the `/` route to use it if the `type` parameter isn't null
 * Spring Security
   * Add the following to `application.properties`:
     * `security.basic.enabled=false`
