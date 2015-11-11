@@ -132,6 +132,7 @@
     * Edit `home.html` to show the username next to each item
     * Add `List<Beer>` to `User` with `@OneToMany(mappedBy = "user")`
     * Add a `showMine` parameter to the `/login` route and a link to `home.html`
+    * Insert a default user at startup by creating an init method with `@PostConstruct`
 
 ### Day 4
 
