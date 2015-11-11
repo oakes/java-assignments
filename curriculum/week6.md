@@ -123,12 +123,12 @@
     * Add `searchByName` to `BeerRepository` with `@Query`
   * Add a user class and do joins
     * Create `User` with `@Table(name = "users")`
-    * Add `User` to `Beer` with `@ManyToOne`
     * Create `src/main/resources/templates/login.html`
     * Create `/login` route and return the template in the `/` route
     * Create `/logout` route and add link in `home.html`
     * Create `UserRepository` interface with `findOneByName`
     * Add `UserRepository` to the controller and use it in the `/login` route
+    * Add `User` to `Beer` with `@ManyToOne`
     * Edit `home.html` to show the username next to each item
     * Add `List<Beer>` to `User` with `@OneToMany(mappedBy = "user")`
     * Add a `showMine` parameter to the `/login` route and a link to `home.html`
