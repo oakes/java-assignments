@@ -101,8 +101,15 @@
 
 * Review assignment (spring - microblog continued)
 * BeerTracker
-  * Add `findByType` to `BeerRepository`
-  * Modify the `/` route to use it if the `type` parameter isn't null
+  * Add a column
+    * Add `Integer calories` to `Beer`
+    * Add support for calories in `home.html`
+    * Add calories in the `/add-beer` route
+  * Use more complex queries
+    * Add `findByType` to `BeerRepository`
+    * Modify the `/` route to use it if the `type` parameter isn't null
+    * Add `findByTypeAndCalories` to `BeerRepository`
+    * Modify the `/` route to use it if the `type` and `calories` parameters aren't null
 * Spring Security
   * Add the following to `application.properties`:
     * `security.basic.enabled=false`
