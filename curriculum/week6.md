@@ -100,7 +100,7 @@
 ### Day 3
 
 * Review assignment (spring - microblog continued)
-* BeerTracker
+* BeerTrackerSpring
   * Add a column
     * Add `Integer calories` to `Beer`
     * Add support for calories in `home.html`
