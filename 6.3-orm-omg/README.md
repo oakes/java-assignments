@@ -24,6 +24,7 @@ Parse the two csv files and store them PostgreSQL via Spring Data. Then display 
   * Click Next and Finish
 * Create a database in PostgreSQL and add the appropriate settings to your `application.properties`
 * Copy the CSV files into your project's root directory
+  * From Github, you can click each one and click the "Raw" button, then save it to your computer
 * Create `Customer` and `Purchase` classes that can hold all the info from their respective CSVs, along with an id (add the appropriate annotations so it can be used with Spring Data)
   * The `Purchase` class should also have a `Customer` field which will serve to join the two tables together
 * Create `CustomerRepository` and `PurchaseRepository` interfaces that can act as Spring Data repositories for the aforementioned classes
