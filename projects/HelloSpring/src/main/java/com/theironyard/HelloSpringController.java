@@ -26,16 +26,14 @@ public class HelloSpringController {
     }
 
     @RequestMapping("/")
-    public String home(Model model, HttpServletRequest request) {
-        HttpSession session = request.getSession();
+    public String home(Model model, HttpSession session) {
         String username = (String) session.getAttribute("username");
         model.addAttribute("username", username);
         return "home";
     }
 
     @RequestMapping("/login")
-    public String login(HttpServletRequest request, String username) {
-        HttpSession session = request.getSession();
+    public String login(HttpSession session, String username) {
         session.setAttribute("username", username);
         return "redirect:/";
     }
