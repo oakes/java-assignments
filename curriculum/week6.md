@@ -134,6 +134,11 @@
 ### Day 4
 
 * Review assignment (spring - orm omg)
+* Major security topics
+  * SQL injection prevention
+  * Cross-site scripting prevention
+  * SSL encryption
+  * Secure password storage
 * BeerTrackerSpring
   * Refactor into separate subpackages
     * Make the fields in `Beer` and `User` public
