@@ -145,8 +145,9 @@
     * Move `Beer` and `User` into a `entities` subpackage
     * Move the controller into a `controllers` subpackage
     * Move `BeerRepository` and `UserRepository` into a `services` subpackage
+  * Make post parameters required
   * Add a secure login system
     * Add password field to `login.html` and the `User` class
-    * Make the `/login` route take a password and make both params required
+    * Make the `/login` route take a password
     * Download [`PasswordHash.java`](https://crackstation.net/source/password-hashing/PasswordHash.java) and use it to store and validate the password
     * Drop and create database
