@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.security.NoSuchAlgorithmException;
+import java.security.spec.InvalidKeySpecException;
 
 /**
  * Created by zach on 11/10/15.
@@ -21,25 +23,25 @@ public class BeerTrackerController {
     UserRepository users;
 
     @PostConstruct
-    public void init() {
+    public void init() throws InvalidKeySpecException, NoSuchAlgorithmException {
         User user = users.findOneByName("Zach");
         if (user == null) {
             user = new User();
             user.name = "Zach";
+            user.password = PasswordHash.createHash("hunter2");
             users.save(user);
         }
     }
 
     @RequestMapping("/")
     public String home(
-            HttpServletRequest request,
+            HttpSession session,
             Model model,
             String type,
             Integer calories,
             String search,
             String showMine
     ) {
-        HttpSession session = request.getSession();
         String username = (String) session.getAttribute("username");
 
         if (username == null) {
@@ -65,9 +67,12 @@ public class BeerTrackerController {
     }
 
     @RequestMapping("/add-beer")
-    public String addBeer(String beername, String beertype, Integer beercalories, HttpServletRequest request) {
-        HttpSession session = request.getSession();
+    public String addBeer(String beername, String beertype, int beercalories, HttpSession session) throws Exception {
         String username = (String) session.getAttribute("username");
+        if (username == null) {
+            throw new Exception("Not logged in.");
+        }
+
         User user = users.findOneByName(username);
 
         Beer beer = new Beer();
@@ -80,7 +85,10 @@ public class BeerTrackerController {
     }
 
     @RequestMapping("/edit-beer")
-    public String editBeer(Integer id, String name, String type) {
+    public String editBeer(int id, String name, String type, HttpSession session) throws Exception {
+        if (session.getAttribute("username") == null) {
+            throw new Exception("Not logged in.");
+        }
         Beer beer = beers.findOne(id);
         beer.name = name;
         beer.type = type;
@@ -89,23 +97,25 @@ public class BeerTrackerController {
     }
 
     @RequestMapping("/login")
-    public String login(String username, HttpServletRequest request) {
-        HttpSession session = request.getSession();
+    public String login(String username, String password, HttpSession session) throws Exception {
         session.setAttribute("username", username);
 
         User user = users.findOneByName(username);
         if (user == null) {
             user = new User();
             user.name = username;
+            user.password = PasswordHash.createHash(password);
             users.save(user);
+        }
+        else if (!PasswordHash.validatePassword(password, user.password)) {
+            throw new Exception("Wrong password");
         }
 
         return "redirect:/";
     }
 
     @RequestMapping("/logout")
-    public String logout(HttpServletRequest request) {
-        HttpSession session = request.getSession();
+    public String logout(HttpSession session) {
         session.invalidate();
         return "redirect:/";
     }
