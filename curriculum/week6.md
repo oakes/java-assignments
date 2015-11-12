@@ -77,7 +77,6 @@
     * Object-Relational Mapping libraries: Hibernate
 * Create [BeerTrackerSpring](../projects/BeerTrackerSpring)
   * Create project from template with the following options
-    * Security
     * Web
     * JPA
     * Mustache
@@ -141,8 +140,8 @@
     * Move `Beer` and `User` into a `entities` subpackage
     * Move the controller into a `controllers` subpackage
     * Move `BeerRepository` and `UserRepository` into a `services` subpackage
-  * Spring Security
-    * Add the following to `application.properties`:
-      * `security.basic.enabled=false`
-    * Add the following to the main class:
-      * `@EnableGlobalMethodSecurity(securedEnabled = true)`
+  * Add a secure login system
+    * Add password field to `login.html` and the `User` class
+    * Make the `/login` route take a password and make both params required
+    * Download [`PasswordHash.java`](https://crackstation.net/source/password-hashing/PasswordHash.java) and use it to store and validate the password
+    * Drop and create database
