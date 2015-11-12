@@ -159,8 +159,3 @@
     * Make the `/login` route take a password and make both params required
     * Download [`PasswordHash.java`](https://crackstation.net/source/password-hashing/PasswordHash.java) and use it to store and validate the password
     * Drop and create database
-* Git in depth
-  * Fork and pull requests vs same repo
-  * Merge conflicts
-  * Branches
-  * Command line interface
