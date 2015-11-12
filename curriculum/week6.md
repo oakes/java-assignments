@@ -134,6 +134,13 @@
 ### Day 4
 
 * Review assignment (spring - orm omg)
+* Add paging to the assignment
+  * Change `CrudRepository` to `PagingAndSortingRepository`, and add `Pageable pageable` to the custom method
+  * Make the `/` route take an `int page` that defaults to `"0"`
+  * Create a `PageRequest` object and pass it into the query methods
+  * Add `nextPage` to the model and add the "Next" link to `home.html`
+  * Add `page` to the model and add the `page` param to the filter links
+  * Add `category` to the model and add the `category` param to the "Next" link
 * Major security topics
   * SQL injection prevention
   * Cross-site scripting prevention
