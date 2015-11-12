@@ -141,6 +141,7 @@
   * Secure password storage
 * BeerTrackerSpring
   * Pass `HttpSession` directly into controller methods
+  * Pass numbers to controller methods as `int` instead of `Integer`
   * Refactor into separate subpackages
     * Make the fields in `Beer` and `User` public
     * Move `Beer` and `User` into a `entities` subpackage
