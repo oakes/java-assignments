@@ -134,13 +134,6 @@
 ### Day 4
 
 * Review assignment (spring - orm omg)
-* Add paging to the assignment
-  * Change `CrudRepository` to `PagingAndSortingRepository`, and add `Pageable pageable` to the custom method
-  * Make the `/` route take an `int page` that defaults to `"0"`
-  * Create a `PageRequest` object and pass it into the query methods
-  * Add `nextPage` to the model and add the "Next" link to `home.html`
-  * Add `page` to the model and add the `page` param to the filter links
-  * Add `category` to the model and add the `category` param to the "Next" link
 * Major security topics
   * SQL injection prevention
   * Cross-site scripting prevention
@@ -149,13 +142,11 @@
 * BeerTrackerSpring
   * Pass `HttpSession` directly into controller methods
   * Pass numbers to controller methods as `int` instead of `Integer`
-  * Refactor into separate subpackages
-    * Make the fields in `Beer` and `User` public
-    * Move `Beer` and `User` into a `entities` subpackage
-    * Move the controller into a `controllers` subpackage
-    * Move `BeerRepository` and `UserRepository` into a `services` subpackage
   * Add a secure login system
     * Add password field to `login.html` and the `User` class
     * Make the `/login` route take a password and make both params required
     * Download [`PasswordHash.java`](https://crackstation.net/source/password-hashing/PasswordHash.java) and use it to store and validate the password
     * Drop and create database
+* Git in depth
+  * Fork and pull requests vs same repo
+  * Merge conflicts
