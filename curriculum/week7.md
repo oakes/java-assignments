@@ -28,7 +28,7 @@
     * Create an `@Before` method that clears the test database
     * Create an autowired `WebApplicationContext` and a `MockMvc`
     * Import static methods from `MockMvcRequestBuilders`
-    * Add `testHomeAndLogin` to the test file
+    * Add `testLogin` to the test file
     * Add `testAddEvent` to the test file
     * Set mock username with `sessionAttr`
   * Add updating and deleting along with tests
