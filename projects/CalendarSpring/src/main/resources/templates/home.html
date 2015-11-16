@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+</head>
+<body>
+{{#user}}
+
+Welcome, {{username}}.
+
+<br><br>
+
+<form action="add-event" method="post">
+    <input type="text" placeholder="Description" name="description" size="50"/><br>
+    <input type="datetime-local" value="{{now}}" name="date"/><br>
+    <button type="submit">Submit</button>
+</form>
+
+<br><br>
+
+{{#event}}
+<input type="datetime-local" value="{{date}}" disabled> {{description}}<br>
+{{/event}}
+
+{{/user}}
+</body>
+</html>
