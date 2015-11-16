@@ -32,6 +32,7 @@
     * Add `testAddEvent` to the test file
     * Set mock username with `sessionAttr`
   * Add updating and deleting along with tests
+  * Add paging
 
 ### Day 2
 
