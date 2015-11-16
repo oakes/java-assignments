@@ -10,6 +10,7 @@
   * Add `nextPage` to the model and add the "Next" link to `home.html`
   * Add `page` to the model and add the `page` param to the filter links
   * Add `category` to the model and add the `category` param to the "Next" link
+  * Make custom methods return `Page` and use the return value to selectively show the "Next" link
 * BeerTrackerSpring
   * Use subpackages for better organization
     * Controllers go in `controllers`
@@ -20,6 +21,10 @@
     * The "Billion Dollar Mistake"
     * Prevent null in the routes: Use primitive types for everything but `String`
     * Prevent null in the database: Non-nullable columns
+* Fork the CalendarSpring project
+  * Fix all the bugs until you can create and display events
+  * Add updating and deleting
+  * Write tests for all the routes
 
 ### Day 2
 
@@ -37,4 +42,6 @@
 ### Day 3
 
 * Review assignment
+* Reading documentation
+* Using REST APIs
 * Deploy to a server
