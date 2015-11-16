@@ -23,8 +23,8 @@
     * Prevent null in the database: Non-nullable columns
 * Fork the CalendarSpring project
   * Fix all the bugs until you can create and display events
-  * Add updating and deleting
-  * Write tests for all the routes
+  * Write tests for the routes
+  * Add updating and deleting along with tests
 
 ### Day 2
 
