@@ -10,7 +10,7 @@
   * Add `nextPage` to the model and add the "Next" link to `home.html`
   * Add `page` to the model and add the `page` param to the filter links
   * Add `category` to the model and add the `category` param to the "Next" link
-  * Make custom methods return `Page` and use the return value to selectively show the "Next" link
+  * Make custom methods return `Page<Purchase>` and use the return value to selectively show the "Next" link
 * BeerTrackerSpring
   * Use subpackages for better organization
     * Controllers go in `controllers`
