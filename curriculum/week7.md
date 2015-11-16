@@ -11,6 +11,11 @@
   * Add `page` to the model and add the `page` param to the filter links
   * Add `category` to the model and add the `category` param to the "Next" link
 * BeerTrackerSpring
+  * Use subpackages for better organization
+    * Controllers go in `controllers`
+    * Entities go in `entities`
+    * Repositories go in `services`
+    * Make fields public when necessary
   * Prevent null values
     * The "Billion Dollar Mistake"
     * Prevent null in the routes: Use primitive types for everything but `String`
