@@ -21,7 +21,7 @@
     * The "Billion Dollar Mistake"
     * Prevent null in the routes: Use primitive types for everything but `String`
     * Prevent null in the database: Non-nullable columns
-* Fork the [CalendarSpring](../projects/CalendarSpring) project
+* Fork the [DebugCalendarSpring](../projects/DebugCalendarSpring) project
   * Fix all the bugs until you can create and display events
   * Write tests for the routes
     * Create `src/test/resources` with its own `application.properties`
