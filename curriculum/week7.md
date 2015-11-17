@@ -40,7 +40,7 @@
   * JSON API + AJAX
   * Uploading files
 * Install [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) chrome extension
-* Create IronGramtem
+* Create IronGram
   * Create project from template with the following options
     * Web
     * DevTools
