@@ -75,12 +75,6 @@
     * Create `/photos` route
     * Add `$.get("/photos", getPhotos)` to the `<script>` tag
     * Add a `setInterval` that gets the photos every 3 seconds
-  * Write tests for the routes
-    * Create `src/test/resources` with its own `application.properties`
-    * Create an `@Before` method that clears the test database
-    * Create an autowired `WebApplicationContext` and a `MockMvc`
-    * Add `testLogin` to the test file (use `MockMvcRequestBuilders.post`)
-    * Add `testUpload` to the test file (use `MockMvcRequestBuilders.post`)
 
 ### Day 3
 
