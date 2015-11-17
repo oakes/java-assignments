@@ -48,14 +48,21 @@
     * JPA
     * H2
     * PostgreSQL
-  * Modify `application.properties`
-    * `spring.datasource.url=jdbc:h2:./main`
-    * `spring.jpa.generate-ddl=true`
-  * Create `TempixController` with `@RestController`
-  * Create `User`
-  * Create `UserRepository`
-  * Copy `PasswordHash.java` into project
-  * In the controller, add the repository and create the `/login` route
+  * Create login
+    * Modify `application.properties`
+      * `spring.datasource.url=jdbc:h2:./main`
+      * `spring.jpa.generate-ddl=true`
+    * Create `TempixController` with `@RestController`
+    * Create `User`
+    * Create `UserRepository`
+    * Copy `PasswordHash.java` into project
+    * In the controller, add the repository and create the `/login` route
+  * Create public folder
+    * Create `WebConfig` which extends `WebMvcConfigurerAdapter`
+      * Override `addResourceHandlers` to add `"public/**"`
+    * Download [jQuery](http://jquery.com/download/) and move it into `public`
+    * Create `public/index.html`
+    * Create `public/main.js`
 * Git
   * Merge conflicts
   * Branches
