@@ -40,7 +40,7 @@
   * JSON API + AJAX
   * Uploading files
 * Install [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) chrome extension
-* Create IronPix
+* Create IronGramtem
   * Create project from template with the following options
     * Web
     * DevTools
@@ -52,7 +52,7 @@
       * `spring.datasource.url=jdbc:h2:./main`
       * `spring.jpa.generate-ddl=true`
       * `spring.jpa.hibernate.ddl-auto=validate`
-    * Create `IronPixController` with `@RestController`
+    * Create `IronGramController` with `@RestController`
     * Create `User` with `username` and `password`
     * Create `Photo` with `sender`, `recipient`, and `filename`
     * Create `UserRepository` and `PhotoRepository`
