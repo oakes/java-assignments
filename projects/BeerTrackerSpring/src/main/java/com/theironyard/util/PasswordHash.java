@@ -1,4 +1,4 @@
-package com.theironyard;
+package com.theironyard.util;
 
 /*
  * Password Hashing With PBKDF2 (http://crackstation.net/hashing-security.htm).

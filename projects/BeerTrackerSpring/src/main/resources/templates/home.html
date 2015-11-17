@@ -28,15 +28,15 @@
 <br><br>
 
 <form action="add-beer" method="post">
-    <input type="text" placeholder="Beer Name" name="beername"/>
-    <select name="beertype">
+    <input type="text" placeholder="Beer Name" name="beername" required/>
+    <select name="beertype" required>
         <option value="Ale">Ale</option>
         <option value="Lager">Lager</option>
         <option value="Pilsner">Pilsner</option>
         <option value="Stout">Stout</option>
         <option value="Other">Other</option>
     </select>
-    <input type="number" placeholder="Calories" name="beercalories"/>
+    <input type="number" placeholder="Calories" name="beercalories" required/>
     <button type="submit">Submit</button>
 </form>
 

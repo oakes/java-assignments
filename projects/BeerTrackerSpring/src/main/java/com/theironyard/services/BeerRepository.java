@@ -1,5 +1,6 @@
-package com.theironyard;
+package com.theironyard.services;
 
+import com.theironyard.entities.Beer;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
