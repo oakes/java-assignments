@@ -27,8 +27,8 @@
     * Create `src/test/resources` with its own `application.properties`
     * Create an `@Before` method that clears the test database
     * Create an autowired `WebApplicationContext` and a `MockMvc`
-    * Add `testLogin` to the test file (use `MockMvcRequestBuilders.post()`)
-    * Add `testAddEvent` to the test file (use `MockMvcRequestBuilders.post()`)
+    * Add `testLogin` to the test file (use `MockMvcRequestBuilders.post`)
+    * Add `testAddEvent` to the test file (use `MockMvcRequestBuilders.post`)
     * Set mock username with `sessionAttr`
   * Add updating and deleting along with tests
   * Add paging
@@ -51,7 +51,7 @@
     * Modify `application.properties`
       * `spring.datasource.url=jdbc:h2:./main`
       * `spring.jpa.generate-ddl=true`
-      * `spring.jpa.hibernate.ddl-auto=validate`
+      * `spring.jpa.hibernate.ddl-auto=none`
     * Create `IronGramController` with `@RestController`
     * Create `User` with `username` and `password`
     * Create `Photo` with `sender`, `recipient`, and `filename`
@@ -74,6 +74,12 @@
   * Show photos
     * Create `/photos` route
     * Add `$.get("/photos", getPhotos)` to the `<script>` tag
+  * Write tests for the routes
+    * Create `src/test/resources` with its own `application.properties`
+    * Create an `@Before` method that clears the test database
+    * Create an autowired `WebApplicationContext` and a `MockMvc`
+    * Add `testLogin` to the test file (use `MockMvcRequestBuilders.post`)
+    * Add `testUpload` to the test file (use `MockMvcRequestBuilders.post`)
 
 ### Day 3
 
