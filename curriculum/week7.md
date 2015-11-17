@@ -48,21 +48,29 @@
     * JPA
     * H2
     * PostgreSQL
-  * Create login
+  * Create initial server-side code
     * Modify `application.properties`
       * `spring.datasource.url=jdbc:h2:./main`
       * `spring.jpa.generate-ddl=true`
     * Create `TempixController` with `@RestController`
-    * Create `User`
-    * Create `UserRepository`
+    * Create `User` with `username`, `password`, and `inbox`
+    * Create `Photo` with `sender`, `recipient`, and `filename`
+    * Create `UserRepository` and `PhotoRepository`
     * Copy `PasswordHash.java` into project
-    * In the controller, add the repository and create the `/login` route
+    * In the controller, add the repositories and create the `/login`, `/logout`, and `/get-user` routes
   * Create public folder
     * Create `WebConfig` which extends `WebMvcConfigurerAdapter`
       * Override `addResourceHandlers` to add `"public/**"`
     * Download [jQuery](http://jquery.com/download/) and move it into `public`
-    * Create `public/index.html`
-    * Create `public/main.js`
+    * Create `public/index.html` with jquery included
+    * Create login, logout, and upload forms
+    * Create a `<script>` tag uses `$.get("/get-user")` and conditionally shows the forms based on the return data
+  * Create upload route
+    * In the controller, create the `/upload` route with a `MultipartFile` as the file argument
+      * Read username from session and throw exception if null
+      * Use `File.createTempFile` and `FileOutputStream` to write to disk
+      * Create `Photo` object
+      * Throw exception if recipient is null
 * Git
   * Merge conflicts
   * Branches
