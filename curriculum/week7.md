@@ -48,7 +48,14 @@
     * JPA
     * H2
     * PostgreSQL
+  * Modify `application.properties`
+    * `spring.datasource.url=jdbc:h2:./main`
+    * `spring.jpa.generate-ddl=true`
   * Create `TempixController` with `@RestController`
+  * Create `User`
+  * Create `UserRepository`
+  * Copy `PasswordHash.java` into project
+  * In the controller, add the repository and create the `/login` route
 * Git
   * Merge conflicts
   * Branches
