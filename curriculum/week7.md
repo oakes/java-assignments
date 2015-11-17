@@ -35,11 +35,20 @@
 
 ### Day 2
 
-* Review assignment
-* Create a JSON API via `@RestController`
-* AJAX
-* Enable CORS
-  * https://spring.io/guides/gs/rest-service-cors/
+* Review assignment (spring - paging and tdd)
+* Topics
+  * JSON API + AJAX
+  * Timers
+  * Uploading files
+* Install [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) chrome extension
+* Create Tempix
+  * Create project from template with the following options
+    * Web
+    * DevTools
+    * JPA
+    * H2
+    * PostgreSQL
+  * Create `TempixController` with `@RestController`
 * Git
   * Merge conflicts
   * Branches
@@ -50,5 +59,7 @@
 
 * Review assignment
 * Reading documentation
+* Enable CORS
+  * https://spring.io/guides/gs/rest-service-cors/
 * Using REST APIs
 * Deploy to a server
