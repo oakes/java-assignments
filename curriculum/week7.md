@@ -74,6 +74,7 @@
   * Show photos
     * Create `/photos` route
     * Add `$.get("/photos", getPhotos)` to the `<script>` tag
+    * Add a `setInterval` that gets the photos every 3 seconds
   * Write tests for the routes
     * Create `src/test/resources` with its own `application.properties`
     * Create an `@Before` method that clears the test database
