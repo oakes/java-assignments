@@ -88,7 +88,6 @@
   * Git
     * Merge conflicts
     * Ignoring files
-    * Branches
 * Create [AnonUpload](../projects/AnonUpload)
   * Create project structure
     * Create project from template with the following options
