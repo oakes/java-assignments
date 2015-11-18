@@ -92,9 +92,17 @@
       * JPA
       * H2
       * PostgreSQL
-  * Create initial server-side code
+  * Create client-side code
+    * Create `public`
+    * Create `public/index.html` and `public/main.js`
+    * Copy jquery into `public`
+  * Create server-side code
     * Modify `application.properties`
       * `spring.datasource.url=jdbc:h2:./main`
       * `spring.jpa.generate-ddl=true`
       * `spring.jpa.hibernate.ddl-auto=none`
+    * Create `File`
+    * Create `FileRepository`
     * Create `AnonUploadController` with `@RestController`
+    * Create a `/files` route
+    * Create an `/upload` route
