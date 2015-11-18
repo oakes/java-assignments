@@ -78,11 +78,12 @@
 ### Day 3
 
 * Review assignment (spring - json)
-* Git
-  * Merge conflicts
-  * Branches
-  * Command line interface
-  * .gitignore
+* Fork ToDoSpring
+  * Fix all the bugs until you can create and display to-dos
+  * Git
+    * Merge conflicts
+    * Ignoring files
+    * Branches
 * Create AnonUpload
   * Create project structure
     * Create project from template with the following options
