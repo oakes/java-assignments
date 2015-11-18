@@ -105,8 +105,8 @@
       * `spring.datasource.url=jdbc:h2:./main`
       * `spring.jpa.generate-ddl=true`
       * `spring.jpa.hibernate.ddl-auto=none`
-    * Create `File`
-    * Create `FileRepository`
+    * Create `AnonFile`
+    * Create `AnonFileRepository`
     * Create `AnonUploadController` with `@RestController`
     * Create a `/files` route
     * Create an `/upload` route
