@@ -80,13 +80,21 @@
 ### Day 3
 
 * Review assignment (spring - json)
-* Reading documentation
-* Enable CORS
-  * https://spring.io/guides/gs/rest-service-cors/
-* Using REST APIs
-* Deploy to a server
 * Git
   * Merge conflicts
   * Branches
   * Command line interface
   * .gitignore
+* Create IronUpload
+  * Create directory for project and create `client` directory inside it
+  * Download Spring project with the following options
+    * Web
+    * DevTools
+    * JPA
+    * H2
+    * PostgreSQL
+  * Extract zip file, rename it to `server`, and move it into project directory
+  * Import the `server` folder
+  * Install [Atom](https://atom.io/) and open `client` folder with it
+  * VCS -> Import -> Create Git Repository
+    * Select the project directory
