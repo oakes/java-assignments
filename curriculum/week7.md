@@ -67,6 +67,7 @@
   * Create upload route
     * In the controller, create the `/upload` route with a `MultipartFile` as the file argument
       * Read username from session and throw exception if null
+      * Check content type and throw exception if it doesn't start with "image"
       * Use `File.createTempFile` and `FileOutputStream` to write to disk
       * Create `Photo` object
       * Throw exception if recipient is null
