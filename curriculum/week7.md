@@ -83,13 +83,13 @@
   * Remove unnecessary config file
   * Create better temp file names
   * Show example using a thread
-* Fork ToDoSpring
+* Fork [DebugToDoSpring](../projects/DebugToDoSpring)
   * Fix all the bugs until you can create and display to-dos
   * Git
     * Merge conflicts
     * Ignoring files
     * Branches
-* Create AnonUpload
+* Create [AnonUpload](../projects/AnonUpload)
   * Create project structure
     * Create project from template with the following options
       * Web
