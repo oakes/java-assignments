@@ -64,7 +64,8 @@
     * Download [jQuery](http://jquery.com/download/) and move it into `public`
     * Create `public/index.html` with jquery included
     * Create login, logout, and upload forms
-    * Create a `<script>` tag that uses `$.get("/user", getUser)` and conditionally shows the forms based on the return data
+    * Create `main.js` and include it after jquery
+    * In `main.js`, use `$.get("/user", getUser)` and conditionally show the forms based on the return data
   * Create upload route
     * In the controller, create the `/upload` route with a `MultipartFile` as the file argument
       * Read username from session and throw exception if null
@@ -73,12 +74,12 @@
       * Throw exception if recipient is null
   * Show photos
     * Create `/photos` route
-    * Add `$.get("/photos", getPhotos)` to the `<script>` tag
-    * Add a `setInterval` that gets the photos every 3 seconds
+    * Add `$.get("/photos", getPhotos)` to `main.js`
+    * Add a `setInterval` to `main.js` that gets the photos every 3 seconds
 
 ### Day 3
 
-* Review assignment
+* Review assignment (spring - json)
 * Reading documentation
 * Enable CORS
   * https://spring.io/guides/gs/rest-service-cors/
