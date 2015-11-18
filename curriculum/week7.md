@@ -21,7 +21,7 @@
     * The "Billion Dollar Mistake"
     * Prevent null in the routes: Use primitive types for everything but `String`
     * Prevent null in the database: Non-nullable columns
-* Fork the [DebugCalendarSpring](../projects/DebugCalendarSpring) project
+* Fork [DebugCalendarSpring](../projects/DebugCalendarSpring)
   * Fix all the bugs until you can create and display events
   * Write tests for the routes
     * Create `src/test/resources` with its own `application.properties`
@@ -59,8 +59,6 @@
     * Copy `PasswordHash.java` into project
     * In the controller, add the repositories and create the `/login`, `/logout`, and `/user` routes
   * Create public folder
-    * Create `WebConfig` which extends `WebMvcConfigurerAdapter`
-      * Override `addResourceHandlers` to add `"public/**"`
     * Download [jQuery](http://jquery.com/download/) and move it into `public`
     * Create `public/index.html` with jquery included
     * Create login, logout, and upload forms
@@ -85,16 +83,17 @@
   * Branches
   * Command line interface
   * .gitignore
-* Create IronUpload
-  * Create directory for project and create `client` directory inside it
-  * Download Spring project with the following options
-    * Web
-    * DevTools
-    * JPA
-    * H2
-    * PostgreSQL
-  * Extract zip file, rename it to `server`, and move it into project directory
-  * Import the `server` folder
-  * Install [Atom](https://atom.io/) and open `client` folder with it
-  * VCS -> Import -> Create Git Repository
-    * Select the project directory
+* Create AnonUpload
+  * Create project structure
+    * Create project from template with the following options
+      * Web
+      * DevTools
+      * JPA
+      * H2
+      * PostgreSQL
+  * Create initial server-side code
+    * Modify `application.properties`
+      * `spring.datasource.url=jdbc:h2:./main`
+      * `spring.jpa.generate-ddl=true`
+      * `spring.jpa.hibernate.ddl-auto=none`
+    * Create `AnonUploadController` with `@RestController`
