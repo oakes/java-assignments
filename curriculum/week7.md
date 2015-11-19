@@ -79,10 +79,6 @@
 ### Day 3
 
 * Review assignment (spring - json)
-  * Break JS into separate file
-  * Remove unnecessary config file
-  * Create better temp file names
-  * Show example using a thread
 * Fork [DebugToDoSpring](../projects/DebugToDoSpring)
   * Fix all the bugs until you can create and display to-dos
   * Git
