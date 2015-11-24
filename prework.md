@@ -26,4 +26,4 @@ Sign up for a [Github](https://github.com/) account, as it is the most popular G
 
 ### Deliverables
 
-Please email zach@theironyard.com your 4clojure and Github usernames. Please take the opportunity to also tell me about any difficulties you think you'll encounter during the course.
+Please email zach@theironyard.com your Github username. Please take the opportunity to also tell me about any difficulties you think you'll encounter during the course.
