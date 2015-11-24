@@ -12,11 +12,7 @@ Java will be the main language we work with during the class. Please work throug
 
 ### Clojure
 
-Although we won't be using Clojure until later in the class, you'll be spending more time with it during this prework than Java. It's a pretty simple language, and will help us to start thinking like programmers. Please read through [Do Things: a Clojure Crash Course](http://www.braveclojure.com/do-things/).
-
-Then, please [create an account on 4clojure](https://www.4clojure.com/register), a website with short programming problems to test your skills. Once you're logged in, look at their [problem list](https://www.4clojure.com/problems) and try to solve all the problems marked as "Elementary". Note that some of them may be difficult despite that designation. Try your best!
-
-After that, watch [my talk about Clojure games](https://www.youtube.com/watch?v=0GzzFeS5cMc)!
+We'll be learning some Clojure later in the course to familiarize ourselves with the new industry trend towards functional programming. Please read through [Do Things: a Clojure Crash Course](http://www.braveclojure.com/do-things/). After that, watch [my talk about Clojure games](https://www.youtube.com/watch?v=0GzzFeS5cMc)!
 
 ### HTML & CSS
 
