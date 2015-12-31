@@ -4,3 +4,4 @@
 * [CodingBat](http://codingbat.com/java)
 * [HowToDoItInJava](http://howtodoinjava.com/)
 * [Password Hashing Security](https://crackstation.net/hashing-security.htm)
+* [Running a JAR on Digital Ocean](https://gist.github.com/oakes/47cd1eaaae83eab634e8)
