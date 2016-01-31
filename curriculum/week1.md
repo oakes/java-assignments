@@ -36,17 +36,14 @@
       * Contact class
       * Two-dimensional array representing pixels
     * Show example of lack of data structure usage
-    * Scenarios - A data structure that holds...
+    * More examples
       * A tweet
       * Web browser history
-      * Every keyboard code and the character it represents
-      * The points scored for each player on a team
-      * The departure time for every plane in an airline's fleet
-
-### Day 2
-
-* Review assignment (arrays and classes)
-* Overview of Git
+  * Writing code in a file
+    * Create the Contact class from yesterday in a file
+    * Use the class in JREPL
+    * You need to add "public" to access it from JREPL
+* Intro to Git
   * Why track changes?
     * Collaboration
     * Revert mistakes
@@ -60,25 +57,11 @@
   * Create a repo and clone it via IntelliJ
   * Write code, commit, and push
   * Show diff
-  * Three ways to revert your changes
-    * If not committed yet
-      * Under Local Changes, right-click the file you want to revert
-      * Click "Revert..."
-    * If committed but not pushed
-      * Under Log, right-click the commit you want to go back to
-      * Click "Reset Current Branch to Here..."
-      * Choose "Hard"
-    * If committed and pushed
-      * Under Log, right-click the commit you want to revert
-      * Click "Create Patch..."
-      * Check "Reverse patch" and create it
-      * Under the VCS menu, choose "Apply Patch..."
-      * Delete the patch file
-      * Commit your changes
-* Writing code in a file
-  * Create the Contact class from yesterday in a file
-  * Use the class in JREPL
-  * You need to add "public" to access it from JREPL
+
+### Day 2
+
+* Review assignment (arrays and classes)
+* Methods
   * A class is more than just a data structure; it can contain code
   * All code must exist inside a class
   * Create `setName` and `getName` methods
