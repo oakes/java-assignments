@@ -40,7 +40,7 @@
       * A tweet
       * Web browser history
   * Writing code in a file
-    * Create the Contact class from yesterday in a file
+    * Create the Contact class in a file
     * Use the class in JREPL
     * You need to add "public" to access it from JREPL
 * Intro to Git
