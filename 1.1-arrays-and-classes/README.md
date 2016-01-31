@@ -9,7 +9,7 @@ We spent time going over how to create and instantiate a class. For this assignm
 ## Example
 
 ```java
-// A list of tweets.
+// Stores a single tweet.
 
 public class Tweet {
     public String text;
