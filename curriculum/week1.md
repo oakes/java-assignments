@@ -54,7 +54,7 @@
     * CVS (1990)
     * SVN (2000)
     * Git (2005)
-  * Create a repo and clone it via IntelliJ
+  * Create a repo in the HelloWorld project via IntelliJ
   * Write code, commit, and push
   * Show diff
 
