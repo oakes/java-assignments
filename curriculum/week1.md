@@ -15,7 +15,7 @@
   * Context of Java's birth in the 90's
   * How it works (bytecode, VM, etc)
 * Intro to Java
-  * Create HelloWorld IntelliJ project inside this repository
+  * Create HelloWorld IntelliJ project
   * Start the REPL
     * Tools -> Start JREPL
   * Scalar variables
@@ -31,16 +31,14 @@
     * Built-in classes
       * Essentially the entire language consists of classes
       * `String` is one of the most common
-    * You can make arrays of objects and objects containing arrays
-      * To-do array
-      * Contact class
-      * Two-dimensional array representing pixels
-    * Show example of lack of data structure usage
-    * More examples
-      * A tweet
+    * Array examples
+      * To-do list
       * Web browser history
+    * Class examples
+      * A form (ex. in a doctor's office)
+      * A tweet
   * Writing code in a file
-    * Create the Contact class in a file
+    * Create `Person` class in a file
     * Use the class in JREPL
     * You need to add "public" to access it from JREPL
 * Intro to Git
