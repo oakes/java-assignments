@@ -3,20 +3,18 @@
 ### Day 1
 
 * Review assignment (dynamic data structures - ATM)
-* Running Java code the normal way
-  * Main method
-  * Jar files
-    * File -> Project Structure...
-    * Click "Artifacts" and then the plus button
-    * JAR -> From modules with dependencies...
-    * Choose the main class and click OK
-    * Build -> Build Artifacts...
 * Review
   * Arrays and classes
   * Methods
   * Control flow (if, while, for, throw)
   * ArrayLists and HashMaps
 * Create a [ToDo project](../projects/ToDo)
+* Jar files
+  * File -> Project Structure...
+  * Click "Artifacts" and then the plus button
+  * JAR -> From modules with dependencies...
+  * Choose the main class and click OK
+  * Build -> Build Artifacts...
 
 ### Day 2
 
