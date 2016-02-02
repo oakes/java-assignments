@@ -57,10 +57,12 @@
 * Methods
   * A class is more than just a data structure; it can contain code
   * All code must exist inside a class
-  * Create `setName` and `getName` methods
+  * Modify the `Person` class
+    * Create getters and setters
+    * Create a constructor
+  * Why getters and setters?
     * Can be useful over direct field access if you want to enforce constraints
-    * Interesting comments from [Notch](http://notch.tumblr.com/post/15782716917/coding-skill-and-the-decline-of-stagnation) on getters and setters
-  * Create a constructor that takes a name
+    * Interesting comments from [Notch](http://notch.tumblr.com/post/15782716917/coding-skill-and-the-decline-of-stagnation)
 * Work through examples of using string methods in the REPL
   * Look up the Java doc for `String`
   * Call methods
@@ -75,7 +77,8 @@
   * Mutation
     * Strings are immutable; their methods return a new string if necessary
     * Mutation is a common source of bugs; a variable can contain something you didn't expect
-  * Create `getFirstName` and `getLastName`
+  * Modify the `Person` class
+    * Create `getFirstName` and `getLastName`
 * Static methods and fields
   * They're stored in the class rather than in each object
   * Use static methods if it is "standalone" (no need to access fields)
