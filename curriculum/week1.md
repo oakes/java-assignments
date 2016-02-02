@@ -9,11 +9,6 @@
 
 ### Day 1
 
-* Overview of the class
-* History of Java
-  * Low level vs high level
-  * Context of Java's birth in the 90's
-  * How it works (bytecode, VM, etc)
 * Intro to Java
   * Create HelloWorld IntelliJ project
   * Start the REPL
@@ -35,7 +30,7 @@
       * To-do list
       * Web browser history
     * Class examples
-      * A form (ex. in a doctor's office)
+      * A form (in a doctor's office)
       * A tweet
   * Writing code in a file
     * Create `Person` class in a file
