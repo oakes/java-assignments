@@ -4,7 +4,7 @@
 
 ## Description
 
-For each of the classes you made yesterday, write constructors, setters, and getters.
+For each of the classes you made yesterday, write constructors, setters, and getters. Test your code in JREPL as you go along.
 
 ## Requirements
 
