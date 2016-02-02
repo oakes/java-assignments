@@ -90,6 +90,8 @@
 ### Day 3
 
 * Review assignment (methods)
+* Main method
+  * Running Java code the normal way
 * Create a [text adventure game](../projects/TextAdventure)
   * Demonstrate use of arrays/classes, static methods, and control flow
 * Use `Scanner` to read console input
