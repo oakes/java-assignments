@@ -6,6 +6,8 @@
 * Install [IntelliJ Community Edition](https://www.jetbrains.com/idea/download/)
 * Install the JREPL IntelliJ plugin
   * Preferences -> Browse repositories… -> Search for “JREPL”
+* Install the Xcode command line tools
+  * Type `git` in the terminal. If a dialog appears, click `Install` and go through the steps.
 
 ### Day 1
 
