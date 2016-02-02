@@ -65,8 +65,7 @@
   * Why getters and setters?
     * Can be useful over direct field access if you want to enforce constraints
     * Interesting comments from [Notch](http://notch.tumblr.com/post/15782716917/coding-skill-and-the-decline-of-stagnation)
-* Work through examples of using string methods in the REPL
-  * Look up the Java doc for `String`
+* Work through examples of using `String` methods in the REPL
   * Call methods
     * `charAt`
     * `contains`
@@ -76,6 +75,7 @@
     * `substring`
     * `toUpperCase`
     * `trim`
+  * Look up the Java doc for `String`
 * Modify the `Person` class
   * Add constraint in `setName` so it only sets the name if there is a space in it
   * Refector the conditional check into `isValidName`
