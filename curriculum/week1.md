@@ -76,14 +76,15 @@
     * `substring`
     * `toUpperCase`
     * `trim`
-  * Mutation
-    * Strings are immutable; their methods return a new string if necessary
-    * Mutation is a common source of bugs; a variable can contain something you didn't expect
-  * Modify the `Person` class
-    * Create `getFirstName` and `getLastName`
+* Modify the `Person` class
+  * Add constraint in `setName` so it only sets the name if there is a space in it
+  * Refector the conditional check into `isValidName`
+  * Create `getFirstName` and `getLastName` using conditionals and `String` methods
+  * Conditionals are the fundamental form of control flow
 * Static methods and fields
   * They're stored in the class rather than in each object
   * Use static methods if it is "standalone" (no need to access fields)
+  * Make `isValidName` static
   * Static methods and fields (look at the ones in `Math` and `System`)
 
 ### Day 3
