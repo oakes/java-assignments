@@ -4,7 +4,7 @@
 
 ## Description
 
-Create a program that mimics an ATM. From the REPL, it should be possible to start it up using `ATM.run()`.
+Create a program that mimics an ATM. It should start using a `main` method.
 
 ## Requirements
 
