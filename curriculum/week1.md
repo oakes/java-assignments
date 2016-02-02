@@ -87,11 +87,6 @@
   * They're stored in the class rather than in each object
   * Use static methods if it is "standalone" (no need to access fields)
   * Static methods and fields (look at the ones in `Math` and `System`)
-  * Create a static method `isValidName` in our project and run it in the REPL
-* Object-oriented vs procedural vs functional programming
-  * OOP: Data and methods are combined
-  * PP: Data and methods are separate
-  * FP: Data and methods are separate, and data is immutable
 
 ### Day 3
 
@@ -110,10 +105,6 @@
 ### Day 4
 
 * Review assignment (control flow - ATM)
-* Text adventure
-  * Refactor code into `Player` class
-  * Add command system
-  * Use `ArrayList` to store inventory
 * Data structures
   * Review arrays and classes
   * Static vs dynamic
@@ -123,5 +114,9 @@
     * Class (static associative)
     * ArrayList (dynamic sequential)
     * HashMap (dynamic associative)
+* Text adventure
+  * Refactor code into `Player` class
+  * Add command system
+  * Use `ArrayList` to store inventory
 * How do static and dynamic data structures work?
   * Stack vs Heap
