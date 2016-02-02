@@ -69,27 +69,26 @@
   * Call methods
     * `charAt`
     * `contains`
+    * `equals`
     * `indexOf`
     * `split`
     * `startsWith`
     * `substring`
     * `toUpperCase`
-    * `trim`
   * Look up the Java doc for `String`
 * Modify the `Person` class
+  * Add constraint in `setAge` so it only sets the age if it is a positive number
   * Add constraint in `setName` so it only sets the name if there is a space in it
   * Refector the conditional check into `isValidName`
-  * Create `getFirstName` and `getLastName` using conditionals and `String` methods
-  * Conditionals are the fundamental form of control flow
+
+### Day 3
+
+* Review assignment (methods)
 * Static methods and fields
   * They're stored in the class rather than in each object
   * Use static methods if it is "standalone" (no need to access fields)
   * Make `isValidName` static
   * Static methods and fields (look at the ones in `Math` and `System`)
-
-### Day 3
-
-* Review assignment (methods)
 * Main method
   * Running Java code the normal way
 * Create a [text adventure game](../projects/TextAdventure)
