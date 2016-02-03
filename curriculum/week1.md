@@ -91,16 +91,14 @@
   * Static methods and fields (look at the ones in `Math` and `System`)
 * Main method
   * Running Java code the normal way
-* Create a [text adventure game](../projects/TextAdventure)
-  * Demonstrate use of arrays/classes, static methods, and control flow
-* Use `Scanner` to read console input
-  * Unlike output, input requires creating an object
-  * Book analogy: Reading requires a bookmark, but writing is simply appending at the end
-* Control flow
-  * Conditionals
-  * Loops
-  * Recursion
-  * Exceptions
+* Create [TextAdventure](../projects/TextAdventure)
+  * Use `Scanner` to read console input
+    * Unlike output, input requires creating an object
+    * Book analogy: Reading requires a bookmark, but writing is simply appending at the end
+  * Control flow
+    * Conditionals
+    * Loops
+    * Exceptions
 
 ### Day 4
 
