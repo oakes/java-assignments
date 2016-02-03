@@ -97,7 +97,6 @@
     * Book analogy: Reading requires a bookmark, but writing is simply appending at the end
   * Control flow
     * Conditionals
-    * Loops
     * Exceptions
 
 ### Day 4
@@ -113,7 +112,6 @@
     * ArrayList (dynamic sequential)
     * HashMap (dynamic associative)
 * Text adventure
-  * Refactor code into `Player` class
   * Add command system
   * Use `ArrayList` to store inventory
 * How do static and dynamic data structures work?
