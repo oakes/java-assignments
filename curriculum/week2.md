@@ -64,8 +64,8 @@
   * Add weapon's damage in `battle` method
   * Add save feature
 * File I/O
-  * JSON
-  * `File`, `FileWriter`, `FileReader`
+  * Reading a `File` with `Scanner`
+  * Reading and writing JSON
 * Dependency management
   * Maven
   * Pull in the [JSON library](http://jodd.org/doc/json/)
