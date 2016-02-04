@@ -102,6 +102,8 @@
 ### Day 4
 
 * Review assignment (control flow - ATM)
+* Converting from a `String` using `Integer.valueOf`, `Double.valueOf`, etc
+* Boxed vs unboxed values
 * Data structures
   * Review arrays and classes
   * Static vs dynamic
@@ -111,8 +113,9 @@
     * Class (static associative)
     * ArrayList (dynamic sequential)
     * HashMap (dynamic associative)
+  * How do static and dynamic data structures work?
+    * Stack vs Heap
+  * Using generics for compile-time safety
 * Text adventure
   * Add command system
   * Use `ArrayList` to store inventory
-* How do static and dynamic data structures work?
-  * Stack vs Heap
