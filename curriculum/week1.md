@@ -117,5 +117,5 @@
     * Stack vs Heap
   * Using generics for compile-time safety
 * Text adventure
-  * Add command system
   * Use `ArrayList` to store inventory
+  * Add command system
