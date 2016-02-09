@@ -24,7 +24,7 @@
   * Start with some `Person` objects
   * Add them to an `ArrayList<Person>`
   * Search an `ArrayList<Person>` for someone with a particular name
-* Use `String.format` in the ToDo project
+* Use `System.out.printf` in the ToDo project
 * Create a [Zoo project](../projects/Zoo)
   * Animal
     * Mammal
@@ -39,13 +39,12 @@
   * Add fields and init them in constructors to demonstrate inheriting fields
   * Override `toString` to demonstrate inheriting methods
 * Text adventure
-  * Use `String.format` when possible
+  * Use `System.out.printf` when possible
   * Add health and damage to `Player`
   * Create a `Player` constructor
   * Create an `Enemy` class
   * Create a `Character` class that they extend
   * Create a `battle` method in `Character`
-  * Create a `toString` method in `Character`
 
 ### Day 3
 
