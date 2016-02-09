@@ -56,15 +56,20 @@
 ## Week 4 - Web apps
 
 * [Spark](http://sparkjava.com/)
+* Basic web apps using Mustache to deliver server-generated HTML pages
+* Use in-memory data structures (primarily `ArrayList` and `HashMap`) to store data for now
 
 ## Week 5 - Databases
 
 * [H2](http://www.h2database.com/html/main.html)
+* Send raw SQL queries over JDBC, not a SQL wrapper, so they learn the manual way
+* Using an embedded database makes the setup process much easier than an external one
 
 ## Week 6-7 - Spring
 
 * [Spring Boot](http://projects.spring.io/spring-boot/)
 * [PostgreSQL](http://postgresapp.com/)
+* Use Hibernate instead of raw SQL now
 
 ## Week 8-9 - Clojure
 
