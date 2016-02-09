@@ -8,7 +8,7 @@ Use inheritance in your inventory project. To do so, create at least five differ
 
 ## Requirements
 
-* Use `String.format` anywhere you are manually concatenating strings with `+`.
+* Use `String.format` or `System.out.printf` anywhere you are manually concatenating strings with `+`.
 * Create at least five classes that extend your existing inventory item class, each one representing a product category.
 * Each category class should have a constructor that sets the "category" field to the appropriate name.
 * Create a static `createItem` method in your main class which returns an object using the correct category class (or throws and error for an invalid category name).
@@ -41,7 +41,7 @@ public class Shirt extends InventoryItem {
     public Shirt(String name, int quantity) {
         this.name = name;
         this.quantity = quantity;
-        this.category = "Shift";
+        this.category = "Shirt";
     }
 }
 ```
