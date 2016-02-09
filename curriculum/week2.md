@@ -19,22 +19,12 @@
 ### Day 2
 
 * Review assignment (review - inventory)
-* Contact project
-  * Create a constructor for `Contact`
-  * Create `Contact` objects
-  * Change their fields
-  * Add them to an `ArrayList<Contact>`
-  * Get a contact out of the list
-  * Search an `ArrayList<Contact>` for someone with a particular name
+* HelloWorld project
+  * Create `PersonFinder.java`
+  * Start with some `Person` objects
+  * Add them to an `ArrayList<Person>`
+  * Search an `ArrayList<Person>` for someone with a particular name
 * Use `String.format` in the ToDo project
-* Text adventure
-  * Add health and damage to `Player`
-  * Create a `Player` constructor
-  * Create an `Enemy` class
-  * Create a `Character` class that they extend
-  * Create a `battle` method in `Character`
-  * Create a `toString` method in `Character`
-  * Discuss `@Override`
 * Create a [Zoo project](../projects/Zoo)
   * Animal
     * Mammal
@@ -46,10 +36,15 @@
     * Bird
       * Hawk
       * Parrot
-* Topics of discussion
-  * Review constructors
-  * Extending a class (inheritance)
-  * The `Object` class
+* Text adventure
+  * Use `String.format` when possible
+  * Add health and damage to `Player`
+  * Create a `Player` constructor
+  * Create an `Enemy` class
+  * Create a `Character` class that they extend
+  * Create a `battle` method in `Character`
+  * Create a `toString` method in `Character`
+  * Discuss `@Override`
 
 ### Day 3
 
@@ -57,7 +52,7 @@
 * Exercise
   * Loop over string array
   * Use `ArrayList` instead of a primitive array
-  * Use `Contact` class instead of strings
+  * Use `Person` class instead of strings
   * Generics and casting
 * Text adventure
   * Store weapon in `Character` and create `Weapon` class
