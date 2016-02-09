@@ -36,6 +36,8 @@
     * Bird
       * Hawk
       * Parrot
+  * Add fields and init them in constructors to demonstrate inheriting fields
+  * Override `toString` to demonstrate inheriting methods
 * Text adventure
   * Use `String.format` when possible
   * Add health and damage to `Player`
@@ -44,7 +46,6 @@
   * Create a `Character` class that they extend
   * Create a `battle` method in `Character`
   * Create a `toString` method in `Character`
-  * Discuss `@Override`
 
 ### Day 3
 
