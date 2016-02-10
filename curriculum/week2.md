@@ -49,10 +49,6 @@
 ### Day 3
 
 * Review assignment (object-oriented programming - inventory)
-* Exercise
-  * Loop over string array
-  * Use `ArrayList` instead of a primitive array
-  * Use `Person` class instead of strings
 * File I/O
   * Writing a `File` with `FileWriter`
   * Reading a `File` with `Scanner`
