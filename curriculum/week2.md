@@ -73,7 +73,6 @@
   * Keep asking for input until valid input is received
   * As a group, create a `HashMap<String, ArrayList<String>>`
 * Text adventure
-  * Save file name constant as `static final`
   * Set breakpoint in `main` to see contents of objects
   * Create bug in `findItem` and set breakpoint
   * Hotswap values
