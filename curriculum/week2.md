@@ -53,14 +53,11 @@
   * Loop over string array
   * Use `ArrayList` instead of a primitive array
   * Use `Person` class instead of strings
-  * Generics and casting
-* Text adventure
-  * Store weapon in `Character` and create `Weapon` class
-  * Add weapon's damage in `battle` method
-  * Add save feature
 * File I/O
   * Reading a `File` with `Scanner`
   * Reading and writing JSON
+* Text adventure
+  * Add save feature
 * Dependency management
   * Maven
   * Pull in the [JSON library](http://jodd.org/doc/json/)
@@ -76,8 +73,6 @@
 * Exercise
   * Keep asking for input until valid input is received
   * As a group, create a `HashMap<String, ArrayList<String>>`
-* `switch` statements
-  * Use in the Zoo project
 * Text adventure
   * Save file name constant as `static final`
   * Set breakpoint in `main` to see contents of objects
