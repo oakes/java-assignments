@@ -70,11 +70,10 @@
 
 * Review assignment (file I/O - save JSON)
 * Exercise
-  * Keep asking for input until valid input is received
   * As a group, create a `HashMap<String, ArrayList<String>>`
 * Text adventure
   * Set breakpoint in `main` to see contents of objects
-  * Create bug in `findItem` and set breakpoint
+  * Create bug and set breakpoint
   * Hotswap values
   * Write test for `battle` method
 * Debugging with IntelliJ
@@ -100,7 +99,7 @@
     * Type in "junit:junit:4.12"
   * Create a test
     * Select a class you want to write tests for
-    * View -> Test 
+    * Navigate -> Test 
 * Create a [Forum project](../projects/Forum)
   * Create console-based forum with custom file format
   * Create `Post` and `ArrayList<Post>`
