@@ -3,16 +3,19 @@
 ### Day 1
 
 * Review assignment (file I/O continued - countries)
-* Forum
-  * Refactor code into separate methods
-* Last week's concepts
+* Review refactoring
+* * In the Forum project, refactor code into separate methods
+* Review data structures
+  * Exercise
+    * Create `HashMap` that maps destination addresses to lists of `Email` objects
+  * Exercise
+    * Word frequency in a sentence into a `HashMap<String, Integer>`
+* Review last week's concepts
   * String formatting
-  * Class inheritance via `extends`
+  * Extending a class
   * Reading and writing files
   * Parsing and serializing JSON
   * Debugging and testing
-* Exercise
-  * Create `HashMap` that maps names to lists of `Email` objects
 * Interfaces
   * Sort an `ArrayList<String>` in JREPL using `Collections.sort`
   * In the HelloWorld project, sort `ArrayList<Person>` by implementing `Comparable`
