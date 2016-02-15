@@ -3,13 +3,12 @@
 ### Day 1
 
 * Review assignment (file I/O continued - countries)
-* Review refactoring
-* * In the Forum project, refactor code into separate methods
-* Review data structures
-  * Exercise
-    * Create `HashMap` that maps destination addresses to lists of `Email` objects
-  * Exercise
-    * Word frequency in a sentence into a `HashMap<String, Integer>`
+* Forum
+  * Refactor code into separate methods
+* HelloWorld
+  * Create `HashMap` that maps destination addresses to lists of `Email` objects
+  * Word frequency in a sentence into a `HashMap<String, Integer>`
+  * Parse a CSV
 * Review last week's concepts
   * String formatting
   * Extending a class
