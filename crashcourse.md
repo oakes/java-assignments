@@ -37,7 +37,7 @@
 ### Writing Java in a file
 
 * Go to [IDEOne](http://ideone.com/) or [Compile Java](http://www.compilejava.net/).
-* Make a simple text-based game.
+* Make a mock text-based game.
 
 ```java
 import java.util.*;
@@ -49,14 +49,13 @@ class Ideone
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		Entity player = new Entity();
-		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("What is your name?");
-		String name = sc.nextLine();
+		String name = "Zach";
 		System.out.println("Greetings, " + name);
 		
 		System.out.println("What shall your weapon be?");
-		String weapon = sc.nextLine();
+		String weapon = "Sword";
 		System.out.println(weapon + " is a fine choice!");
 		
 		Entity ogre = new Entity();
