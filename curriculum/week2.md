@@ -105,5 +105,4 @@
   * Create `Post` and `ArrayList<Post>`
   * Create file and read its contents into the arraylist
   * Loop over posts and print the top ones out
-  * Break the loop out into `printPosts`
   * Create an infinite loop that listens for a post # to jump to
