@@ -8,7 +8,6 @@
 * HelloWorld
   * Create `HashMap` that maps destination addresses to lists of `Email` objects
   * Word frequency in a sentence into a `HashMap<String, Integer>`
-  * Parse a CSV
 * Review last week's concepts
   * String formatting
   * Extending a class
