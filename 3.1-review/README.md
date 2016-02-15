@@ -13,6 +13,8 @@ Fork the [People](../projects/People) project. Read the csv file into a `HashMap
 * Loop over the `HashMap` and sort each list by last name.
 * Override `toString` in the `Person` class to print out a nicely-formatted string for that person (something like "Martha Jenkins from France").
 * Print out the entire `HashMap` at the end.
-* Break your code into separate methods and write tests for each one.
-* Modify your `compareTo` method so it sorts by first name if the last names are the same.
+* Break your code into separate methods.
 * Write the resulting `HashMap` to a file called "people.json" formatted as JSON.
+* Optional:
+  * Write tests for your methods.
+  * Modify your `compareTo` method so it sorts by first name if the last names are the same.
