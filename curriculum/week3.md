@@ -46,13 +46,6 @@
   * Allow hitting enter in URL textfield
   * Implement `ChangeListener` to update the URL textfield
   * Wire up the back and forward buttons
-* Build as a JAR file
-  * File -> Project Structure...
-  * Click on "JavaFXApp.jar"
-  * Click on "Create Manifest..."
-  * Click OK
-  * Build -> Build Artifacts...
-  * Click on "Build"
 
 ### Day 3
 
