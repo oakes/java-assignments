@@ -54,9 +54,6 @@
 * Download the latest SDK
   * At the main screen, go to: Configure -> SDK Manager
   * Download the SDK for Android 4.0.3
-* Install Intel HAXM (allows Android emulators to run faster)
-  * Go to `~/Library/Android/sdk/extras/intel/Hardware_Accelerated_Execution_Manager`
-  * Double-click "IntelHAXM.dmg" and run the installer
 * Create a project
   * At the main screen, go to: Start a new Android Studio project
   * Give it a name and type "theironyard.com" as the company domain, and click "Next"
