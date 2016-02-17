@@ -51,9 +51,6 @@
 
 * Review assignment (javafx - contacts)
 * Install [Android Studio](https://developer.android.com/sdk/index.html)
-* Download the latest SDK
-  * At the main screen, go to: Configure -> SDK Manager
-  * Download the SDK for Android 4.0.3
 * Create a project
   * At the main screen, go to: Start a new Android Studio project
   * Give it a name and type "theironyard.com" as the company domain, and click "Next"
