@@ -54,7 +54,7 @@
 * Create a project
   * At the main screen, go to: Start a new Android Studio project
   * Give it a name and type "theironyard.com" as the company domain, and click "Next"
-  * Select Android 4.0.3 and click "Next"
+  * Select an Android version and click "Next"
   * Select "Empty Activity" and click "Next"
   * Click "Finish"
 * Configure an emulator
