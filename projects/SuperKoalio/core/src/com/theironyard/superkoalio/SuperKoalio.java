@@ -4,10 +4,14 @@ import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TmxMapLoader;
+import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 
 public class SuperKoalio extends ApplicationAdapter {
@@ -16,6 +20,9 @@ public class SuperKoalio extends ApplicationAdapter {
     TextureRegion jump;
     Animation walk;
     FitViewport viewport;
+    OrthographicCamera camera;
+    TiledMap map;
+    OrthogonalTiledMapRenderer renderer;
 
     float x = 0;
     float y = 0;
@@ -25,7 +32,7 @@ public class SuperKoalio extends ApplicationAdapter {
     boolean canJump = true;
 
     final float MAX_VELOCITY = 500;
-    final float MAX_JUMP_VELOCITY = 1000;
+    final float MAX_JUMP_VELOCITY = 2000;
     final int WIDTH = 18;
     final int HEIGHT = 26;
     final int DRAW_WIDTH = WIDTH*3;
@@ -36,6 +43,9 @@ public class SuperKoalio extends ApplicationAdapter {
     public void create () {
         batch = new SpriteBatch();
         viewport = new FitViewport(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+        camera = new OrthographicCamera();
+        map = new TmxMapLoader().load("level1.tmx");
+        renderer = new OrthogonalTiledMapRenderer(map, 3);
 
         Texture sheet = new Texture("koalio.png");
         TextureRegion[][] tiles = TextureRegion.split(sheet, WIDTH, HEIGHT);
@@ -53,6 +63,16 @@ public class SuperKoalio extends ApplicationAdapter {
     @Override
     public void resize(int width, int height) {
         viewport.update(width, height);
+        camera.setToOrtho(false, width, height);
+    }
+
+    static float decelerate(float velocity) {
+        float deceleration = 0.8f;
+        velocity = velocity * deceleration;
+        if (Math.abs(velocity) < 0.5f) {
+            velocity = 0;
+        }
+        return velocity;
     }
 
     void move() {
@@ -80,8 +100,8 @@ public class SuperKoalio extends ApplicationAdapter {
             canJump = true;
         }
 
-        xv *= 0.8;
-        yv *= 0.9;
+        xv = decelerate(xv);
+        yv = decelerate(yv);
     }
 
     void draw() {
@@ -100,6 +120,11 @@ public class SuperKoalio extends ApplicationAdapter {
 
         Gdx.gl.glClearColor(0.5f, 0.5f, 1, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+
+        camera.update();
+        renderer.setView(camera);
+        renderer.render();
+
         batch.begin();
         if (xv >= 0) {
             batch.draw(img, x, y, DRAW_WIDTH, DRAW_HEIGHT);

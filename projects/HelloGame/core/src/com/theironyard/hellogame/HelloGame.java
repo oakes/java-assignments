@@ -35,6 +35,15 @@ public class HelloGame extends ApplicationAdapter {
 		batch.end();
 	}
 
+    static float decelerate(float velocity) {
+        float deceleration = 0.9f;
+        velocity = velocity * deceleration;
+        if (Math.abs(velocity) < 0.5f) {
+            velocity = 0;
+        }
+        return velocity;
+    }
+
     void move() {
         if (Gdx.input.isKeyPressed(Input.Keys.UP)) {
             yv = MAX_VELOCITY;
@@ -52,7 +61,7 @@ public class HelloGame extends ApplicationAdapter {
         x += xv * Gdx.graphics.getDeltaTime();
         y += yv * Gdx.graphics.getDeltaTime();
 
-        xv *= 0.9;
-        yv *= 0.9;
+        xv = decelerate(xv);
+        yv = decelerate(yv);
     }
 }
