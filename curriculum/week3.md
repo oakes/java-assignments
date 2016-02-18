@@ -93,17 +93,16 @@
   * Uncheck everything except "Desktop"
   * Open the project in IntelliJ
   * Run -> Edit Configurations...
-  * Change the "Working directory" to point to the `core/assets` subfolder
 * Create [HelloGame](../projects/HelloGame)
   * Create `x` and `y`
   * Continuously increment `x`
   * Create `move` method
     * Create `if` statements that use `Gdx.input.isKeyPressed` to change the position
-    * Set `xVelocity` and `yVelocity` to `MAX_VELOCITY` in the `if` statements
-    * Change `x` and `y` by the `xVelocity` and `yVelocity` multiplied by `Gdx.graphics.getDeltaTime()`
-    * Dampen `xVelocity` and `yVelocity`
+    * Set `xv` and `yv` to `MAX_VELOCITY` in the `if` statements
+    * Change `x` and `y` by the `xv` and `yv` multiplied by `Gdx.graphics.getDeltaTime()`
+    * Dampen `xv` and `yv`
 * Create [SuperKoalio](../projects/SuperKoalio)
-  * Create `x`, `y`, `xVelocity`, and `yVelocity`
+  * Create `x`, `y`, `xv`, and `yv`
   * Load the koala `Texture` and split it by width (18) and height (26)
   * Set `stand` texture to `grid[0][0]`
   * Copy the `move` method from HelloGame
