@@ -46,7 +46,7 @@
   * Change the `/create-account` route to login as well
   * Change the `/accounts` route to use `users.values()`
   * Rename `accounts.html` to `logged-in.html`
-  * Rename `index.html` to `not-logged-in.html` and move it into `resources/templates`
+  * Rename `index.html` to `not-logged-in.html`
   * Remove the `/accounts` route
   * Create a `/` route that sends down either template based on whether the user is logged in or not
 * Cookies
