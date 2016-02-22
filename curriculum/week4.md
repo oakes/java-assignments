@@ -4,9 +4,6 @@
 
 * Review assignment (libgdx - minicraft)
 * Exercise (parse a sentence and calculate word frequency)
-* Review terminology
-  * Libraries vs frameworks
-  * Functions vs methods
 * Review language features
   * Inheritance
     * Extending a class
@@ -14,7 +11,7 @@
   * Anonymous classes
     * We made one in the BrowserAndroid project
     * They let you extend a class and instantiate it all at once
-    * Open the Zoo project and create add alligator to the switch statement as an anonymous class
+    * Open the Zoo project and add alligator to the switch statement as an anonymous class
     * Create an AnonymousClassExample file
       * Extend `Reptile` in a separate class
       * Extend `Reptile` in an anonymous class
