@@ -5,9 +5,6 @@
 * Review assignment (libgdx - minicraft)
 * Exercise (parse a sentence and calculate word frequency)
 * Review language features
-  * Inheritance
-    * Extending a class
-    * Implementing an interface
   * Anonymous classes
     * We made one in the BrowserAndroid project
     * They let you extend a class and instantiate it all at once
@@ -28,13 +25,12 @@
     * `com.sparkjava:spark-core:2.3`
   * Project Structure -> Modules -> New Folder...
     * Call it "resources" and mark it as such
-  * Difference between serving static files and creating routes
   * Project Structure -> Libraries -> Add the Mustache library
     * `com.sparkjava:spark-template-mustache:2.3`
-  * Create `resources/templates/index.html` and a GET route
-  * Create `resources/templates/account.html` and a GET route
-  * Add create account form to `index.html`
-  * Create a POST route that saves the username/password into an object
+  * Create `resources/templates/login.html` and a GET route
+  * Create `resources/templates/home.html` and a GET route
+  * Add create account form to `login.html`
+  * Create a POST route that saves the username into an object
   * Display the name on the account page
 
 ### Day 2
@@ -43,11 +39,8 @@
 * Exercise (parse string, remove duplicate words, build new string)
 * Add multi-user support to HelloSpark
   * Store users in `HashMap<String, User>`
-  * Change the `/create-account` route to login as well
-  * Change the `/accounts` route to use `users.values()`
-  * Rename `accounts.html` to `logged-in.html`
-  * Rename `index.html` to `not-logged-in.html`
-  * Remove the `/accounts` route
+  * Rename `home.html` to `logged-in.html`
+  * Rename `login.html` to `not-logged-in.html`
   * Create a `/` route that sends down either template based on whether the user is logged in or not
 * Cookies
   * The `Session` works by storing a cookie with a session ID
