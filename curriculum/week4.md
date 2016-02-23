@@ -37,23 +37,35 @@
 
 * Review assignment (spark - microblog)
 * Exercise (parse string, remove duplicate words, build new string)
+* Review mustache
+  * `String name;`
+    * Welcome, {{name}}!
+  * `ArrayList<String> names;`
+    * {{#names}} {{.}} {{/names}}
+  * `Message msg;`
+    * {{#message}} {{text}} by {{username}} {{/message}}
+  * `ArrayList<Message> messages;`
+    * {{#messages}} {{text}} by {{username}} {{/messages}}
+  * Conditional (truthy)
+    * {{#name}}Welcome, {{name}}!{{/name}}
+  * Conditional (falsey)
+    * {{^name}}Please login.{{/name}}
 * Add multi-user support to HelloSpark
   * Store users in `HashMap<String, User>`
 * Cookies
   * The `Session` works by storing a cookie with a session ID
   * Cookies are small pieces of data sent from a web server
   * Browsers send them back each time they talk to the server afterwards
-* Create [BeerTracker](../projects/BeerTracker)
+* Create GameTracker
   * Add the Spark and Mustache libraries
   * Create `resources/templates`
   * Create `resources/templates/home.html`
   * Create `/` route
   * Create `resources/templates/login.html`
   * Create `/login` route
-  * Create `Beer` and the `/create-beer` route
-  * Add beers to the `home.html` template
-  * Add an `id` to `Beer`
-  * Create `/delete-beer` route and form
+  * Create `Game` and the `/create-game` route
+  * Add games to the `home.html` template
+  * Create `/delete-game` route and form
 
 ### Day 3
 
@@ -95,19 +107,6 @@
 ### Day 4
 
 * Review assignment (spark - paging)
-* Review mustache
-  * `String name;`
-    * Welcome, {{name}}!
-  * `ArrayList<String> names;`
-    * {{#names}} {{.}} {{/names}}
-  * `Message msg;`
-    * {{#message}} {{text}} by {{username}} {{/message}}
-  * `ArrayList<Message> messages;`
-    * {{#messages}} {{text}} by {{username}} {{/messages}}
-  * Conditional (truthy)
-    * {{#name}}Welcome, {{name}}!{{/name}}
-  * Conditional (falsey)
-    * {{^name}}Please login.{{/name}}
 * Exercise (reverse array, turn array into hashmap)
 * Layers of the Internet
   * Physical layer (hardware)
