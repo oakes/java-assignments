@@ -65,7 +65,6 @@
   * Create `/login` route
   * Create `Game` and the `/create-game` route
   * Add games to the `home.html` template
-  * Create `/delete-game` route and form
 
 ### Day 3
 
