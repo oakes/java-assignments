@@ -39,9 +39,6 @@
 * Exercise (parse string, remove duplicate words, build new string)
 * Add multi-user support to HelloSpark
   * Store users in `HashMap<String, User>`
-  * Rename `home.html` to `logged-in.html`
-  * Rename `login.html` to `not-logged-in.html`
-  * Create a `/` route that sends down either template based on whether the user is logged in or not
 * Cookies
   * The `Session` works by storing a cookie with a session ID
   * Cookies are small pieces of data sent from a web server
@@ -49,12 +46,12 @@
 * Create [BeerTracker](../projects/BeerTracker)
   * Add the Spark and Mustache libraries
   * Create `resources/templates`
-  * Create `resources/templates/logged-in.html`
+  * Create `resources/templates/home.html`
   * Create `/` route
-  * Create `resources/templates/not-logged-in.html`
+  * Create `resources/templates/login.html`
   * Create `/login` route
   * Create `Beer` and the `/create-beer` route
-  * Add beers to the `logged-in.html` template
+  * Add beers to the `home.html` template
   * Add an `id` to `Beer`
   * Create `/delete-beer` route and form
 
