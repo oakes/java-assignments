@@ -56,7 +56,7 @@
   * The `Session` works by storing a cookie with a session ID
   * Cookies are small pieces of data sent from a web server
   * Browsers send them back each time they talk to the server afterwards
-* Create GameTracker
+* Create [GameTracker](../projects/GameTracker)
   * Add the Spark and Mustache libraries
   * Create `resources/templates`
   * Create `resources/templates/home.html`
