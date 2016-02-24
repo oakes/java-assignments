@@ -10,9 +10,7 @@ Fork the [PeopleWeb](../projects/PeopleWeb) project. In this project, we're read
 
 * Create a GET route for `/` and make a template for it that simply displays the name of each person in the `ArrayList<Person>`.
 * Make it only display the first 20 names.
-* Add a link to the bottom called "Next" which loads the same page but with a "offset" parameter that causes it to load the *next* 20 names.
-  * Note: You can pass parameters to GET routes by simply adding a question mark after it, like this: `/?offset=20`.
-* Create another GET route called `/person` which displays all the data about a single person.
-  * It should take a GET parameter which is the id for that person, like this: `/person?id=1`
+* Add a link to the bottom called "Next" which loads the same page but with a "offset" parameter that causes it to load the *next* 20 names, like this: `/?offset=20`.
+* Create another GET route called `/person` which displays all the data about a single person. It should take a GET parameter which is the id for that person, like this: `/person?id=1`
 * Make all the people shown on the main page link to their `/person` page, so I can click on their names for additional information.
 * Optional: Make the main page and the person page display the data in an HTML table.
