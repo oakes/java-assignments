@@ -18,4 +18,4 @@ Design your very own CRUD app using Spark. It must support user authentication (
 * Delete: If logged in, show a delete button next to the entries created by that user. Clicking it should delete the item and refresh the page.
 * Compile the project as a JAR file and upload it to the "Releases" section of your repo.
 * Optional: Add paging to your list of entries.
-* Optional: Add CSS (served statically via `resources/public`).
+* Optional: Add CSS (served statically via a `public` folder).
