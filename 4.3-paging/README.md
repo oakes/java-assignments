@@ -14,3 +14,6 @@ Fork the [PeopleWeb](../projects/PeopleWeb) project. In this project, we're read
 * Create another GET route called `/person` which displays all the data about a single person. It should take a GET parameter which is the id for that person, like this: `/person?id=1`
 * Make all the people shown on the main page link to their `/person` page, so I can click on their names for additional information.
 * Optional: Make the main page and the person page display the data in an HTML table.
+
+![screenshot 1](screenshot1.png)
+![screenshot 2](screenshot2.png)
