@@ -76,32 +76,18 @@
 * Create [ForumWeb](../projects/ForumWeb)
   * Set up the libraries and `resources` directory
   * Create `Message` (id, replyId, username and text) with a constructor
-  * Create `User` (password and messages)
+  * Create `User` (name and password)
   * Create `HashMap<String, User>` and `ArrayList<Message>`
   * Write `addTestUsers` and `addTestMessages` method and make the aforementioned variables static
-  * Create `threads.html`
-    * Use the mustache if-else to determine whether to show the login form
-    * Turn the thread text into links
+  * Create `home.html` which lists messages
   * Create `/` route
     * Get username from session
     * Create `HashMap` and add username/threads to it
-  * Create `replies.html`
+  * Turn the thread text into links that show replies to the given message
     * GET routes can receive parameters too, but they are passed via the URL rather than via an HTML form
-    * Add permalinks so you can drill down reply threads
-  * Create `/replies` route
-    * Get username from session
-    * Create `HashMap` and add username to it
-    * Get id from `request.queryParams`
-    * In try/catch, put the message and replies into the `HashMap`
-  * Create login form in `threads.html`
-  * Create `/login` route
-    * Get username/password via `request.queryParams`
-    * If either is empty, run `Spark.halt(403)`
-    * Get `User` object for the given username
-    * If null, create a new user object
-    * If password isn't equal, run `Spark.halt(403)`
-    * Add username to session
-    * Redirect to `/`
+    * In the `/` route, get the replyId from `request.queryParams`
+  * Use the mustache if-else to determine whether to show the login form
+    * Create `/login` and `/logout` route
 
 ### Day 4
 
