@@ -117,7 +117,7 @@
     * Get username from session
     * If username is null, run `Spark.halt(403)`
     * Get replyId and text from `request.queryParams`
-    * In a try/catch, create `Message` and add it to the `ArrayList<Message>`
+    * Create `Message` and add it to the `ArrayList<Message>`
     * Redirect to `/`
   * You can make it refresh the current page rather than take you home
     * `response.redirect(request.headers("Referer"))`
