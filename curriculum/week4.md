@@ -93,17 +93,6 @@
 
 * Review assignment (spark - paging)
 * Exercise (reverse array, turn array into hashmap)
-* ForumWeb
-  * Create create-message form in `home.html`
-    * Use `<input type="hidden" name="replyId" value="{{replyId}}" />` to pass the reply id to the server
-  * Create `/create-message` route
-    * Get username from session
-    * If username is null, run `Spark.halt(403)`
-    * Get replyId and text from `request.queryParams`
-    * Create `Message` and add it to the `ArrayList<Message>`
-    * Redirect to `/`
-  * You can make it refresh the current page rather than take you home
-    * `response.redirect(request.headers("Referer"))`
 * Layers of the Internet
   * Physical layer (hardware)
     * Wireless
@@ -120,6 +109,17 @@
     * UTF-8
     * HTTP
     * HTTP/2
+* ForumWeb
+  * Create create-message form in `home.html`
+    * Use `<input type="hidden" name="replyId" value="{{replyId}}" />` to pass the reply id to the server
+  * Create `/create-message` route
+    * Get username from session
+    * If username is null, run `Spark.halt(403)`
+    * Get replyId and text from `request.queryParams`
+    * Create `Message` and add it to the `ArrayList<Message>`
+    * Redirect to `/`
+  * You can make it refresh the current page rather than take you home
+    * `response.redirect(request.headers("Referer"))`
 * Build as a JAR file
   * File -> Project Structure...
   * Click "Artifacts" and then the plus button
