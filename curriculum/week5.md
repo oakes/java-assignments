@@ -72,7 +72,7 @@
 
 ### Day 2
 
-* Review assignment (sql basics - beer tracker database)
+* Review assignment (sql basics - game tracker database)
 * Joins
   * Most common type is `INNER JOIN`
   * There is also `LEFT JOIN`, `RIGHT JOIN`, and `FULL JOIN`
