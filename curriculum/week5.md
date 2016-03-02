@@ -104,7 +104,6 @@
 * HTML vs JSON routes
   * Initiate request from HTML (link or form) -> server returns HTML -> browser refreshes page
   * Initiate request from JavaScript -> server returns JSON -> JavaScript parses data and injects it into the page
-* Install [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) chrome extension
 * Create [AjaxChat](../projects/AjaxChat)
   * Create project and add libraries
     * `com.h2database:h2:1.4.190`
@@ -121,6 +120,8 @@
   * Create routes for AJAX queries
     * POST `/add-message`
     * GET `/get-messages`
+  * Install [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) chrome extension
+  * Create `index.html`, `chat.js` and bring in jquery
 * Git
   * Merge conflicts
   * Ignoring files
