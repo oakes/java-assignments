@@ -2,7 +2,7 @@
 
 ### Day 1
 
-* Review assignment (spark - crud)
+* Review assignment
 * Exercise (read people.csv via `Scanner` into arraylist and run case-insensitive search)
 * Saving data to the disk
   * Serialize to JSON vs using a database
@@ -72,7 +72,7 @@
 
 ### Day 2
 
-* Review assignment (sql basics - game tracker database)
+* Review assignment
 * Joins
   * Most common type is `INNER JOIN`
   * There is also `LEFT JOIN`, `RIGHT JOIN`, and `FULL JOIN`
@@ -102,7 +102,7 @@
 
 ### Day 3
 
-* Review assignment (sql joins and tdd - crud)
+* Review assignment
 * Exercise (manually sort an array of strings)
 * Time
   * Old way: `java.util.Date` and `java.util.Calendar`
@@ -144,7 +144,7 @@
 
 ### Day 4
 
-* Review assignment (sql paging - people web)
+* Review assignment
 * Create [CountriesAjax](../projects/CountriesAjax)
   * Create project and add three libraries
     * `com.h2database:h2:1.4.190`
