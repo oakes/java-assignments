@@ -102,6 +102,9 @@
 
 * Exercise (manually sort an array of strings)
 * Install [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) chrome extension
+* Git
+  * Merge conflicts
+  * Ignoring files
 * Time
   * Old way: `java.util.Date` and `java.util.Calendar`
   * New way: `java.time.LocalDateTime`
