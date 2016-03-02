@@ -2,7 +2,6 @@
 
 ### Day 1
 
-* Review assignment (spring - crud)
 * Add paging support to the "Purchases" assignment
   * Change `CrudRepository` to `PagingAndSortingRepository`, and add `Pageable pageable` to the custom method
   * Make the `/` route take an `int page` that defaults to `"0"`
@@ -35,7 +34,6 @@
 
 ### Day 2
 
-* Review assignment (spring - paging and tdd)
 * Topics
   * JSON API + AJAX
   * Uploading files
@@ -78,7 +76,6 @@
 
 ### Day 3
 
-* Review assignment (spring - json)
 * Fork [DebugToDoSpring](../projects/DebugToDoSpring)
   * Fix all the bugs until you can create and display to-dos
   * Git

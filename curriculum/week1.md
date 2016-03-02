@@ -52,7 +52,6 @@
 
 ### Day 2
 
-* Review assignment
 * Methods
   * A class is more than just a data structure; it can contain code
   * All code must exist inside a class
@@ -80,7 +79,6 @@
 
 ### Day 3
 
-* Review assignment
 * Static methods and fields
   * They're stored in the class rather than in each object
   * Use static methods if it is "standalone" (no need to access fields)
@@ -98,7 +96,6 @@
 
 ### Day 4
 
-* Review assignment
 * Converting from a `String` using `Integer.valueOf`, `Double.valueOf`, etc
 * Boxed vs unboxed values
 * Data structures

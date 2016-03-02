@@ -2,7 +2,6 @@
 
 ### Day 1
 
-* Review assignment
 * Review
   * Arrays and classes
   * Methods
@@ -18,7 +17,6 @@
 
 ### Day 2
 
-* Review assignment
 * HelloWorld project
   * Create `PersonFinder.java`
   * Start with some `Person` objects
@@ -48,7 +46,6 @@
 
 ### Day 3
 
-* Review assignment
 * File I/O
   * Writing a `File` with `FileWriter`
   * Reading a `File` with `Scanner`
@@ -68,7 +65,6 @@
 
 ### Day 4
 
-* Review assignment
 * Exercise
   * As a group, create a `HashMap<String, ArrayList<String>>`
 * Text adventure

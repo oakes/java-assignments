@@ -2,7 +2,6 @@
 
 ### Day 1
 
-* Review assignment
 * Forum
   * Refactor code into separate methods
 * HelloWorld
@@ -24,7 +23,6 @@
 
 ### Day 2
 
-* Review assignment
 * Install [Scene Builder](http://www.oracle.com/technetwork/java/javase/downloads/javafxscenebuilder-1x-archive-2199384.html)
 * Create a project
   * New Project -> JavaFX template
@@ -49,7 +47,6 @@
 
 ### Day 3
 
-* Review assignment
 * Install [Android Studio](https://developer.android.com/sdk/index.html)
 * Create a project
   * At the main screen, go to: Start a new Android Studio project
@@ -87,7 +84,6 @@
 
 ### Day 4
 
-* Review assignment
 * Create a project
   * Download and run [the setup app](https://libgdx.badlogicgames.com/download.html)
   * Uncheck everything except "Desktop"
