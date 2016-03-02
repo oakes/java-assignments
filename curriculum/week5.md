@@ -101,7 +101,26 @@
 ### Day 3
 
 * Exercise (manually sort an array of strings)
+* HTML vs JSON routes
+  * Initiate request from HTML (link or form) -> server returns HTML -> browser refreshes page
+  * Initiate request from JavaScript -> server returns JSON -> JavaScript parses data and injects it into the page
 * Install [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) chrome extension
+* Create [AjaxChat](../projects/AjaxChat)
+  * Create project and add libraries
+    * `com.h2database:h2:1.4.190`
+    * `com.sparkjava:spark-core:2.3`
+    * `org.jodd:jodd-json:3.6.6`
+    * `junit:junit:4.12`
+  * Open database
+    * Create `Connection`
+    * Create a table
+    * Define `insertMessage` and `selectMessages` and write a test for them
+  * Serve files in the current directory
+    * `Spark.externalStaticFileLocation("public");`
+    * `Spark.init();`
+  * Create routes for AJAX queries
+    * POST `/add-message`
+    * GET `/get-messages`
 * Git
   * Merge conflicts
   * Ignoring files
@@ -142,25 +161,3 @@
     * Get `offset` from `request.queryParams` in `/`
     * Pass `nextOffset` into the template
     * In `events.html`, create the "Next" link
-* Create [CountriesAjax](../projects/CountriesAjax)
-  * Create project and add three libraries
-    * `com.h2database:h2:1.4.190`
-    * `com.sparkjava:spark-core:2.3`
-    * `org.jodd:jodd-json:3.6.6`
-  * Open database
-    * Create `Connection`
-    * Create a table
-    * Define `insertCountry`, `selectCountry`, and `selectCountries`
-  * Serve files in the current directory
-    * `Spark.externalStaticFileLocation("public");`
-    * `Spark.init();`
-  * Create routes for AJAX queries
-    * POST `/add-country`
-    * GET `/get-country`
-    * GET `/get-countries`
-  * Build JAR file
-    * File -> Project Structure...
-    * Click "Artifacts" and then the plus button
-    * JAR -> From modules with dependencies...
-    * Choose the main class and click OK
-    * Build -> Build Artifacts...
