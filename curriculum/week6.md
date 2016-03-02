@@ -38,7 +38,6 @@
 
 ### Day 2
 
-* Review assignment (spring - microblog)
 * Exercise (reverse number)
 * Java build systems
   * Ant (2000)
@@ -95,8 +94,6 @@
 
 ### Day 3
 
-* Review assignment (spring - microblog continued)
-* Exercise (palindrome detector)
 * BeerTrackerSpring
   * Add a column
     * Add `Integer calories` to `Beer`
@@ -133,7 +130,6 @@
 
 ### Day 4
 
-* Review assignment (spring - orm omg)
 * Major security topics
   * SQL injection prevention
   * Cross-site scripting prevention
