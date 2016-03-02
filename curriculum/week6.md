@@ -74,47 +74,47 @@
   * Solutions
     * SQL wrapper libraries: JOOQ
     * Object-Relational Mapping libraries: Hibernate
-* Create [BeerTrackerSpring](../projects/BeerTrackerSpring)
+* Create GameTrackerSpring
   * Create project from template with the following options
     * Web
     * JPA
     * Mustache
     * PostgreSQL
-  * Create `beertracker` database in psql
+  * Create `gametracker` database in psql
   * In `src/main/resources/application.properties` add:
-    * `spring.datasource.url=jdbc:postgresql://localhost:5432/beertracker`
+    * `spring.datasource.url=jdbc:postgresql://localhost:5432/gametracker`
     * `spring.jpa.generate-ddl=true`
-  * Create `Beer` class that uses `@Entity`, `@Id`, and `@GeneratedValue`
+  * Create `Game` class that uses `@Entity`, `@Id`, and `@GeneratedValue`
   * Create `src/main/resources/templates/home.html`
-  * Create `BeerTrackerController` with a `/` and `/add-beer` route
-  * Create `BeerRepository` interface that extends `CrudRepository`
+  * Create `GameTrackerController` with a `/` and `/add-game` route
+  * Create `GameRepository` interface that extends `CrudRepository`
   * Use `@Autowired` to bring the repo into the controller
-  * In `/add-beer`, create a `Beer` object and save it to the repo
-  * In `/`, add the beers to the `Model`
+  * In `/add-game`, create a `Game` object and save it to the repo
+  * In `/`, add the games to the `Model`
 
 ### Day 3
 
-* BeerTrackerSpring
+* GameTrackerSpring
   * Add a column
-    * Add `Integer calories` to `Beer`
-    * Add support for calories in `home.html`
-    * Add calories in the `/add-beer` route
-  * Add type filter
-    * In `home.html`, add links for each beer type
-    * Add `findByType` to `BeerRepository`
+    * Add `Integer quantity` to `Game`
+    * Add support for quantity in `home.html`
+    * Add quantity in the `/add-game` route
+  * Add genre filter
+    * In `home.html`, add links for each game genre
+    * Add `findByGenre` to `GameRepository`
     * Modify the `/` route to use it if the `type` parameter isn't null
-  * Add type and calories filter
-    * Add `findByTypeAndCalories` to `BeerRepository`
-    * Modify the `/` route to use it if the `type` and `calories` parameters aren't null
-    * Add `findByTypeAndCaloriesIsLessThanEqual` to `BeerRepository`
+  * Add quantity and genre filter
+    * Add `findByGenreAndQuantity` to `GameRepository`
+    * Modify the `/` route to use it if the `genre` and `quantity` parameters aren't null
+    * Add `findByGenreAndQuantityIsLessThanEqual` to `GameRepository`
   * More query methods
-    * `findFirstByType`
-    * `countByType`
-    * `findByTypeOrderByNameAsc`
+    * `findFirstByGenre`
+    * `countByGenre`
+    * `findByGenreOrderByNameAsc`
     * [Tutorial](http://www.petrikainulainen.net/programming/spring-framework/spring-data-jpa-tutorial-creating-database-queries-from-method-names/)
   * Add search form
     * In `home.html`, add search form
-    * Add `searchByName` to `BeerRepository` with `@Query`
+    * Add `searchByName` to `GameRepository` with `@Query`
   * Add a user class and do joins
     * Create `User` with `@Table(name = "users")`
     * Create `src/main/resources/templates/login.html`
@@ -122,9 +122,9 @@
     * Create `/logout` route and add link in `home.html`
     * Create `UserRepository` interface with `findOneByName`
     * Add `UserRepository` to the controller and use it in the `/login` route
-    * Add `User` to `Beer` with `@ManyToOne`
+    * Add `User` to `Game` with `@ManyToOne`
     * Edit `home.html` to show the username next to each item
-    * Add `List<Beer>` to `User` with `@OneToMany(mappedBy = "user")`
+    * Add `List<Game>` to `User` with `@OneToMany(mappedBy = "user")`
     * Add a `showMine` parameter to the `/login` route and a link to `home.html`
     * Insert a default user at startup by creating an init method with `@PostConstruct`
 
@@ -135,7 +135,7 @@
   * Cross-site scripting prevention
   * SSL encryption
   * Secure password storage
-* BeerTrackerSpring
+* GameTrackerSpring
   * Pass `HttpSession` directly into controller methods
   * Pass numbers to controller methods as `int` instead of `Integer`
   * Add a secure login system
