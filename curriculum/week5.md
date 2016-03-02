@@ -101,6 +101,7 @@
 ### Day 3
 
 * Exercise (manually sort an array of strings)
+* Install [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) chrome extension
 * Time
   * Old way: `java.util.Date` and `java.util.Calendar`
   * New way: `java.time.LocalDateTime`
@@ -138,9 +139,6 @@
     * Get `offset` from `request.queryParams` in `/`
     * Pass `nextOffset` into the template
     * In `events.html`, create the "Next" link
-
-### Day 4
-
 * Create [CountriesAjax](../projects/CountriesAjax)
   * Create project and add three libraries
     * `com.h2database:h2:1.4.190`
