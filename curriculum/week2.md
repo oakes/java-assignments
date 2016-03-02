@@ -1,8 +1,8 @@
-## Week 2 - Console programs
+## Week 2 - Console apps
 
 ### Day 1
 
-* Review assignment (dynamic data structures - ATM)
+* Review assignment
 * Review
   * Arrays and classes
   * Methods
@@ -18,7 +18,7 @@
 
 ### Day 2
 
-* Review assignment (review - inventory)
+* Review assignment
 * HelloWorld project
   * Create `PersonFinder.java`
   * Start with some `Person` objects
@@ -48,7 +48,7 @@
 
 ### Day 3
 
-* Review assignment (object-oriented programming - inventory)
+* Review assignment
 * File I/O
   * Writing a `File` with `FileWriter`
   * Reading a `File` with `Scanner`
@@ -68,7 +68,7 @@
 
 ### Day 4
 
-* Review assignment (file I/O - save JSON)
+* Review assignment
 * Exercise
   * As a group, create a `HashMap<String, ArrayList<String>>`
 * Text adventure
