@@ -10,7 +10,7 @@
   * Add `page` to the model and add the `page` param to the filter links
   * Add `category` to the model and add the `category` param to the "Next" link
   * Make custom methods return `Page<Purchase>` and use the return value to selectively show the "Next" link
-* BeerTrackerSpring
+* GameTrackerSpring
   * Use subpackages for better organization
     * Controllers go in `controllers`
     * Entities go in `entities`
@@ -78,9 +78,6 @@
 
 * Fork [DebugToDoSpring](../projects/DebugToDoSpring)
   * Fix all the bugs until you can create and display to-dos
-  * Git
-    * Merge conflicts
-    * Ignoring files
 * Create [AnonUpload](../projects/AnonUpload)
   * Create project structure
     * Create project from template with the following options
