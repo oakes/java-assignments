@@ -33,7 +33,7 @@
   * Static vs non-static, public vs private
   * Control flow (conditionals, loops, recursion, exceptions)
 
-## Week 2 - Console programs
+## Week 2 - Console apps
 
 * The main method
 * Packages
@@ -47,7 +47,7 @@
 * Debugging
 * Testing (JUnit)
 
-## Week 3 - Graphical programs
+## Week 3 - Graphical apps
 
 * Desktop: [JavaFX](http://docs.oracle.com/javase/8/javase-clienttechnologies.htm)
 * Mobile: [Android](http://developer.android.com/index.html)
