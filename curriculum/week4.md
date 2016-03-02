@@ -2,7 +2,7 @@
 
 ### Day 1
 
-* Review assignment (libgdx - minicraft)
+* Review assignment
 * Exercise (parse a sentence and calculate word frequency)
 * Review language features
   * Anonymous classes
@@ -35,7 +35,7 @@
 
 ### Day 2
 
-* Review assignment (spark - microblog)
+* Review assignment
 * Exercise (parse string, remove duplicate words, build new string)
 * Review mustache
   * `String name;`
@@ -68,7 +68,7 @@
 
 ### Day 3
 
-* Review assignment (spark - microblog continued)
+* Review assignment
 * Exercise (with arraylist of names, take the first 5, map uppercase, filter those starting with "A")
 * Streams
   * map
@@ -91,7 +91,7 @@
 
 ### Day 4
 
-* Review assignment (spark - paging)
+* Review assignment
 * Exercise (reverse array, turn array into hashmap)
 * Layers of the Internet
   * Physical layer (hardware)
