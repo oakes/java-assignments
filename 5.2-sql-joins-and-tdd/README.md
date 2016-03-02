@@ -24,4 +24,4 @@ Add a database to the CRUD app you built last weekend.
   * Create an `updateEntry` method, which updates all the values for a given id.
   * Create a `deleteEntry` method, which deletes an entry with the given id.
   * Create a test for `updateEntry` and `deleteEntry`.
-* Remove your global arraylist/hashmap that stores users and entries. Use your five new methods in your project so it now is backed by a database.
+* Remove your global arraylist/hashmap that stores users and entries. Use your new methods in your project so it now is backed by a database.
