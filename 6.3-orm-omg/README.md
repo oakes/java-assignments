@@ -15,6 +15,7 @@ Parse the two csv files and store them in PostgreSQL via Spring Data. Then displ
   * Click "Switch to the full version"
   * Check the following options:
     * Web
+    * DevTools
     * JPA
     * Mustache
     * PostgreSQL
