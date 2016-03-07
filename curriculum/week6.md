@@ -11,6 +11,7 @@
     * Check the following options:
       * Web
       * Mustache
+      * DevTools
     * Download and unzip the project
     * Import into IntelliJ
     * Choose "Import project from external model" and select Gradle
@@ -77,6 +78,7 @@
 * Create GameTrackerSpring
   * Create project from template with the following options
     * Web
+    * DevTools
     * JPA
     * Mustache
     * PostgreSQL
