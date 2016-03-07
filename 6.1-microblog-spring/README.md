@@ -46,7 +46,7 @@ Make a web application that allows you write and delete short messages. When you
 * In `home.html`, add a button or link called "Delete" next to each message
   * It will need to send the id as a parameter
 * In your controller, create a route for `/delete-message`
-  * It should take the message id as an argument (the type should be `Integer`)
+  * It should take the message id as an argument
   * It should remove the message with the given id (do something like `messages.remove(id - 1)`)
   * It should return a redirect to `/`
 
