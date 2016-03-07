@@ -15,9 +15,8 @@ Make a web application that allows you write and delete short messages. When you
   * Click "Switch to the full version"
   * Check the following options:
     * Web
-    * JPA
     * Mustache
-    * PostgreSQL
+    * DevTools
   * Download and unzip the project
   * Import into IntelliJ
   * Choose "Import project from external model" and select Gradle
