@@ -99,7 +99,7 @@
 
 * GameTrackerSpring
   * Add a column
-    * Add `Integer quantity` to `Game`
+    * Add `int quantity` to `Game`
     * Add support for quantity in `home.html`
     * Add quantity in the `/add-game` route
   * Add genre filter
@@ -139,13 +139,8 @@
   * SSL encryption
   * Secure password storage
 * GameTrackerSpring
-  * Pass `HttpSession` directly into controller methods
-  * Pass numbers to controller methods as `int` instead of `Integer`
   * Add a secure login system
     * Add password field to `login.html` and the `User` class
     * Make the `/login` route take a password and make both params required
     * Download [`PasswordHash.java`](https://crackstation.net/source/password-hashing/PasswordHash.java) and use it to store and validate the password
     * Drop and create database
-* Git in depth
-  * Fork and pull requests vs same repo
-  * Merge conflicts
