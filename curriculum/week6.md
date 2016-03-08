@@ -78,7 +78,7 @@
   * Solutions
     * SQL wrapper libraries: JOOQ
     * Object-Relational Mapping libraries: Hibernate
-* Create GameTrackerSpring
+* Create [GameTrackerSpring](../projects/GameTrackerSpring)
   * Create project from template with the following options
     * Web
     * DevTools
