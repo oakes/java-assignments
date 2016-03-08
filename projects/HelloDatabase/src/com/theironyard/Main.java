@@ -8,19 +8,21 @@ public class Main {
         Connection conn = DriverManager.getConnection("jdbc:h2:./main");
 
         Statement stmt = conn.createStatement();
-        stmt.execute("CREATE TABLE IF NOT EXISTS players (name VARCHAR, health DOUBLE, score INT, is_alive BOOLEAN)");
-        stmt.execute("INSERT INTO players VALUES ('Alice', 100, 10, true)");
-        stmt.execute("INSERT INTO players VALUES ('Bob', 95, 10, true)");
-        stmt.execute("UPDATE players SET health = 50 WHERE name = 'Alice'");
-        stmt.execute("DELETE FROM players WHERE name ='Bob'");
 
-        // BAD:
-        //String input = "', 0, 0, true); DROP TABLE players; --";
-        //stmt.execute(String.format("INSERT INTO players VALUES ('%s', 100, 10, true)", input));
-        // GOOD:
-        String input = "Charlie";
-        PreparedStatement stmt2 = conn.prepareStatement("INSERT INTO players VALUES (?, 100, 10, true)");
-        stmt2.setString(1, input);
+        stmt.execute("CREATE TABLE IF NOT EXISTS players (id IDENTITY, name VARCHAR, health DOUBLE, is_alive BOOLEAN, score INT)");
+        stmt.execute("INSERT INTO players VALUES (NULL, 'Bob', 7.5, true, 50)");
+        stmt.execute("UPDATE players SET health = 10.0 WHERE name = 'Bob'");
+        stmt.execute("DELETE FROM players WHERE name = 'Bob'");
+
+        // BAD
+        //String name = "Alice";
+        //String name = "', 10.0, true, 50); DROP TABLE players; --";
+        //stmt.execute(String.format("INSERT INTO players VALUES (NULL, '%s', 10.0, true, 50)", name));
+
+        // GOOD
+        PreparedStatement stmt2 = conn.prepareStatement("INSERT INTO players VALUES (NULL, ?, ?, true, 50)");
+        stmt2.setString(1, "Alice");
+        stmt2.setDouble(2, 10.0);
         stmt2.execute();
 
         ResultSet results = stmt.executeQuery("SELECT * FROM players");
@@ -28,8 +30,7 @@ public class Main {
             String name = results.getString("name");
             double health = results.getDouble("health");
             int score = results.getInt("score");
-            boolean isAlive = results.getBoolean("is_alive");
-            System.out.println(String.format("%s %s %s %s", name, health, score, isAlive));
+            System.out.printf("%s %s %s\n", name, health, score);
         }
 
         stmt.execute("DROP TABLE players");
