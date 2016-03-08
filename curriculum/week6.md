@@ -66,6 +66,7 @@
 * HelloDatabase
   * Download and add library: [PostgreSQL Driver](https://jdbc.postgresql.org/download/postgresql-9.4-1205.jdbc42.jar)
   * Change connection URL to `"jdbc:postgresql://localhost:5432/hellodb"`
+  * Use `SERIAL` instead of `IDENTITY`
   * Use `DECIMAL` instead of `DOUBLE`
 * Writing direct SQL queries
   * Problems
