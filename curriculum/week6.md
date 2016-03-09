@@ -100,18 +100,14 @@
 ### Day 3
 
 * GameTrackerSpring
-  * Add a column
-    * Add `int quantity` to `Game`
-    * Add support for quantity in `home.html`
-    * Add quantity in the `/add-game` route
   * Add genre filter
     * In `home.html`, add links for each game genre
     * Add `findByGenre` to `GameRepository`
     * Modify the `/` route to use it if the `type` parameter isn't null
-  * Add quantity and genre filter
-    * Add `findByGenreAndQuantity` to `GameRepository`
+  * Add genre and release year filter
+    * Add `findByGenreAndReleaseYear` to `GameRepository`
     * Modify the `/` route to use it if the `genre` and `quantity` parameters aren't null
-    * Add `findByGenreAndQuantityIsLessThanEqual` to `GameRepository`
+    * Add `findByGenreAndReleaseYearIsGreaterThanEqual` to `GameRepository`
   * More query methods
     * `findFirstByGenre`
     * `countByGenre`
