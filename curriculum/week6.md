@@ -103,7 +103,7 @@
   * Add genre filter
     * In `home.html`, add links for each game genre
     * Add `findByGenre` to `GameRepository`
-    * Modify the `/` route to use it if the `type` parameter isn't null
+    * Modify the `/` route to use it if the `genre` parameter isn't null
   * Add genre and release year filter
     * Add `findByGenreAndReleaseYear` to `GameRepository`
     * Modify the `/` route to use it if the `genre` and `releaseYear` parameters aren't null
@@ -112,7 +112,7 @@
     * `findFirstByGenre`
     * `countByGenre`
     * `findByGenreOrderByNameAsc`
-    * [Tutorial](http://www.petrikainulainen.net/programming/spring-framework/spring-data-jpa-tutorial-creating-database-queries-from-method-names/)
+    * [Documentation](http://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation)
   * Add search form
     * In `home.html`, add search form
     * Add `searchByName` to `GameRepository` with `@Query`
