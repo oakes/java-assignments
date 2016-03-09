@@ -106,7 +106,7 @@
     * Modify the `/` route to use it if the `type` parameter isn't null
   * Add genre and release year filter
     * Add `findByGenreAndReleaseYear` to `GameRepository`
-    * Modify the `/` route to use it if the `genre` and `quantity` parameters aren't null
+    * Modify the `/` route to use it if the `genre` and `releaseYear` parameters aren't null
     * Add `findByGenreAndReleaseYearIsGreaterThanEqual` to `GameRepository`
   * More query methods
     * `findFirstByGenre`
