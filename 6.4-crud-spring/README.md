@@ -21,3 +21,4 @@ Design your very own CRUD app using Spring. It must support user authentication 
 * Delete: If logged in, show a delete button next to the entries created by that user.
 * Compile the project as a JAR file and upload it to the "Releases" section of your repo.
 * Optional: Add JavaScript and CSS (served statically via `resources/static`).
+* Optional: Add paging.
