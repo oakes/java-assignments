@@ -131,6 +131,7 @@
 
 ### Day 4
 
+* Exercise (palindrome detector)
 * Major security topics
   * SQL injection prevention
   * Cross-site scripting prevention
