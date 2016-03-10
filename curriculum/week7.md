@@ -10,12 +10,6 @@
   * Add `page` to the model and add the `page` param to the filter links
   * Add `category` to the model and add the `category` param to the "Next" link
   * Make custom methods return `Page<Purchase>` and use the return value to selectively show the "Next" link
-* GameTrackerSpring
-  * Use subpackages for better organization
-    * Controllers go in `controllers`
-    * Entities go in `entities`
-    * Repositories go in `services`
-    * Make fields public when necessary
 * Fork [DebugCalendarSpring](../projects/DebugCalendarSpring)
   * Fix all the bugs until you can create and display events
   * Write tests for the routes
