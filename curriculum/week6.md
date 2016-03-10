@@ -143,3 +143,11 @@
     * Make the `/login` route take a password and make both params required
     * Download [`PasswordHash.java`](https://crackstation.net/source/password-hashing/PasswordHash.java) and use it to store and validate the password
     * Drop and create database
+* Time
+  * Old way: `java.util.Date` and `java.util.Calendar`
+  * New way: `java.time.LocalDateTime`
+  * Advantages of `LocalDateTime`
+    * Sane API
+    * Immutable
+    * Supports ISO-8601
+  * Create CalendarSpring
