@@ -138,10 +138,15 @@
   * SSL encryption
   * Secure password storage
 * GameTrackerSpring
+  * Use subpackages for better organization
+    * Controllers go in `controllers`
+    * Entities go in `entities`
+    * Repositories go in `services`
+    * Make fields public when necessary
   * Add a secure login system
     * Add password field to `login.html` and the `User` class
     * Make the `/login` route take a password and make both params required
-    * Download [`PasswordHash.java`](https://crackstation.net/source/password-hashing/PasswordHash.java) and use it to store and validate the password
+    * Download [`PasswordHash.java`](https://github.com/defuse/password-hashing/blob/master/PasswordStorage.java) and use it to store and validate the password
     * Drop and create database
 * Time
   * Old way: `java.util.Date` and `java.util.Calendar`
