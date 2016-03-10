@@ -1,4 +1,4 @@
-package com.theironyard;
+package com.theironyard.entities;
 
 import javax.persistence.*;
 
@@ -28,10 +28,11 @@ public class Game {
     public Game() {
     }
 
-    public Game(String name, String platform, String genre, int releaseYear) {
+    public Game(String name, String platform, String genre, int releaseYear, User user) {
         this.name = name;
         this.platform = platform;
         this.genre = genre;
         this.releaseYear = releaseYear;
+        this.user = user;
     }
 }

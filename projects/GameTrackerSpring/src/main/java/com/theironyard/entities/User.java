@@ -1,4 +1,4 @@
-package com.theironyard;
+package com.theironyard.entities;
 
 import javax.persistence.*;
 
@@ -15,10 +15,18 @@ public class User {
     @Column(nullable = false, unique = true)
     String name;
 
+    @Column(nullable = false)
+    String passwordHash;
+
     public User() {
     }
 
-    public User(String name) {
+    public User(String name, String passwordHash) {
         this.name = name;
+        this.passwordHash = passwordHash;
+    }
+
+    public String getPasswordHash() {
+        return passwordHash;
     }
 }
