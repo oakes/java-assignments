@@ -2,14 +2,6 @@
 
 ### Day 1
 
-* Add paging support to the "Purchases" assignment
-  * Change `CrudRepository` to `PagingAndSortingRepository`, and add `Pageable pageable` to the custom method
-  * Make the `/` route take an `int page` that defaults to `"0"`
-  * Create a `PageRequest` object and pass it into the query methods
-  * Add `nextPage` to the model and add the "Next" link to `home.html`
-  * Add `page` to the model and add the `page` param to the filter links
-  * Add `category` to the model and add the `category` param to the "Next" link
-  * Make custom methods return `Page<Purchase>` and use the return value to selectively show the "Next" link
 * Fork [DebugCalendarSpring](../projects/DebugCalendarSpring)
   * Fix all the bugs until you can create and display events
   * Write tests for the routes
@@ -20,7 +12,22 @@
     * Add `testAddEvent` to the test file (use `MockMvcRequestBuilders.post`)
     * Set mock username with `sessionAttr`
   * Add updating and deleting along with tests
-  * Add paging
+* Time
+  * Old way: `java.util.Date` and `java.util.Calendar`
+  * New way: `java.time.LocalDateTime`
+  * Advantages of `LocalDateTime`
+    * Sane API
+    * Immutable
+    * Supports ISO-8601
+  * Create CalendarSpring
+* Add paging support to the "Purchases" assignment
+  * Change `CrudRepository` to `PagingAndSortingRepository`, and add `Pageable pageable` to the custom method
+  * Make the `/` route take an `int page` that defaults to `"0"`
+  * Create a `PageRequest` object and pass it into the query methods
+  * Add `nextPage` to the model and add the "Next" link to `home.html`
+  * Add `page` to the model and add the `page` param to the filter links
+  * Add `category` to the model and add the `category` param to the "Next" link
+  * Make custom methods return `Page<Purchase>` and use the return value to selectively show the "Next" link
 
 ### Day 2
 
