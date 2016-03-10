@@ -16,10 +16,6 @@
     * Entities go in `entities`
     * Repositories go in `services`
     * Make fields public when necessary
-  * Prevent null values
-    * The "Billion Dollar Mistake"
-    * Prevent null in the routes: Use primitive types for everything but `String`
-    * Prevent null in the database: Non-nullable columns
 * Fork [DebugCalendarSpring](../projects/DebugCalendarSpring)
   * Fix all the bugs until you can create and display events
   * Write tests for the routes
