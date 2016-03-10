@@ -3,5 +3,5 @@
 * [Java Koans](https://gist.github.com/oakes/5ca72ed74dfad3a61e7e)
 * [CodingBat](http://codingbat.com/java)
 * [HowToDoItInJava](http://howtodoinjava.com/)
-* [Password Hashing Security](https://crackstation.net/hashing-security.htm)
+* [PasswordStorage.java](https://github.com/defuse/password-hashing/blob/master/PasswordStorage.java)
 * [Running a JAR on Digital Ocean](https://gist.github.com/oakes/47cd1eaaae83eab634e8)
