@@ -146,5 +146,5 @@
   * Add a secure login system
     * Add password field to `login.html` and the `User` class
     * Make the `/login` route take a password and make both params required
-    * Download [`PasswordHash.java`](https://github.com/defuse/password-hashing/blob/master/PasswordStorage.java) and use it to store and validate the password
+    * Download [`PasswordStorage.java`](https://github.com/defuse/password-hashing/blob/master/PasswordStorage.java) and use it to store and validate the password
     * Drop and create database
