@@ -2,16 +2,6 @@
 
 ### Day 1
 
-* Fork [DebugCalendarSpring](../projects/DebugCalendarSpring)
-  * Fix all the bugs until you can create and display events
-  * Write tests for the routes
-    * Create `src/test/resources` with its own `application.properties`
-    * Create an `@Before` method that clears the test database
-    * Create an autowired `WebApplicationContext` and a `MockMvc`
-    * Add `testLogin` to the test file (use `MockMvcRequestBuilders.post`)
-    * Add `testAddEvent` to the test file (use `MockMvcRequestBuilders.post`)
-    * Set mock username with `sessionAttr`
-  * Add updating and deleting along with tests
 * Time
   * Old way: `java.util.Date` and `java.util.Calendar`
   * New way: `java.time.LocalDateTime`
@@ -31,6 +21,16 @@
 
 ### Day 2
 
+* Fork [DebugCalendarSpring](../projects/DebugCalendarSpring)
+  * Fix all the bugs until you can create and display events
+  * Write tests for the routes
+    * Create `src/test/resources` with its own `application.properties`
+    * Create an `@Before` method that clears the test database
+    * Create an autowired `WebApplicationContext` and a `MockMvc`
+    * Add `testLogin` to the test file (use `MockMvcRequestBuilders.post`)
+    * Add `testAddEvent` to the test file (use `MockMvcRequestBuilders.post`)
+    * Set mock username with `sessionAttr`
+  * Add updating and deleting along with tests
 * Topics
   * JSON API + AJAX
   * Uploading files
