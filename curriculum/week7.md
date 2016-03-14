@@ -4,8 +4,8 @@
 
 * Time
   * Old way: `java.util.Date` and `java.util.Calendar`
-  * New way: `java.time.LocalDateTime`
-  * Advantages of `LocalDateTime`
+  * New way: `java.time.LocalDate` and `java.time.LocalDateTime`
+  * Advantages of `java.time`
     * Sane API
     * Immutable
     * Supports ISO-8601
