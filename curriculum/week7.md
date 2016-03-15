@@ -49,7 +49,7 @@
     * Create `User` with `username` and `password`
     * Create `Photo` with `sender`, `recipient`, and `filename`
     * Create `UserRepository` and `PhotoRepository`
-    * Copy `PasswordHash.java` into project
+    * Copy `PasswordStorage.java` into project
     * In the controller, add the repositories and create the `/login`, `/logout`, and `/user` routes
   * Create public folder
     * Download [jQuery](http://jquery.com/download/) and move it into `public`
