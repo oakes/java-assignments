@@ -71,8 +71,11 @@
 
 ### Day 3
 
-* Fork [DebugToDoSpring](../projects/DebugToDoSpring)
-  * Fix all the bugs until you can create and display to-dos
+* Fork [AngularSpring](../projects/AngularSpring)
+  * JS frameworks behave differently than standard HTML queries
+    * They encode parameters with JSON rather than URL encoding
+    * They sometimes use path variables to request a specific id
+  * Add the necessary routes to make the app work
 * Create [AnonUpload](../projects/AnonUpload)
   * Create project structure
     * Create project from template with the following options
