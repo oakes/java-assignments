@@ -75,6 +75,7 @@
   * JS frameworks behave differently than standard HTML queries
     * They encode parameters with JSON rather than URL encoding
     * They sometimes use path variables to request a specific id
+    * All routes pertaining to a given entity have the same name
   * Add the necessary routes to make the app work
 * Create [AnonUpload](../projects/AnonUpload)
   * Create project structure
