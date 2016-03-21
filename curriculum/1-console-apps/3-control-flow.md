@@ -1,4 +1,4 @@
-## Static methods and fields
+## Static Methods and Fields
 
 If a method or field is `static`, it means that it is stored "globally" in the class rather than in each object. You should only make a method static if it is "standalone". For example, if we want to use the `isValidName` method we wrote yesterday, we have to do two steps in JREPL:
 
