@@ -150,3 +150,58 @@ public class Animal {
     }
 }
 ```
+
+## Text Adventure
+
+Start by using string formatting everywhere it makes sense to in the project. Now let's work on a battle system. We'll start by adding health and damage, as well as a constructor, to our `Player`:
+
+```java
+public class Player {
+    String name;
+    String weapon;
+    String location;
+    int health;
+    int damage;
+    
+    public Player() {
+        this.health = 20;
+        this.damage = 20;
+    }
+    
+    ...
+}
+```
+
+Now let's create a class to represent our enemy:
+
+```java
+public class Enemy {
+    String name;
+    int health;
+    int damage;
+}
+```
+
+Notice how the `Player` and `Enemy` classes have some of the same fields. We can reduce this duplication by creating a class that they both extend:
+
+```java
+public class Character {
+    String name;
+    int health;
+    int damage;
+}
+```
+
+```java
+public class Enemy extends Character {
+}
+```
+
+```java
+public class Player extends Character {
+    String weapon;
+    String location;
+    
+    ...
+}
+```
