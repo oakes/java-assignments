@@ -80,3 +80,56 @@ public class Hawk extends Bird {
     }
 }
 ```
+
+Next, let's add a method to the top-most `Animal` class:
+
+```java
+public class Animal {
+    public String name;
+    
+    public void makeSound() {
+        System.out.println("Animal sound!");
+    }
+}
+```
+
+There isn't really any specific sound we can make it "say", so this is an opportunity to "override" the method in the `Dog`, `Snake`, and `Hawk` class to make it say a specific sound. We'll also use the `@Override` annotation, which, while not strictly necessary, will let us catch typos:
+
+```java
+public class Dog extends Mammal {
+    public Dog() {
+        this.name = "Dog";
+    }
+    
+    @Override
+    public void makeSound() {
+        System.out.println("Bark!");
+    }
+}
+```
+
+```java
+public class Snake extends Reptile {
+    public Snake() {
+        this.name = "Snake";
+    }
+    
+    @Override
+    public void makeSound() {
+        System.out.println("Sssssssss!");
+    }
+}
+```
+
+```java
+public class Hawk extends Bird {
+    public Hawk() {
+        this.name = "Hawk";
+    }
+    
+    @Override
+    public void makeSound() {
+        System.out.println("Cawwww!");
+    }
+}
+```
