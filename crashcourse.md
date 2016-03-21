@@ -48,29 +48,37 @@ class Ideone
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		Entity player = new Entity();
-		
 		System.out.println("What is your name?");
 		String name = "Zach";
+		
 		System.out.println("Greetings, " + name);
 		
 		System.out.println("What shall your weapon be?");
-		String weapon = "Sword";
+		String weapon = "sword";
+		
 		System.out.println(weapon + " is a fine choice!");
 		
+		Entity player = new Entity();
 		Entity ogre = new Entity();
+		ogre.health = 50.0;
 		
-		while (ogre.health > 0) {
-			ogre.health -= 10;
+		while (player.health > 0 && ogre.health > 0) {
+			player.health = player.health - ogre.damage;
+			ogre.health = ogre.health - player.damage;
 		}
 		
-		System.out.println("The ogre has been killed!");
+		if (player.health > 0) {
+			System.out.println("You have won!");
+		}
+		else if (ogre.health > 0) {
+			System.out.println("You have died...");
+		}
 	}
 }
 
 class Entity
 {
-	double health = 100;
-	double damage = 10;
+	double health = 100.0;
+	double damage = 10.0;
 }
 ```
