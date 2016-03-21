@@ -133,3 +133,20 @@ public class Hawk extends Bird {
     }
 }
 ```
+
+We can also override built-in methods. For example, in the `Animal` class, we can override `toString` so it will print out the name of the animal when passed to `System.out.println`. We only need to do it there, because all the classes that inherit it will receive the funtionality automatically:
+
+```java
+public class Animal {
+    public String name;
+    
+    public void makeSound() {
+        System.out.println("Animal sound!");
+    }
+    
+    @Override
+    public String toString() {
+        return this.name;
+    }
+}
+```
