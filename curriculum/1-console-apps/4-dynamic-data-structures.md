@@ -44,3 +44,83 @@ This is because the `ArrayList` doesn't remember what the types are of its conte
 * `HashMap<String, String> = new HashMap<>();`
 
 Dynamic data structures are convenient, but don't use them if you don't need to. If you know your "person" variable needs to contain a name and address, why not just make a class? Static data structures are faster, use less memory, and are often safer at compile-time.
+
+## Text Adventure
+
+Let's add a system to find items in our game. We can use a dynamic data structure, so it will grow as we find more items. First, let's add a field to our `Player` class:
+
+```java
+public class Player {
+    String name;
+    String weapon;
+    String location;
+    ArrayList<String> items = new ArrayList<>();
+    
+    ...
+}
+```
+
+Add a `findItem` method which takes an item name and asks if you want to pick it up:
+
+```java
+public class Player {
+    ...
+    
+    public void findItem(String item) {
+        System.out.println("You found a " + item + "! Pick it up? [y/n]");
+        String answer = Game.nextLine();
+        if (answer.equalsIgnoreCase("y")) {
+            items.add(item);
+            System.out.println("You picked up an item!");
+        }
+    }
+}
+```
+
+We can now call this method in the main class:
+
+```java
+public class Game {
+    ...
+    
+    public static void main(String[] args) throws Exception {
+        ...
+        player.findItem("shield");
+        player.findItem("boots");
+        player.findItem("belt");
+    }
+}
+```
+
+Just for fun, it would be cool to add a command system, much like IRC or Slack where you can type `/something` and it will be interpreted in a special way. For example, we could type `/exit` to exit the game, and `/inv` to get a list of our inventory. To do this, we need to "wrap" the `Scanner` class' `nextLine` method in our own, so we can short-circuit it when necessary.
+
+First, we'll write our own `nextLine` method:
+
+```java
+public class Game {
+    ...
+    
+    public static String nextLine() {
+        String line = scanner.nextLine();
+        while (line.startsWith("/")) {
+            switch (line) {
+                case "/inv":
+                    for (String item : player.items) {
+                        System.out.println(item);
+                    }
+                    break;
+                case "/exit":
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Command not found!");
+                    break;
+            }
+            line = scanner.nextLine();
+        }
+        return line;
+    }
+}
+```
+
+As you can see, it calls the scanner's `nextLine` method, but instead of returning it immediately, it loops to check if the line starts with a `/`. Now change every instance of `scanner.nextLine()` in the `Player` class to `Game.nextLine()` and the command system should now be available.
