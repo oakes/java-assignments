@@ -4,8 +4,6 @@ A class is more than just an associative data structure; it can contain code. In
 
 It may seem silly to create getters and setters. Why not access and set the fields directly like we did yesterday? They can be useful when you want to enforce constraints. For example, don't set the name unless it has a space.
 
-That being said, don't worry too much about "good practice" early on. Even accomplished devs like Notch have [admitted](http://notch.tumblr.com/post/15782716917/coding-skill-and-the-decline-of-stagnation) they sometimes take shortcuts.
-
 Now let's look at some built-in methods in the `String` class. Open JREPL:
 
 * `String s = “Hello, world!”;`
