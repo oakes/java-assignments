@@ -205,3 +205,49 @@ public class Player extends Character {
     ...
 }
 ```
+
+Since both the player and enemy extend the `Character` class, we can create a `battle` method there so both can use it:
+
+```java
+public class Character {
+    ...
+    
+    public void battle(Character enemy) {
+        System.out.printf("%s appears!\n", enemy.name);
+
+        while (health > 0 && enemy.health > 0) {
+            health -= enemy.damage;
+            enemy.health -= damage;
+            System.out.printf("%s's health: %d\n", name, health);
+            System.out.printf("%s's health: %d\n", enemy.name, enemy.health);
+        }
+
+        String message = "%s has died.\n";
+
+        if (health <= 0) {
+            System.out.printf(message, name);
+        }
+
+        if (enemy.health <= 0) {
+            System.out.printf(message, enemy.name);
+        }
+    }
+}
+```
+
+Now we can call it at the end of the main method:
+
+```java
+public class Game {
+    ...
+    
+    public static void main(String[] args) throws Exception {
+        ...
+        
+        Enemy ogre = new Enemy("Ogre", 10, 10);
+        player.battle(ogre);
+    }
+    
+    ...
+}
+```
