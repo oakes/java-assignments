@@ -44,3 +44,68 @@ public class CharacterTest {
     }
 }
 ```
+
+## Forum
+
+Now we will create a console-based forum project called `Forum`. It will simply read posts from a flat file and display them in a way that lets you navigate threads. We'll start, as always, with our data:
+
+```java
+public class Post {
+    int replyId;
+    String author;
+    String text;
+
+    public Post(int replyId, String author, String text) {
+        this.replyId = replyId;
+        this.author = author;
+        this.text = text;
+    }
+}
+```
+
+Then, we will create our own custom file format to store the posts. Create a file called `posts.txt` in the root of your project that contains this:
+
+```
+-1|alice|Hey guys!
+-1|bob|This is a new discussion
+0|charlie|Hi alice
+2|alice|Hi charlie
+1|charlie|Hey bob
+```
+
+Finally, write the code to parse the file and allow the use to drill down a given thread:
+
+```java
+public class Forum {
+    public static void main(String[] args) throws FileNotFoundException {
+        ArrayList<Post> posts = new ArrayList<>();
+
+        // read all the posts into memory
+        File f = new File("posts.txt");
+        Scanner fileScanner = new Scanner(f);
+        while (fileScanner.hasNext()) {
+            String line = fileScanner.nextLine();
+            String[] columns = line.split("\\|");
+            Post post = new Post(Integer.valueOf(columns[0]), columns[1], columns[2]);
+            posts.add(post);
+        }
+
+        Scanner consoleScanner = new Scanner(System.in);
+
+        int replyId = -1;
+        while (true) {
+            // loop over posts and print the ones with the right reply id
+            int id = 0;
+            for (Post post : posts) {
+                if (post.replyId == replyId) {
+                    System.out.printf("(%d) %s by %s\n", id, post.text, post.author);
+                }
+                id++;
+            }
+            // ask the user to type a new reply id
+            System.out.println("Type the id you want to see replies to:");
+            replyId = Integer.valueOf(consoleScanner.nextLine());
+        }
+    }
+}
+```
