@@ -1,4 +1,4 @@
-Android is a complicated ecosystem with its own idiosyncrasies. We must start by downloading a variant of IntelliJ maintained by Google called [Android Studio](https://developer.android.com/sdk/index.html).
+Download and install [Android Studio](https://developer.android.com/sdk/index.html).
 
 ## ToDoAndroid
 
