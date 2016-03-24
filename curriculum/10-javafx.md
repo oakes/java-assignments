@@ -1,4 +1,4 @@
-## JavaFX
+## ToDoDesktop
 
 JavaFX is a UI library built into the Java runtime. It provides a strict separation between logic and presentation. The former is written in Java, while the latter is written in XML. While you could write the interface's XML manually, it is more common to use a visual tool called [Scene Builder](http://gluonhq.com/open-source/scene-builder/), so let's download it and get started.
 
@@ -120,3 +120,9 @@ public class Controller implements Initializable {
     ...
 }
 ```
+
+## BrowserDesktop
+
+In IntelliJ, create a new project called `BrowserDesktop` and use the JavaFX template. Run it right away and you should see a blank window appear. Now open `Main.java` and modify the code so the title is "Browser Desktop" and the scene is set to 800 by 600. Launch Scene Builder and open the `sample.fxml` file located in the IntelliJ project. Start by deleting the GridPane from the hierarchy. Begin by dragging VBox into the hierarchy. Inside of it, place an HBox and a WebView. Select the WebView, and under Layout (on the right) set its VGrow attribute to "ALWAYS".
+
+![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/images/javafx-3.png)
