@@ -11,3 +11,71 @@ Launch the emulator and let it run in the background. Android Studio's console s
 Open activity_main.xml and delete the default TextView. Add a vertical LinearLayout to the root view. Then add a ListView and a horizontal LinearLayout to that. To the last widget, add a Plain Text and a Button. Adjust the ListView to make room for the bottom bar. Select the Button and set its Text property to "Add". Finally, select the Plain Text and under its properties set `layout:width` to `0` and `layout:weight` to `1`.
 
 ![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/images/android-1.png)
+
+Now that we have the layout, let's open `MainActivity.java` and bring the widgets in:
+
+```java
+public class MainActivity extends AppCompatActivity {
+    ListView list;
+    EditText text;
+    Button addButton;
+    
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        list = (ListView) findViewById(R.id.listView);
+        text = (EditText) findViewById(R.id.editText);
+        addButton = (Button) findViewById(R.id.button);
+    }
+}
+```
+
+Then create an `ArrayAdapter<String>` to hold the todo items:
+
+```java
+public class MainActivity extends AppCompatActivity {
+    ArrayAdapter<String> items;
+    
+    ...
+    
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        ...
+        
+        items = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
+        list.setAdapter(items);
+    }
+}
+```
+
+Finally, implement and add the appropriate listeners for the button click and the list item's long click:
+
+```java
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemLongClickListener {
+    ...
+    
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        ...
+        
+        addButton.setOnClickListener(this);
+        list.setOnItemLongClickListener(this);
+    }
+    
+    @Override
+    public void onClick(View v) {
+        String item = text.getText().toString();
+        items.add(item);
+        text.setText("");
+    }
+
+    @Override
+    public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+        String item = items.getItem(position);
+        items.remove(item);
+        return true;
+    }
+}
+```
