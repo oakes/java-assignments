@@ -59,12 +59,19 @@ public class ToDoItem {
         this.text = text;
         this.isDone = false;
     }
+    
+    @Override
+    public String toString() {
+        return text + (isDone ? " (done)" : "");
+    }
 }
 ```
 
+Notice that we are overriding `toString` here. This is because our ListView is going to call it to display appropriate text. This particular method will show the text and will also show "(done)" if it is marked as done.
+
 From here, we can create an `ObservableList<ToDoItem>` in our controller to hold them. It behaves similarly to an `ArrayList` except that it will automatically update the ListView when it is updated:
 
-```
+```java
 public class Controller {
     ObservableList<ToDoItem> items = FXCollections.observableArrayList();
     
@@ -74,7 +81,7 @@ public class Controller {
 
 When the app first starts, we need to connect it to the ListView. To get a method that runs right when the app starts, we must make the controller implement `Initializable`:
 
-```
+```java
 public class Controller implements Initializable {
     ...
 
@@ -82,5 +89,34 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         list.setItems(items);
     }
+}
+```
+
+Now we can fill in the methods:
+
+```java
+public class Controller implements Initializable {
+    ...
+
+    public void addItem() {
+        items.add(new ToDoItem(text.getText()));
+        text.setText("");
+    }
+
+    public void removeItem() {
+        ToDoItem item = (ToDoItem) list.getSelectionModel().getSelectedItem();
+        items.remove(item);
+    }
+
+    public void toggleItem() {
+        ToDoItem item = (ToDoItem) list.getSelectionModel().getSelectedItem();
+        if (item != null) {
+            item.isDone = !item.isDone;
+            list.setItems(null);
+            list.setItems(items);
+        }
+    }
+    
+    ...
 }
 ```
