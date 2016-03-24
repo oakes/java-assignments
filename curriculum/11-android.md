@@ -79,3 +79,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 }
 ```
+
+## BrowserAndroid
+
+At the main screen, go to: Start a new Android Studio project. Call it `BrowserAndroid` with `theironyard.com` as the domain. Select "Phone and Tablet" as the form factor. Then select Empty Activity. Click Finish on the last screen of the wizard. Launch the previously-created emulator if it isn't already running.
+
+Open activity_main.xml and delete the default TextView. Add a vertical LinearLayout to the root view. Then add a a horizontal LinearLayout and a WebView to that. Then add two Small Button widgets, a Plain Text, and another Small Button to the horizontal LinearLayout. Select the horizontal LinearLayout and set its `layout:height` to `wrap_content`. Select the WebView and set its `layout:width` and `layout:height` to `fill_parent`. Select each button and set their Text property to `<`, `>`, and `Go` respectively. Finally, select the Plain Text and under its properties set `layout:width` to `0` and `layout:weight` to `1`.
+
+![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/images/android-2.png)
