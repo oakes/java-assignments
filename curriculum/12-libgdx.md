@@ -113,7 +113,7 @@ In the setup app, call the project `SuperKoalio` with the package `com.theironya
 
 Download the [assets zip file](https://github.com/oakes/java-assignments/raw/master/curriculum/assets/super-koalio-assets.zip) and extract it into your `core/assets` folder.
 
-You should now be able to run the app with the Desktop configuration selected. Let's open MyGdxGame.java and make it display the koala bear:
+You should now be able to run the app with the Desktop configuration selected. Let's open MyGdxGame.java and make it display the koala bear with a blue background:
 
 ```java
 public class MyGdxGame extends ApplicationAdapter {
@@ -134,7 +134,7 @@ public class MyGdxGame extends ApplicationAdapter {
 
     @Override
     public void render () {
-        Gdx.gl.glClearColor(1, 0, 0, 1);
+        Gdx.gl.glClearColor(0.5f, 0.5f, 1, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         batch.begin();
         batch.draw(stand, 0, 0);
@@ -155,7 +155,7 @@ public class MyGdxGame extends ApplicationAdapter {
 
     @Override
     public void render () {
-        Gdx.gl.glClearColor(1, 0, 0, 1);
+        Gdx.gl.glClearColor(0.5f, 0.5f, 1, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         batch.begin();
         batch.draw(stand, 0, 0, DRAW_WIDTH, DRAW_HEIGHT);
@@ -180,7 +180,7 @@ public class MyGdxGame extends ApplicationAdapter {
     public void render () {
         move();
 
-        Gdx.gl.glClearColor(1, 0, 0, 1);
+        Gdx.gl.glClearColor(0.5f, 0.5f, 1, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         batch.begin();
         batch.draw(stand, x, y, DRAW_WIDTH, DRAW_HEIGHT);
@@ -281,7 +281,7 @@ public class MyGdxGame extends ApplicationAdapter {
             img = stand;
         }
 
-        Gdx.gl.glClearColor(1, 0, 0, 1);
+        Gdx.gl.glClearColor(0.5f, 0.5f, 1, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         batch.begin();
         batch.draw(img, x, y, DRAW_WIDTH, DRAW_HEIGHT);
@@ -305,7 +305,7 @@ public class MyGdxGame extends ApplicationAdapter {
     public void render () {
         ...
 
-        Gdx.gl.glClearColor(1, 0, 0, 1);
+        Gdx.gl.glClearColor(0.5f, 0.5f, 1, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         batch.begin();
         if (faceRight) {
