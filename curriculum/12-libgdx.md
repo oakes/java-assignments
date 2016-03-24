@@ -107,6 +107,8 @@ public class MyGdxGame extends ApplicationAdapter {
 }
 ```
 
+![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/libgdx-2.png)
+
 ## SuperKoalio
 
 In the setup app, call the project `SuperKoalio` with the package `com.theironyard`. Uncheck everything but "Desktop". After generating the project, import it into IntelliJ. In the import wizard, select "Import project from external model" and make sure Gradle is selected. When the project loads, go to `Run -> Edit Configurations...`. Click the `+` button and add an "Application". The name will be "Desktop", the main class will be `DesktopLauncher`, the working directory will be the `core/assets` folder, and the classpath module will be "desktop_main".
@@ -374,3 +376,5 @@ public class MyGdxGame extends ApplicationAdapter {
     ...
 }
 ```
+
+![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/libgdx-3.png)
