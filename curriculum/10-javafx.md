@@ -12,9 +12,11 @@ Now add a TextField and three Button controls in the HBox. Set the TextField's H
 
 ![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/images/javafx-2.png)
 
-We'll begin our code by bringing the ListView and TextField into it. To do so, we must first give them both an ID in Scene Builder. To do so, click on them and open the Code section, where you will write `list` and `text` for them respectively. Lastly, in the bottom left corner you need to open the Controller section and set the controller class to `sample.Controller` (or whatever your controller's full class name is).
+First, make sure the UI knows where the controller is by going to the bottom left corner and opening the Controller section. Set the controller class to `sample.Controller` (or whatever your controller's full class name is).
 
-Now, let's bring them into the controller using the `@FXML` annotation:
+Then we should give our ListView and TextField IDs in Scene Builder. To do so, click on them and open the Code section, where you will write `list` and `text` for them respectively.
+
+Now, let's bring them into the controller using the `@FXML` annotation, which works by locating controls with IDs of the same name:
 
 ```java
 public class Controller {
@@ -127,6 +129,22 @@ In IntelliJ, create a new project called `BrowserDesktop` and use the JavaFX tem
 
 ![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/images/javafx-3.png)
 
-Now add two Button controls (for back/forward), a TextField (the address bar), and one more Button (to initiate address loading) in the HBox. Then click the TextField and set its HGrow attribute to "ALWAYS", and click each button and change their Text property to "<", ">", and "Go" respectively. Also, set the Min Width of each button to "USE_PREF_SIZE" to ensure the text doesn't get clipped.
+Now add two Button controls (for back/forward), a TextField (the address bar), and one more Button (to initiate address loading) in the HBox. Then click the TextField and set its HGrow attribute to "ALWAYS", and click each button and change their Text property to `<`, `>`, and `Go` respectively. Also, set the Min Width of each button to "USE_PREF_SIZE" to ensure the text doesn't get clipped.
 
 ![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/images/javafx-4.png)
+
+First, make sure the UI knows where the controller is by going to the bottom left corner and opening the Controller section. Set the controller class to `sample.Controller` (or whatever your controller's full class name is).
+
+Then we should give our TextField and WebView IDs in Scene Builder. To do so, click on them and open the Code section, where you will write `addressBar` and `webView` for them respectively.
+
+Now, let's bring them into the controller using the `@FXML` annotation, which works by locating controls with IDs of the same name:
+
+```java
+public class Controller {
+    @FXML
+    TextField addressBar;
+
+    @FXML
+    WebView webView;
+}
+```
