@@ -143,7 +143,7 @@ public class MyGdxGame extends ApplicationAdapter {
 }
 ```
 
-We should adjust it to draw the upscale the image:
+We should adjust it to upscale the image:
 
 ```java
 public class MyGdxGame extends ApplicationAdapter {
@@ -260,5 +260,117 @@ public class MyGdxGame extends ApplicationAdapter {
         yv = decelerate(yv);
         xv = decelerate(xv);
     }
+}
+```
+
+Show the jump texture when jumping:
+
+```java
+public class MyGdxGame extends ApplicationAdapter {
+    ...
+    
+    @Override
+    public void render () {
+        move();
+
+        TextureRegion img;
+        if (y > 0) {
+            img = jump;
+        }
+        else {
+            img = stand;
+        }
+
+        Gdx.gl.glClearColor(1, 0, 0, 1);
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+        batch.begin();
+        batch.draw(img, x, y, DRAW_WIDTH, DRAW_HEIGHT);
+        batch.end();
+    }
+    
+    ...
+}
+```
+
+Flip the texture when the direction changes:
+
+```java
+public class MyGdxGame extends ApplicationAdapter {
+    ...
+    boolean canJump, faceRight = true;
+
+    ...
+
+    @Override
+    public void render () {
+        ...
+
+        Gdx.gl.glClearColor(1, 0, 0, 1);
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+        batch.begin();
+        if (faceRight) {
+            batch.draw(img, x, y, DRAW_WIDTH, DRAW_HEIGHT);
+        }
+        else {
+            batch.draw(img, x + DRAW_WIDTH, y, DRAW_WIDTH * -1, DRAW_HEIGHT);
+        }
+        batch.end();
+    }
+
+    ...
+
+    void move() {
+        ...
+        if (Gdx.input.isKeyPressed(Input.Keys.RIGHT)) {
+            xv = MAX_VELOCITY;
+            faceRight = true;
+        }
+        if (Gdx.input.isKeyPressed(Input.Keys.LEFT)) {
+            xv = MAX_VELOCITY * -1;
+            faceRight = false;
+        }
+
+        ...
+    }
+}
+```
+
+Finally, add the walk animation:
+
+```java
+public class MyGdxGame extends ApplicationAdapter {
+    ...
+    Animation walk;
+    float time;
+    
+    ...
+
+    @Override
+    public void create () {
+        ...
+        walk = new Animation(0.2f, tiles[0][2], tiles[0][3], tiles[0][4]);
+    }
+
+    @Override
+    public void render () {
+        time += Gdx.graphics.getDeltaTime();
+
+        move();
+
+        TextureRegion img;
+        if (y > 0) {
+            img = jump;
+        }
+        else if (xv != 0) {
+            img = walk.getKeyFrame(time, true);
+        }
+        else {
+            img = stand;
+        }
+
+        ...
+    }
+
+    ...
 }
 ```
