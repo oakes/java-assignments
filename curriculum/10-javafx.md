@@ -28,7 +28,7 @@ public class Controller {
 }
 ```
 
-We should first write the code to make our buttons run methods in this controller. To do so, open Scene Builder, click on them and open the Code section. In the On Action input, write `addItem`, `removeItem`, and `toggleItem`. Now save it write the equivalent methods in the controller:
+We should now write the code to make our buttons run methods in this controller. To do so, open Scene Builder, click on them and open the Code section. In the On Action input, write `addItem`, `removeItem`, and `toggleItem` respectively. Now save it write the equivalent methods in the controller:
 
 ```java
 public class Controller {
@@ -148,3 +148,100 @@ public class Controller {
     WebView webView;
 }
 ```
+
+We should now write the code to make our buttons run methods in this controller. To do so, open Scene Builder, click on them and open the Code section. In the On Action input, write `goBack`, `goForward`, and `goToUrl` respectively. Now save it write the equivalent methods in the controller:
+
+```java
+public class Controller {
+    ...
+    
+    public void goBack() {
+        System.out.println("goBack");
+    }
+
+    public void goForward() {
+        System.out.println("goForward");
+    }
+
+    public void goToUrl() {
+        System.out.printf("goToUrl");
+    }
+}
+```
+
+Try running the project and make sure that you see the print statements in IntelliJ's console after clicking the buttons.
+
+Now we can fill in the methods:
+
+```java
+public class Controller {
+    ...
+    
+    public void goBack() {
+        try {
+            webView.getEngine().getHistory().go(-1);
+        } catch (Exception e) {
+
+        }
+    }
+
+    public void goForward() {
+        try {
+            webView.getEngine().getHistory().go(1);
+        } catch (Exception e) {
+
+        }
+    }
+
+    public void goToUrl() {
+        String url = addressBar.getText();
+        if (!url.startsWith("http")) {
+            url = "http://" + url;
+        }
+        webView.getEngine().load(url);
+    }
+}
+```
+
+We should now have basic web browser functionality. There are some enhancements we can add. First, let's go to Scene Builder and click on the TextField. In the Code section, set On Key Pressed to a method called "onKeyPressed". That will allow us to write a method in our controller like this:
+
+```java
+public class Controller {
+    ...
+    
+    public void onKeyPressed(KeyEvent event) {
+        if (event.getCode() == KeyCode.ENTER) {
+            goToUrl();
+        }
+    }
+}
+```
+
+We should also provide a way to update the address bar when we click on a link to a new page. To do this, we must first tell the browser's "load worker" to use this controller as its change listener by implementing `Initializable`:
+
+```java
+public class Controller implements Initializable {
+    ...
+    
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        Worker worker = webView.getEngine().getLoadWorker();
+        worker.stateProperty().addListener(this);
+    }
+}
+```
+
+Then we need to implement `ChangeListener`, which will provide the method in which we will update the address bar's text:
+
+```java
+public class Controller implements Initializable, ChangeListener {
+    ...
+    
+    @Override
+    public void changed(ObservableValue observable, Object oldValue, Object newValue) {
+        addressBar.setText(webView.getEngine().getLocation());
+    }
+}
+```
+
+Now you can see that clicking links will update the address bar.
