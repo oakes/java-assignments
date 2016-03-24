@@ -87,3 +87,83 @@ At the main screen, go to: Start a new Android Studio project. Call it `BrowserA
 Open activity_main.xml and delete the default TextView. Add a vertical LinearLayout to the root view. Then add a a horizontal LinearLayout and a WebView to that. Then add two Small Button widgets, a Plain Text, and another Small Button to the horizontal LinearLayout. Select the horizontal LinearLayout and set its `layout:height` to `wrap_content`. Select the WebView and set its `layout:width` and `layout:height` to `fill_parent`. Select each button and set their Text property to `<`, `>`, and `Go` respectively. Finally, select the Plain Text and under its properties set `layout:width` to `0` and `layout:weight` to `1`.
 
 ![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/images/android-2.png)
+
+Now that we have the layout, let's open `MainActivity.java` and bring the widgets in:
+
+```java
+public class MainActivity extends AppCompatActivity {
+    EditText addressBar;
+    Button backButton;
+    Button forwardButton;
+    Button goButton;
+    WebView webView;
+    
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        addressBar = (EditText) findViewById(R.id.editText);
+        backButton = (Button) findViewById(R.id.button);
+        forwardButton = (Button) findViewById(R.id.button2);
+        goButton = (Button) findViewById(R.id.button3);
+        webView = (WebView) findViewById(R.id.webView);
+    }
+}
+```
+
+Then implement and add the appropriate listeners for the buttons:
+
+```java
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        ...
+        
+        backButton.setOnClickListener(this);
+        forwardButton.setOnClickListener(this);
+        goButton.setOnClickListener(this);
+    }
+    
+    @Override
+    public void onClick(View v) {
+        if (v == backButton) {
+            webView.goBack();
+        }
+        else if (v == forwardButton) {
+            webView.goForward();
+        }
+        else if (v == goButton) {
+            String address = addressBar.getText().toString();
+            if (!address.startsWith("http")) {
+                address = "http://" + address;
+            }
+            webView.loadUrl(address);
+        }
+    }
+}
+```
+
+Make sure to add the appropriate permission to AndroidManifest.xml:
+
+```
+<uses-permission android:name="android.permission.INTERNET" />
+```
+
+Finally, add code to `onCreate` that updates the address bar:
+
+```java
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        ...
+        
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                addressBar.setText(url);
+            }
+        });
+    }
+}
+```
