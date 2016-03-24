@@ -10,7 +10,7 @@ Launch the emulator and let it run in the background. Android Studio's console s
 
 Open activity_main.xml and delete the default TextView. Add a vertical LinearLayout to the root view. Then add a ListView and a horizontal LinearLayout to that. To the last widget, add a Plain Text and a Button. Adjust the ListView to make room for the bottom bar. Select the Button and set its Text property to "Add". Finally, select the Plain Text and under its properties set `layout:width` to `0` and `layout:weight` to `1`.
 
-![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/images/android-1.png)
+![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/android-1.png)
 
 Now that we have the layout, let's open `MainActivity.java` and bring the widgets in:
 
@@ -86,7 +86,7 @@ At the main screen, go to: Start a new Android Studio project. Call it `BrowserA
 
 Open activity_main.xml and delete the default TextView. Add a vertical LinearLayout to the root view. Then add a a horizontal LinearLayout and a WebView to that. Then add two Small Button widgets, a Plain Text, and another Small Button to the horizontal LinearLayout. Select the horizontal LinearLayout and set its `layout:height` to `wrap_content`. Select the WebView and set its `layout:width` and `layout:height` to `fill_parent`. Select each button and set their Text property to `<`, `>`, and `Go` respectively. Finally, select the Plain Text and under its properties set `layout:width` to `0` and `layout:weight` to `1`.
 
-![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/images/android-2.png)
+![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/android-2.png)
 
 Now that we have the layout, let's open `MainActivity.java` and bring the widgets in:
 
