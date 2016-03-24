@@ -6,11 +6,11 @@ In IntelliJ, create a new project called `ToDoDesktop` and use the JavaFX templa
 
 Launch Scene Builder and open the `sample.fxml` file located in the IntelliJ project. Start by deleting the GridPane from the hierarchy. Most UIs can be created through a combination of HBox and VBox, so that's what we will do. Begin by dragging VBox into the hierarchy. Inside of it, place an HBox and a ListView. Select the ListView, and under Layout (on the right) set its VGrow attribute to "ALWAYS".
 
-![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/images/javafx-1.png)
+![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/javafx-1.png)
 
 Now add a TextField and three Button controls in the HBox. Set the TextField's Hgrow attribute to "ALWAYS". Set the Text property of the buttons to "Add", "Remove", and "Toggle". Also, set the Min Width of each button to "USE_PREF_SIZE" to ensure the text doesn't get clipped.
 
-![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/images/javafx-2.png)
+![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/javafx-2.png)
 
 First, make sure the UI knows where the controller is by going to the bottom left corner and opening the Controller section. Set the controller class to `sample.Controller` (or whatever your controller's full class name is).
 
@@ -127,11 +127,11 @@ public class Controller implements Initializable {
 
 In IntelliJ, create a new project called `BrowserDesktop` and use the JavaFX template. Run it right away and you should see a blank window appear. Now open `Main.java` and modify the code so the title is "Browser Desktop" and the scene is set to 800 by 600. Launch Scene Builder and open the `sample.fxml` file located in the IntelliJ project. Start by deleting the GridPane from the hierarchy. Begin by dragging VBox into the hierarchy. Inside of it, place an HBox and a WebView. Select the WebView, and under Layout (on the right) set its VGrow attribute to "ALWAYS".
 
-![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/images/javafx-3.png)
+![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/javafx-3.png)
 
 Now add two Button controls (for back/forward), a TextField (the address bar), and one more Button (to initiate address loading) in the HBox. Then click the TextField and set its HGrow attribute to "ALWAYS", and click each button and change their Text property to `<`, `>`, and `Go` respectively. Also, set the Min Width of each button to "USE_PREF_SIZE" to ensure the text doesn't get clipped.
 
-![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/images/javafx-4.png)
+![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/javafx-4.png)
 
 First, make sure the UI knows where the controller is by going to the bottom left corner and opening the Controller section. Set the controller class to `sample.Controller` (or whatever your controller's full class name is).
 
