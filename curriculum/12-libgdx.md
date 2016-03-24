@@ -64,3 +64,45 @@ public class MyGdxGame extends ApplicationAdapter {
 }
 ```
 
+Now let's introduce velocity with `xv` and `yv` to allow for more fluid movement:
+
+```java
+public class MyGdxGame extends ApplicationAdapter {
+    SpriteBatch batch;
+    Texture img;
+    float x, y, xv, yv;
+    static final float MAX_VELOCITY = 100;
+
+    ...
+
+    float decelerate(float velocity) {
+        float deceleration = 0.99f; // the closer to 1, the slower the deceleration
+        velocity *= deceleration;
+        if (Math.abs(velocity) < 1) {
+            velocity = 0;
+        }
+        return velocity;
+    }
+
+    void move() {
+        if (Gdx.input.isKeyPressed(Input.Keys.UP)) {
+            yv = MAX_VELOCITY;
+        }
+        if (Gdx.input.isKeyPressed(Input.Keys.DOWN)) {
+            yv = MAX_VELOCITY * -1;
+        }
+        if (Gdx.input.isKeyPressed(Input.Keys.RIGHT)) {
+            xv = MAX_VELOCITY;
+        }
+        if (Gdx.input.isKeyPressed(Input.Keys.LEFT)) {
+            xv = MAX_VELOCITY * -1;
+        }
+
+        y += yv * Gdx.graphics.getDeltaTime();
+        x += xv * Gdx.graphics.getDeltaTime();
+
+        yv = decelerate(yv);
+        xv = decelerate(xv);
+    }
+}
+```
