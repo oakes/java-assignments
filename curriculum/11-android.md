@@ -116,6 +116,8 @@ Then implement and add the appropriate listeners for the buttons:
 
 ```java
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    ...
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         ...
@@ -154,6 +156,8 @@ Finally, add code to `onCreate` that updates the address bar:
 
 ```java
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    ...
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         ...
