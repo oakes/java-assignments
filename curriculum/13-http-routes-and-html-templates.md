@@ -54,7 +54,7 @@ Create a new project called `HelloSpark`. In `Project Structure -> Libraries`, a
 
 In `Project Structure -> Modules`, create a folder called "resources" and mark it as such. Inside of that, create a folder called "templates". This will hold our HTML templates.
 
-Let's start in our main class. To kick things off, let's define write some HTML at `resources/templates/home.html`:
+To kick things off, let's define write some HTML at `resources/templates/home.html`:
 
 ```html
 <html>
