@@ -25,16 +25,14 @@ public class Message {
 }
 ```
 
-Then we should make a class for our user. This time we'll store a password:
+Then we should make a class for our user:
 
 ```java
 public class User {
     String name;
-    String password;
 
-    public User(String name, String password) {
+    public User(String name) {
         this.name = name;
-        this.password = password;
     }
 }
 ```
@@ -64,9 +62,9 @@ public class Main {
     }
     
     static void addTestUsers() {
-        users.put("Alice", new User("Alice", ""));
-        users.put("Bob", new User("Bob", ""));
-        users.put("Charlie", new User("Charlie", ""));
+        users.put("Alice", new User("Alice"));
+        users.put("Bob", new User("Bob"));
+        users.put("Charlie", new User("Charlie"));
     }
 
     static void addTestMessages() {
@@ -123,4 +121,149 @@ public class Main {
 }
 ```
 
-This should be enough to see the top-level messages (i.e., the ones with a `replyId` of -1).
+This should be enough to see the top-level messages (i.e., the ones with a `replyId` of -1). Now let's modify the code to optionally receive a query parameter for the `replyId` so we don't have to hard-code it:
+
+```java
+public class Main {
+    static HashMap<String, User> users = new HashMap<>();
+    static ArrayList<Message> messages = new ArrayList<>();
+
+    public static void main(String[] args) {
+        addTestUsers();
+        addTestMessages();
+        
+        Spark.init();
+        Spark.get(
+                "/",
+                ((request, response) -> {
+                    String replyId = request.queryParams("replyId");
+                    int replyIdNum = -1;
+                    if (replyId != null) {
+                        replyIdNum = Integer.valueOf(replyId);
+                    }
+                    
+                    HashMap m = new HashMap();
+                    ArrayList<Message> threads = new ArrayList<>();
+                    for (Message message : messages) {
+                        if (message.replyId == replyIdNum) {
+                            threads.add(message);
+                        }
+                    }
+                    m.put("messages", threads);
+                    return new ModelAndView(m, "home.html");
+                }),
+                new MustacheTemplateEngine()
+        );
+    }
+    
+    ...
+}
+```
+
+Now, for example, if we go to http:/localhost:4567/?replyId=0 we should see Charlie's reply to Alice. Let's modify the HTML to make each message link to replies to that message:
+
+```html
+<html>
+<body>
+{{#messages}}
+<a href="/?replyId={{id}}">{{author}}: {{text}}</a><br>
+{{/messages}}
+</body>
+</html>
+```
+
+It's now time to create our login system. First create the requisite POST route:
+
+```java
+public class Main {
+    static HashMap<String, User> users = new HashMap<>();
+    static ArrayList<Message> messages = new ArrayList<>();
+
+    public static void main(String[] args) {
+        ...
+        
+        Spark.post(
+                "/login",
+                ((request, response) -> {
+                    String userName = request.queryParams("loginName");
+                    if (userName == null) {
+                        throw new Exception("Login name not found.");
+                    }
+                    
+                    User user = users.get(userName);
+                    if (user == null) {
+                        user = new User(userName);
+                        users.put(userName, user);
+                    }
+
+                    Session session = request.session();
+                    session.attribute("userName", userName);
+
+                    response.redirect("/");
+                    return "";
+                })
+        );
+    }
+    
+    ...
+}
+```
+
+Then modify the GET route to insert the username into the template (or null if not logged in):
+
+```java
+public class Main {
+    static HashMap<String, User> users = new HashMap<>();
+    static ArrayList<Message> messages = new ArrayList<>();
+
+    public static void main(String[] args) {
+        addTestUsers();
+        addTestMessages();
+        
+        Spark.init();
+        Spark.get(
+                "/",
+                ((request, response) -> {
+                    ...
+                    
+                    Session session = request.session();
+                    String userName = session.attribute("userName");
+                    
+                    m.put("messages", threads);
+                    m.put("userName", userName);
+                    return new ModelAndView(m, "home.html");
+                }),
+                new MustacheTemplateEngine()
+        );
+        
+        ...
+    }
+    
+    ...
+}
+```
+
+Now we can modify the HTML to conditionally display either the login form or a welcome message dependong on whether `userName` is null or not:
+
+```html
+<html>
+<body>
+{{^userName}}
+<form action="/login" method="post">
+    <input type="text" placeholder="Enter your name" name="loginName"/>
+    <button type="submit">Login</button>
+</form>
+<br>
+{{/userName}}
+
+{{#userName}}
+Welcome, {{.}}!
+<br>
+{{/userName}}
+
+{{#messages}}
+<a href="/?replyId={{id}}">{{author}}: {{text}}</a><br>
+{{/messages}}
+</body>
+</html>
+```
