@@ -39,12 +39,13 @@ public class User {
 }
 ```
 
-Start off the main class by creating our `HashMap`:
+Start off the main class by creating our `HashMap`. Instead of storing our `ArrayList` inside the `User` class, like we did before, we'll create a separate `ArrayList<Message>` that stores everyone's messages. This is more appropriate for a forum, since messages from various users are often displayed on the same page:
 
 ```java
 
 public class Main {
     static HashMap<String, User> users = new HashMap<>();
+    static ArrayList<Message> messages = new ArrayList<>();
 
     public static void main(String[] args) {
     }
