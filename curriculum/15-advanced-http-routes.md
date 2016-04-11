@@ -267,3 +267,48 @@ Welcome, {{.}}!
 </body>
 </html>
 ```
+
+Finally, let's add a logout button to our HTML:
+
+```html
+<html>
+<body>
+...
+
+{{#userName}}
+Welcome, {{.}}!
+<form action="/logout" method="post">
+    <button type="submit">Logout</button>
+</form>
+<br>
+{{/userName}}
+
+...
+</body>
+</html>
+```
+
+And the route to go along with it:
+
+```java
+public class Main {
+    static HashMap<String, User> users = new HashMap<>();
+    static ArrayList<Message> messages = new ArrayList<>();
+
+    public static void main(String[] args) {
+        ...
+        
+        Spark.post(
+                "/logout",
+                ((request, response) -> {
+                    Session session = request.session();
+                    session.invalidate();
+                    response.redirect("/");
+                    return "";
+                })
+        );
+    }
+    
+    ...
+}
+```
