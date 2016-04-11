@@ -44,3 +44,115 @@ public class AnonymousFunctionExample {
     }
 }
 ```
+
+## HelloSpark
+
+Create a new project called `HelloSpark`. In `Project Structure -> Libraries`, add two libraries:
+
+* `com.sparkjava:spark-core:2.3`
+* `com.sparkjava:spark-template-mustache:2.3`
+
+In `Project Structure -> Modules`, create a folder called "resources" and mark it as such. Inside of that, create a folder called "templates". This will hold our HTML templates.
+
+Let's start in our main class. To kick things off, let's define write some HTML at `resources/templates/home.html`:
+
+```html
+<html>
+<body>
+Hello, {{name}}!
+</body>
+</html>
+```
+
+Then, in our main class, we can make a GET route to return that file:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        Spark.init();
+        
+        Spark.get(
+                "/",
+                ((request, response) -> {
+                    HashMap m = new HashMap();
+                    m.put("name", "Alice");
+                    return new ModelAndView(m, "home.html");
+                }),
+                new MustacheTemplateEngine()
+        );
+    }
+}
+```
+
+When you run the project, you should now see the page at http://localhost:4567. Now let's create a way to log in, and after doing so, make the aforementioned page display whatever name we login with. First, create a login page at `resources/templates/login.html`:
+
+```html
+<html>
+<body>
+<form action="/login" method="post">
+    <input type="text" placeholder="Enter your name" name="loginName"/>
+    <button type="submit">Login</button>
+</form>
+</body>
+</html>
+```
+
+Then, make a simple `User` class:
+
+```java
+public class User {
+    String name;
+
+    public User(String name) {
+        this.name = name;
+    }
+}
+```
+
+Now we can define a static field to store our user, and modify the GET route to return the login page if the user is null:
+
+```java
+public class Main {
+    static User user;
+    
+    public static void main(String[] args) {
+        Spark.init();
+        
+        Spark.get(
+                "/",
+                ((request, response) -> {
+                    HashMap m = new HashMap();
+                    if (user == null) {
+                        return new ModelAndView(m, "login.html");
+                    } else {
+                        m.put("name", user.name);
+                        return new ModelAndView(m, "home.html");
+                    }
+                }),
+                new MustacheTemplateEngine()
+        );
+    }
+}
+```
+
+Finally, create the POST route that the login page hits:
+
+```java
+public class Main {
+    static User user;
+    
+    public static void main(String[] args) {
+        ...
+        
+        Spark.post(
+                "/login",
+                ((request, response) -> {
+                    String name = request.queryParams("loginName");
+                    user = new User(name);
+                    response.redirect("/");
+                    return "";
+                })
+        );
+    }
+}
+```
