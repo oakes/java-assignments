@@ -197,3 +197,13 @@ public class Main {
     ...
 }
 ```
+
+Let's pretend we are deploying this to a real server by creating a standalone JAR file (often called a "fat" JAR because it contains everything we need to run our code):
+
+* File -> Project Structure...
+* Click "Artifacts" and then the plus button
+* JAR -> From modules with dependencies...
+* Choose the main class and click OK
+* Build -> Build Artifacts...
+
+You should now see a JAR file in `out/artifacts/ForumWeb_jar`. You can simply repeat the last step to build a new JAR file. You can try running it in IntelliJ's terminal by running `java -jar out/artifacts/ForumWeb_jar/ForumWeb.jar`.
