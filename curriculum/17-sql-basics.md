@@ -115,4 +115,4 @@ public class Main {
 }
 ```
 
-Why is this bad? Imagine the string is coming from a web form. This string could contain anything, including things like single quotes.
+Why is this bad? Imagine the string is coming from a web form. This string could contain anything. What if they type in `O'Brien`? The SQL command will be `INSERT INTO players VALUES (NULL, 'O'Brien', true, 0, 100.0)`. Notice the problem? The apostrophe will close the string early, and the query will fail. If the user is clever enough, they might type in something like `', true, 0, 0); DROP TABLE players; --` which would cause your code to delete the entire table (try it!). This is called a SQL injection attack.
