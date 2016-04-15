@@ -28,3 +28,23 @@ With this in mind, we can write all five commands to create the table and create
 * `SELECT * FROM players WHERE name = 'Bob'`
 * `UPDATE players SET is_alive = FALSE WHERE name = 'Bob'`
 * `DELETE FROM players WHERE name = 'Bob'`
+
+## HelloDatabase
+
+Create a new project called `HelloDatabase`. In `File -> Project Structure -> Libraries`, add the following library from Maven:
+
+* `com.h2database:h2:1.4.191`
+
+H2 is an embedded SQL database, which means it runs inside your project and stores its data in a single file on your disk. Later on we will try using an external database like PostGreSQL, which will run outside of our project, but for now we can stick to H2 so we don't need to worry about starting and stopping our database. Another nice thing about H2 is that it has a built-in web interface for interacting with the database. In your main class, write just a single line to start it:
+
+```java
+public class Main {
+    public static void main(String[] args) throws SQLException {
+        Server.createWebServer().start();
+    }
+}
+```
+
+After running it, open your web browser and go to http://localhost:8082 where you will see a login page. Change the JDBC URL to `jdbc:h2:./main`, which will save the database in a file called `main.mv.db` in your project's directory. Make sure the username and password are blank and click Connect.
+
+![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/sql-basics-1.png)
