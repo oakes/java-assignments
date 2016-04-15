@@ -100,3 +100,19 @@ public class Main {
 ```
 
 When you restart your project and run the same command in the web interface, you should now see no results.
+
+While this works, most of the time we are not hard-coding values into our SQL queries like this. Typically, we will receive data from an external source (such as an HTTP route) and put the values into our SQL string. You may be tempted to reach for `String.format`, which we've used in the past to inject things into strings, but this is a very bad idea. To see why, let's try it out.
+
+```java
+public class Main {
+    public static void main(String[] args) throws SQLException {
+        ...
+        
+        // BAD
+        String name = "Alice";
+        stmt.execute(String.format("INSERT INTO players VALUES (NULL, '%s', true, 0, 100.0)", name));
+    }
+}
+```
+
+Why is this bad? Imagine the string is coming from a web form. This string could contain anything, including things like single quotes.
