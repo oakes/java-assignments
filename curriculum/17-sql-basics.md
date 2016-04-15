@@ -59,3 +59,44 @@ Now let's do the next four commands. Note that when inserting, we are writing `N
 ![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/sql-basics-4.png)
 ![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/sql-basics-5.png)
 ![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/sql-basics-6.png)
+
+This interface is a nice way to interact with your database, but we we need to learn how to run these queries directly from our Java code. Go back to your main class and create a database connect to the aforementioned JDBC URL:
+
+```java
+public class Main {
+    public static void main(String[] args) throws SQLException {
+        Server.createWebServer().start();
+        
+        Connection conn = DriverManager.getConnection("jdbc:h2:./main");
+    }
+}
+```
+
+This is the connection we will use to send SQL commands to H2. To do so, we will create a `Statement` object and using it to execute SQL strings. We'll start by creating our table and inserting a record. Note that the normal `CREATE TABLE` command will fail if the table already exists, so we must call `CREATE TABLE IF NOT EXISTS` instead:
+
+```java
+public class Main {
+    public static void main(String[] args) throws SQLException {
+        Server.createWebServer().start();
+        
+        Connection conn = DriverManager.getConnection("jdbc:h2:./main");
+        Statement stmt = conn.createStatement();
+        stmt.execute("CREATE TABLE IF NOT EXISTS players (id IDENTITY, name VARCHAR, is_alive BOOLEAN, score INT, health DOUBLE)");
+        stmt.execute("INSERT INTO players VALUES (NULL, 'Alice', true, 0, 100.0)");
+    }
+}
+```
+
+Restart your project and log back into the web interface. If you run `SELECT * FROM PLAYERS` you should see Alice in the table of results. Now add the `UPDATE` and `DELETE` commands:
+
+```java
+public class Main {
+    public static void main(String[] args) throws SQLException {
+        ...
+        stmt.execute("UPDATE players SET is_alive = FALSE WHERE name = 'Alice'");
+        stmt.execute("DELETE FROM players WHERE name = 'Alice'");
+    }
+}
+```
+
+When you restart your project and run the same command in the web interface, you should now see no results.
