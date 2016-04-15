@@ -28,9 +28,8 @@
 * Embedded vs external databases (SQLite/H2 vs MySQL/PostgreSQL)
 * Create [HelloDatabase](../projects/HelloDatabase)
   * Download and add [H2](http://www.h2database.com/html/main.html) JAR file to project
-  * Work with the database directly (by running the JAR file from the Terminal tab)
+  * Work with the database directly via H2's built-in web interface
     * Use `jdbc:h2:./main` as the JDBC URL
-    * Make the user name blank
   * Work with the database from Java (by writing code in `Main.java`)
     * Create a `Connection`
       * `Connection conn = DriverManager.getConnection("jdbc:h2:./main")`
