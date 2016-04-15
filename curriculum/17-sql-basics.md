@@ -20,3 +20,11 @@ Let's start with creating a table. Doing so requires us to specify all the colum
 * `BOOLEAN`
 * `INT`
 * `DOUBLE`
+
+With this in mind, we can write all five commands to create the table and create/read/update/delete a player in the table. Keep in mind that capitalization isn't important, but generally built-in keywords are written in all caps and table/column names are in snake case (lower case with underscores).
+
+* `CREATE TABLE players (name VARCHAR, is_alive BOOLEAN, score INT, health DOUBLE)`
+* `INSERT INTO players VALUES ('Bob', true, 0, 100.0)`
+* `SELECT * FROM players WHERE name = 'Bob'`
+* `UPDATE players SET is_alive = FALSE WHERE name = 'Bob'`
+* `DELETE FROM players WHERE name = 'Bob'`
