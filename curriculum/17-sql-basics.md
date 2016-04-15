@@ -109,10 +109,47 @@ public class Main {
         ...
         
         // BAD
-        String name = "Alice";
+        String name = "Charlie";
         stmt.execute(String.format("INSERT INTO players VALUES (NULL, '%s', true, 0, 100.0)", name));
     }
 }
 ```
 
 Why is this bad? Imagine the string is coming from a web form. This string could contain anything. What if they type in `O'Brien`? The SQL command will be `INSERT INTO players VALUES (NULL, 'O'Brien', true, 0, 100.0)`. Notice the problem? The apostrophe will close the string early, and the query will fail. If the user is clever enough, they might type in something like `', true, 0, 0); DROP TABLE players; --` which would cause your code to delete the entire table (try it!). This is called a SQL injection attack.
+
+The solution is to use a `PreparedStatement` instead of a `Statement` whenever you need to inject values into your SQL query. Let's write an example that inserts the data safely:
+
+```java
+public class Main {
+    public static void main(String[] args) throws SQLException {
+        ...
+        
+        // GOOD
+        PreparedStatement stmt2 = conn.prepareStatement("INSERT INTO players VALUES (NULL, ?, ?, ?, ?)");
+        stmt2.setString(1, "David");
+        stmt2.setBoolean(2, true);
+        stmt2.setInt(3, 0);
+        stmt2.setDouble(4, 100.0);
+        stmt2.execute();
+    }
+}
+```
+
+We now need to read from the database programmatically. This time, I just want to select all the players and print them out. In this case, we don't actually need to inject anything into the query, because it is simply `SELECT * FROM players`, but we'll use a `PreparedStatement` anyway just to make it a habit:
+
+```java
+public class Main {
+    public static void main(String[] args) throws SQLException {
+        ...
+        
+        PreparedStatement stmt3 = conn.prepareStatement("SELECT * FROM players");
+        ResultSet results = stmt3.executeQuery();
+        while (results.next()) {
+            String playerName = results.getString("name");
+            double health = results.getDouble("health");
+            int score = results.getInt("score");
+            System.out.printf("%s %s %s\n", playerName, health, score);
+        }
+    }
+}
+```
