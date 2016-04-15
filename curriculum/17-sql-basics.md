@@ -48,3 +48,8 @@ public class Main {
 After running it, open your web browser and go to http://localhost:8082 where you will see a login page. Change the JDBC URL to `jdbc:h2:./main`, which will save the database in a file called `main.mv.db` in your project's directory. Make sure the username and password are blank and click Connect.
 
 ![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/sql-basics-1.png)
+
+An interface will appear that allows you to run SQL commands on the database. Let's try running all five commands, but with a twist: We're going to add an `id` column which assigns a unique number to each record starting at 1. Nearly every database table uses this as a simple way to reference a record, so there is a special type called `IDENTITY` in H2 which will automatically increment it for you. Let's start with the `CREATE TABLE` statement:
+
+![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/sql-basics-2.png)
+
