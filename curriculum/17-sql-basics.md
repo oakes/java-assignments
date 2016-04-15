@@ -53,3 +53,9 @@ An interface will appear that allows you to run SQL commands on the database. Le
 
 ![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/sql-basics-2.png)
 
+Now let's do the next four commands. Note that when inserting, we are writing `NULL` for the `id` column so the database generates it for us automatically:
+
+![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/sql-basics-3.png)
+![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/sql-basics-4.png)
+![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/sql-basics-5.png)
+![](https://raw.githubusercontent.com/oakes/java-assignments/master/curriculum/assets/sql-basics-6.png)
