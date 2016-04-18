@@ -103,4 +103,217 @@ public class MainTest {
 }
 ```
 
-Run the test and make sure it passes.
+Run the test and make sure it passes. Now let's return to the main class and write methods to insert and select a single `Message`:
+
+```java
+public class Main {
+    ...
+
+    public static void insertMessage(Connection conn, int userId, int replyId, String text) throws SQLException {
+        PreparedStatement stmt = conn.prepareStatement("INSERT INTO messages VALUES (NULL, ?, ?, ?)");
+        stmt.setInt(1, userId);
+        stmt.setInt(2, replyId);
+        stmt.setString(3, text);
+        stmt.execute();
+    }
+
+    public static Message selectMessage(Connection conn, int id) throws SQLException {
+        PreparedStatement stmt = conn.prepareStatement("SELECT * FROM messages INNER JOIN users ON messages.user_id = users.id WHERE messages.id = ?");
+        stmt.setInt(1, id);
+        ResultSet results = stmt.executeQuery();
+        if (results.next()) {
+            int replyId = results.getInt("messages.reply_id");
+            String name = results.getString("users.name");
+            String text = results.getString("messages.text");
+            return new Message(id, replyId, name, text);
+        }
+        return null;
+    }
+    
+    ...
+}
+```
+
+We can then write a test for it in `MainTest`:
+
+```java
+public class MainTest {
+    ...
+    
+    @Test
+    public void testMessage() throws SQLException {
+        Connection conn = startConnection();
+        Main.insertUser(conn, "Alice", "");
+        User user = Main.selectUser(conn, "Alice");
+        Main.insertMessage(conn, user.id, -1, "Hello, world!");
+        Message message = Main.selectMessage(conn, 1);
+        endConnection(conn);
+        assertTrue(message != null);
+    }
+}
+```
+
+Finally, we can write a method to retrieve replies to a given message's ID:
+
+```java
+public class Main {
+    ...
+    
+    public static ArrayList<Message> selectReplies(Connection conn, int replyId) throws SQLException {
+        ArrayList<Message> messages = new ArrayList<>();
+        PreparedStatement stmt = conn.prepareStatement("SELECT * FROM messages INNER JOIN users ON messages.user_id = users.id WHERE messages.reply_id = ?");
+        stmt.setInt(1, replyId);
+        ResultSet results = stmt.executeQuery();
+        while (results.next()) {
+            int id = results.getInt("messages.id");
+            String name = results.getString("users.name");
+            String text = results.getString("messages.text");
+            Message message = new Message(id, replyId, name, text);
+            messages.add(message);
+        }
+        return messages;
+    }
+    
+    ...
+}
+```
+
+And the equivalent test for it:
+
+```java
+public class MainTest {
+    ...
+    
+    @Test
+    public void testReplies() throws SQLException {
+        Connection conn = startConnection();
+        Main.insertUser(conn, "Alice", "");
+        Main.insertUser(conn, "Bob", "");
+        User alice = Main.selectUser(conn, "Alice");
+        User bob = Main.selectUser(conn, "Bob");
+        Main.insertMessage(conn, alice.id, -1, "Hello, world!");
+        Main.insertMessage(conn, bob.id, 1, "This is a reply!");
+        Main.insertMessage(conn, bob.id, 1, "This is another reply!");
+        ArrayList<Message> replies = Main.selectReplies(conn, 1);
+        endConnection(conn);
+        assertTrue(replies.size() == 2);
+    }
+}
+```
+
+If the tests are now passing, we are ready to integrate the methods into our code. Begin by removing the global `users` and `messages` collections that are currently storing everything in memory. Create the tables at the top of the main method:
+
+```java
+public class Main {
+    ...
+    
+    public static void main(String[] args) throws SQLException {
+        Connection conn = DriverManager.getConnection("jdbc:h2:./main");
+        createTables(conn);
+        
+        ...
+    }
+}
+```
+
+In `/login`, use `selectUser` and `insertUser`:
+
+```java
+public class Main {
+    ...
+    
+    public static void main(String[] args) throws SQLException {
+        ...
+        Spark.post(
+                "/login",
+                ((request, response) -> {
+                    String userName = request.queryParams("loginName");
+                    if (userName == null) {
+                        throw new Exception("Login name not found.");
+                    }
+
+                    User user = selectUser(conn, userName);
+                    if (user == null) {
+                        insertUser(conn, userName, "");
+                    }
+
+                    Session session = request.session();
+                    session.attribute("userName", userName);
+
+                    response.redirect("/");
+                    return "";
+                })
+        );
+        ...
+    }
+}
+```
+
+In `create-message`, use `selectUser` and `insertMessage`:
+
+```java
+public class Main {
+    ...
+    
+    public static void main(String[] args) throws SQLException {
+        ...
+        Spark.post(
+                "/create-message",
+                ((request, response) -> {
+                    Session session = request.session();
+                    String userName = session.attribute("userName");
+                    if (userName == null) {
+                        throw new Exception("Not logged in.");
+                    }
+
+                    String text = request.queryParams("messageText");
+                    String replyId = request.queryParams("replyId");
+                    if (text == null || replyId == null) {
+                        throw new Exception("Didn't get necessary query parameters.");
+                    }
+                    int replyIdNum = Integer.valueOf(replyId);
+
+                    User user = selectUser(conn, userName);
+                    insertMessage(conn, user.id, replyIdNum, text);
+
+                    response.redirect(request.headers("Referer"));
+                    return "";
+                })
+        );
+    }
+}
+```
+
+Finally, in `/` use `selectReplies`:
+
+```java
+public class Main {
+    ...
+    
+    public static void main(String[] args) throws SQLException {
+        ...
+        Spark.get(
+                "/",
+                ((request, response) -> {
+                    Session session = request.session();
+                    String userName = session.attribute("userName");
+
+                    String replyId = request.queryParams("replyId");
+                    int replyIdNum = -1;
+                    if (replyId != null) {
+                        replyIdNum = Integer.valueOf(replyId);
+                    }
+
+                    HashMap m = new HashMap();
+                    ArrayList<Message> threads = selectReplies(conn, replyIdNum);
+                    m.put("messages", threads);
+                    m.put("userName", userName);
+                    m.put("replyId", replyIdNum);
+                    return new ModelAndView(m, "home.html");
+                }),
+                new MustacheTemplateEngine()
+        );
+        ...
+    }
+}
+```
