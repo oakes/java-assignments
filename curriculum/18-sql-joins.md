@@ -147,7 +147,7 @@ public class MainTest {
         User user = Main.selectUser(conn, "Alice");
         Main.insertMessage(conn, user.id, -1, "Hello, world!");
         Message message = Main.selectMessage(conn, 1);
-        endConnection(conn);
+        conn.close();
         assertTrue(message != null);
     }
 }
@@ -195,7 +195,7 @@ public class MainTest {
         Main.insertMessage(conn, bob.id, 1, "This is a reply!");
         Main.insertMessage(conn, bob.id, 1, "This is another reply!");
         ArrayList<Message> replies = Main.selectReplies(conn, 1);
-        endConnection(conn);
+        conn.close();
         assertTrue(replies.size() == 2);
     }
 }
