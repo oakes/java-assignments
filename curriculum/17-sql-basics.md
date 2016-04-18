@@ -224,4 +224,53 @@ public class ToDo {
 }
 ```
 
-Let's put them to use. In your main method, remove the `ArrayList<ToDoItem> todos` that currently stores them in memory.
+Let's put them to use. In your main method, remove the `ArrayList<ToDoItem> todos` that currently stores them in memory. Then change each of the three `if` branches to use the methods we just defined:
+
+```java
+public class ToDo {
+    ...
+    
+    public static void main(String[] args) throws SQLException {
+        ...
+        
+        while (true) {
+            System.out.println("1. Create to-do item");
+            System.out.println("2. Toggle to-do item");
+            System.out.println("3. List to-do items");
+
+            String option = scanner.nextLine();
+
+            if (option.equals("1")) {
+                System.out.println("Enter your to-do item:");
+                String text = scanner.nextLine();
+
+                //ToDoItem item = new ToDoItem(text, false);
+                //items.add(item);
+                insertToDo(conn, text);
+            }
+            else if (option.equals("2")) {
+                System.out.println("Enter the number of the item you want to toggle:");
+                int itemNum = Integer.valueOf(scanner.nextLine());
+                //ToDoItem item = items.get(itemNum-1);
+                //item.isDone = !item.isDone;
+                toggleToDo(conn, itemNum);
+            }
+            else if (option.equals("3")) {
+                ArrayList<ToDoItem> items = selectToDos(conn);
+                //int i = 1;
+                for (ToDoItem item : items) {
+                    String checkbox = "[ ]";
+                    if (item.isDone) {
+                        checkbox = "[x]";
+                    }
+                    System.out.printf("%s %d. %s\n", checkbox, item.id, item.text);
+                    //i++;
+                }
+            }
+            else {
+                System.out.println("Invalid option");
+            }
+        }
+    }
+}
+```
