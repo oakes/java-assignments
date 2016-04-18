@@ -201,13 +201,14 @@ public class MainTest {
 }
 ```
 
-If the tests are now passing, we are ready to integrate the methods into our code. Begin by removing the global `users` and `messages` collections that are currently storing everything in memory. Create the tables at the top of the main method:
+If the tests are now passing, we are ready to integrate the methods into our code. Begin by removing the global `users` and `messages` collections that are currently storing everything in memory. Then create the tables at the top of the main method:
 
 ```java
 public class Main {
     ...
     
     public static void main(String[] args) throws SQLException {
+        Server.createWebServer().start();
         Connection conn = DriverManager.getConnection("jdbc:h2:./main");
         createTables(conn);
         
