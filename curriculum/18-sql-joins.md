@@ -26,3 +26,81 @@ SELECT * FROM games INNER JOIN users ON users.id = games.user_id WHERE users.id 
 ```
 
 There are other kinds of joins, but we'll stick with inner joins for now. For a nice overview of the different kinds of joins, see [Visual Representation of SQL Joins](http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins).
+
+## ForumWeb
+
+Let's add a database to our ForumWeb project. To do so, we're going to practice test-driven development (TDD). We'll write all our SQL methods and verify they work by writing a test right after. Only when our tests are passing will we actually start using those methods. Start by writing a method to create our tables:
+
+```java
+public class Main {
+    public static void createTables(Connection conn) throws SQLException {
+        Statement stmt = conn.createStatement();
+        stmt.execute("CREATE TABLE IF NOT EXISTS users (id IDENTITY, name VARCHAR, password VARCHAR)");
+        stmt.execute("CREATE TABLE IF NOT EXISTS messages (id IDENTITY, user_id INT, reply_id INT, text VARCHAR)");
+    }
+    
+    ...
+}
+```
+
+Next, create methods to insert and select a single user:
+
+```java
+public class Main {
+    ...
+
+    public static void insertUser(Connection conn, String name, String password) throws SQLException {
+        PreparedStatement stmt = conn.prepareStatement("INSERT INTO users VALUES (NULL, ?, ?)");
+        stmt.setString(1, name);
+        stmt.setString(2, password);
+        stmt.execute();
+    }
+
+    public static User selectUser(Connection conn, String name) throws SQLException {
+        PreparedStatement stmt = conn.prepareStatement("SELECT * FROM users WHERE name = ?");
+        stmt.setString(1, name);
+        ResultSet results = stmt.executeQuery();
+        if (results.next()) {
+            int id = results.getInt("id");
+            String password = results.getString("password");
+            return new User(id, name, password);
+        }
+        return null;
+    }
+    
+    ...
+}
+```
+
+We now have enough to start writing tests. Add JUnit to the project by going to `File -> Project Structure -> Libraries` and adding `junit:junit:4.12` via Maven. Then go to the `Modules` section, create a folder at `src/test`, and mark it as a test folder (green color). Finally, make sure your main class is open and go to `Navigate -> Test` and choose `Create New Test...`. Make sure JUnit 4 is selected in the dialog and create the Test class.
+
+In your new `MainTest` class, create a method for your tests to use to create a database connection. We'll make it use an in-memory database for tests:
+
+```java
+public class MainTest {
+    public Connection startConnection() throws SQLException {
+        Connection conn = DriverManager.getConnection("jdbc:h2:mem:test");
+        Main.createTables(conn);
+        return conn;
+    }
+}
+```
+
+Now let's create a method to test inserting and selecting a `User`:
+
+```java
+public class MainTest {
+    ...
+    
+    @Test
+    public void testUser() throws SQLException {
+        Connection conn = startConnection();
+        Main.insertUser(conn, "Alice", "");
+        User user = Main.selectUser(conn, "Alice");
+        conn.close();
+        assertTrue(user != null);
+    }
+}
+```
+
+Run the test and make sure it passes.
