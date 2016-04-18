@@ -243,7 +243,7 @@ public class Main {
 }
 ```
 
-In `create-message`, use `selectUser` and `insertMessage`:
+In `/create-message`, use `selectUser` and `insertMessage`:
 
 ```java
 public class Main {
