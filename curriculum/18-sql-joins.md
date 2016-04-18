@@ -227,21 +227,14 @@ public class Main {
         Spark.post(
                 "/login",
                 ((request, response) -> {
-                    String userName = request.queryParams("loginName");
-                    if (userName == null) {
-                        throw new Exception("Login name not found.");
-                    }
+                    ...
 
                     User user = selectUser(conn, userName);
                     if (user == null) {
                         insertUser(conn, userName, "");
                     }
 
-                    Session session = request.session();
-                    session.attribute("userName", userName);
-
-                    response.redirect("/");
-                    return "";
+                    ...
                 })
         );
         ...
@@ -260,24 +253,12 @@ public class Main {
         Spark.post(
                 "/create-message",
                 ((request, response) -> {
-                    Session session = request.session();
-                    String userName = session.attribute("userName");
-                    if (userName == null) {
-                        throw new Exception("Not logged in.");
-                    }
-
-                    String text = request.queryParams("messageText");
-                    String replyId = request.queryParams("replyId");
-                    if (text == null || replyId == null) {
-                        throw new Exception("Didn't get necessary query parameters.");
-                    }
-                    int replyIdNum = Integer.valueOf(replyId);
+                    ...
 
                     User user = selectUser(conn, userName);
                     insertMessage(conn, user.id, replyIdNum, text);
 
-                    response.redirect(request.headers("Referer"));
-                    return "";
+                    ...
                 })
         );
     }
@@ -295,14 +276,7 @@ public class Main {
         Spark.get(
                 "/",
                 ((request, response) -> {
-                    Session session = request.session();
-                    String userName = session.attribute("userName");
-
-                    String replyId = request.queryParams("replyId");
-                    int replyIdNum = -1;
-                    if (replyId != null) {
-                        replyIdNum = Integer.valueOf(replyId);
-                    }
+                    ...
 
                     HashMap m = new HashMap();
                     ArrayList<Message> threads = selectReplies(conn, replyIdNum);
