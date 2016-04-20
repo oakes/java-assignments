@@ -33,7 +33,7 @@ Notice how PostGreSQL's SQL isn't quite the same as H2's. The auto-incrementing 
 
 ## GameTrackerSpring
 
-Let's create the same game tracker web app we made previously, but this time using Spring and Hibernate. First, create the project via Spring Initializr with the following libraries:
+Let's create the same game tracker web app we made previously, but this time using Spring and Hibernate. First, create the project via Spring Initializr called `GameTrackerSpring` with the following libraries:
 
 * Web
 * DevTools
