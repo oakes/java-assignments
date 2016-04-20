@@ -86,6 +86,8 @@ public class Game {
 
 After restarting your project, go back to `psql`. Make sure you are connected to the `gametracker` database and run the `\dt` command. Notice that Hibernate has automatically created a table called "games"!
 
+Next, create `src/main/resources/templates/home.html`:
+
 ```html
 <html>
 <body>
@@ -165,4 +167,19 @@ public class GameTrackerController {
 }
 ```
 
-That's all we need to do to create an entry into the games table.
+That's all we need to do to create an entry into the games table! Now we need to learn how to do the equivalent of `SELECT * FROM games`, so we can display the games in the page.
+
+```java
+@Controller
+public class GameTrackerController {
+    ...
+    
+    @RequestMapping(path = "/", method = RequestMethod.GET)
+    public String home(Model model) {
+        model.addAttribute("games", games.findAll());
+        return "home";
+    }
+    
+    ...
+}
+```
