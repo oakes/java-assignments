@@ -39,6 +39,7 @@ Let's create the same game tracker web app we made previously, but this time usi
 * DevTools
 * Mustache
 * JPA
+* H2 (useful for testing)
 * PostgreSQL
 
 Import it into IntelliJ. Now open `psql` and create a database for this project via `CREATE DATABASE gametracker;`. Then open `src/main/resources/application.properties` and add the following:
@@ -48,3 +49,36 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/gametracker
 spring.jpa.generate-ddl=true
 ```
 
+Let's start by creating an entity, which is just a normal class that Hibernate will automatically create a table for. Create `src/main/java/com/theironyard/Game.java`:
+
+```java
+@Entity
+public class Game {
+    @Id
+    @GeneratedValue
+    int id;
+
+    @Column(nullable = false)
+    String name;
+
+    @Column(nullable = false)
+    String platform;
+
+    @Column(nullable = false)
+    String genre;
+
+    @Column(nullable = false)
+    int releaseYear;
+
+    public Game() {
+    }
+
+    public Game(String name, String platform, String genre, int releaseYear, User user) {
+        this.name = name;
+        this.platform = platform;
+        this.genre = genre;
+        this.releaseYear = releaseYear;
+        this.user = user;
+    }
+}
+```
