@@ -99,3 +99,33 @@ public interface GameRepository extends CrudRepository<Game, Integer> {
     List<Game> findByGenreOrderByNameAsc(String genre);
 }
 ```
+
+Let's add a search feature. To begin, we'll add the necessary form to the HTML page:
+
+```html
+<html>
+<body>
+...
+
+<form action="/" method="get">
+    <input type="text" placeholder="Search" name="search"/>
+    <button type="submit">Search</button>
+</form>
+
+<br><br>
+
+...
+```
+
+To add a proper search feature, we need to use the SQL operator known as `LIKE` instead of `=`. To do this, we'll need to write a raw SQL query instead of a normal query method like before. Luckily, we can do so using the `@Query` annotation.
+
+```java
+public interface GameRepository extends CrudRepository<Game, Integer> {
+    ...
+    
+    @Query("SELECT g FROM Game g WHERE g.name LIKE ?1%")
+    List<Game> findByNameStartsWith(String name);
+}
+```
+
+Note that it is fairly strict about how the query is written. We need to write the class name instead of the table name (thus, `Game` instead of `games`) and provide an alias (that's what the `g` is). The parameter syntax requires us to write `?1` as the first argument, and the `%` is a wildcard character.
