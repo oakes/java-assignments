@@ -160,7 +160,7 @@ public class Main {
 }
 ```
 
-Now, for example, if we go to http:/localhost:4567/?replyId=0 we should see Charlie's reply to Alice. Let's modify the HTML to make each message link to replies to that message:
+Now, for example, if we go to `http:/localhost:4567/?replyId=0` we should see Charlie's reply to Alice. Let's modify the HTML to make each message link to replies to that message:
 
 ```html
 <html>
