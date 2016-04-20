@@ -92,7 +92,7 @@ Finally, create an HTML file at `public/index.html` that brings in both JS files
 </html>
 ```
 
-Make sure you can see the alert message appear at http://localhost:4567.
+Make sure you can see the alert message appear at `http://localhost:4567`.
 
 Let's return our attention to the server side. Create the necessary methods to insert and select messages:
 
@@ -188,7 +188,7 @@ function addMessage() {
 }
 ```
 
-You should have enough now to run the project and try submitting a message. If you go to http://localhost:4567/get-messages you should see JSON representing the messages currently in the database. It's a good idea to install the [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) chrome extension so the JSON is formatted nicely.
+You should have enough now to run the project and try submitting a message. If you go to `http://localhost:4567/get-messages` you should see JSON representing the messages currently in the database. It's a good idea to install the [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) chrome extension so the JSON is formatted nicely.
 
 Now let's make it display the messages from the server. In `index.html`, create an empty element to store the messages:
 
