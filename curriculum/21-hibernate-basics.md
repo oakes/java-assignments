@@ -49,10 +49,11 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/gametracker
 spring.jpa.generate-ddl=true
 ```
 
-Let's start by creating an entity, which is just a normal class that Hibernate will automatically create a table for. Create `src/main/java/com/theironyard/Game.java`:
+Let's start by creating an entity, which is just a normal class that Hibernate will automatically create a table for. Create `src/main/java/com/theironyard/Game.java`. The `id` column is always given special annotations marking it as such and making it auto-increment. Every other column should be marked with `@Column(nullable = false)` to make sure null values aren't accidentally inserted into the database (unless you intend for that to be possible).
 
 ```java
 @Entity
+@Table(name = "games")
 public class Game {
     @Id
     @GeneratedValue
@@ -82,3 +83,86 @@ public class Game {
     }
 }
 ```
+
+After restarting your project, go back to `psql`. Make sure you are connected to the `gametracker` database and run the `\dt` command. Notice that Hibernate has automatically created a table called "games"!
+
+```html
+<html>
+<body>
+<form action="/add-game" method="post">
+    <input type="text" placeholder="Name" name="gameName"/>
+    <select name="gameGenre">
+        <option selected disabled>Genre</option>
+        <option value="adventure">Adventure</option>
+        <option value="rpg">RPG</option>
+        <option value="strategy">Strategy</option>
+        <option value="shooter">Shooter</option>
+    </select>
+    <select name="gamePlatform">
+        <option selected disabled>Platform</option>
+        <option value="pc">PC</option>
+        <option value="ps4">PS4</option>
+        <option value="xbone">XBox One</option>
+        <option value="wiiu">Wii U</option>
+    </select>
+    <input type="number" placeholder="Release Year" name="gameYear"/>
+    <button type="submit">Add Game</button>
+</form>
+
+<ol>
+{{#games}}
+    <li>{{name}} {{platform}} {{releaseYear}}</li>
+{{/games}}
+</ol>
+</body>
+</html>
+```
+
+Now create `GameTrackerSpringController`:
+
+```java
+@Controller
+public class GameTrackerController {
+    @RequestMapping(path = "/", method = RequestMethod.GET)
+    public String home() {
+        return "home";
+    }
+}
+```
+
+We now need to learn how to learn how to save a game into the database. To do so, we need to create an interface called `GameRepository`:
+
+```java
+public interface GameRepository extends CrudRepository<Game, Integer> {
+}
+```
+
+Now back in our controller, we will bring in this repository via a special annotation:
+
+```java
+@Controller
+public class GameTrackerController {
+    @Autowired
+    GameRepository games;
+    
+    ...
+}
+```
+
+We can then create our `/add-game` route and use this repository to save a game to the database:
+
+```java
+@Controller
+public class GameTrackerController {
+    ...
+    
+    @RequestMapping(path = "/add-game", method = RequestMethod.POST)
+    public String addGame(String gameName, String gamePlatform, String gameGenre, int gameYear) {
+        Game game = new Game(gameName, gamePlatform, gameGenre, gameYear);
+        games.save(game);
+        return "redirect:/";
+    }
+}
+```
+
+That's all we need to do to create an entry into the games table.
