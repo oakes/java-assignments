@@ -30,3 +30,21 @@ Thus far, we've used the H2 embedded database for our projects. To get experienc
   * `DROP TABLE test;`
 
 Notice how PostGreSQL's SQL isn't quite the same as H2's. The auto-incrementing column type is `SERIAL` instead of `IDENTITY`, and when inserting we specify `DEFAULT` as its value instead of `NULL`. This is one of the problems with writing raw SQL queries. As we've learned, it is also easy to make typos in SQL strings and it involves a lot of busy work. To solve this problem, some people opt to use an ORM (Object Relational Mapping) library such as Hibernate.
+
+## GameTrackerSpring
+
+Let's create the same game tracker web app we made previously, but this time using Spring and Hibernate. First, create the project via Spring Initializr with the following libraries:
+
+* Web
+* DevTools
+* Mustache
+* JPA
+* PostgreSQL
+
+Import it into IntelliJ. Now open `psql` and create a database for this project via `CREATE DATABASE gametracker;`. Then open `src/main/resources/application.properties` and add the following:
+
+```
+spring.datasource.url=jdbc:postgresql://localhost:5432/gametracker
+spring.jpa.generate-ddl=true
+```
+
