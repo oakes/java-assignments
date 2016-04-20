@@ -175,7 +175,8 @@ public class GameTrackerController {
     
     @RequestMapping(path = "/", method = RequestMethod.GET)
     public String home(Model model) {
-        model.addAttribute("games", games.findAll());
+        List<Game> gameList = games.findAll();
+        model.addAttribute("games", gameList);
         return "home";
     }
     
