@@ -46,7 +46,7 @@ public class HelloSpringController {
 }
 ```
 
-Now we can test it out. Try going a URL like http://localhost:8080/person?name=Alice&city=Charleston&age=30 and verify that the three values are displayed on the page. Now let's see how Spring makes it easy to create a JSON route as well. First, we'll need a class to represent this data, so create `src/main/java/com/theironyard/Person.java`:
+Now we can test it out. Try going a URL like `http://localhost:8080/person?name=Alice&city=Charleston&age=30` and verify that the three values are displayed on the page. Now let's see how Spring makes it easy to create a JSON route as well. First, we'll need a class to represent this data, so create `src/main/java/com/theironyard/Person.java`:
 
 ```java
 public class Person {
@@ -74,7 +74,7 @@ public class HelloSpringJsonController {
 }
 ```
 
-Note that we're using `@RestController` this time, and we're returning the object we want to serialize into JSON. Try it out by going to http://localhost:8080/person.json?name=Alice&city=Charleston&age=30. Now let's try making a simple login system to learn how POST routes work. First, create `src/main/resources/templates/home.html`:
+Note that we're using `@RestController` this time, and we're returning the object we want to serialize into JSON. Try it out by going to `http://localhost:8080/person.json?name=Alice&city=Charleston&age=30`. Now let's try making a simple login system to learn how POST routes work. First, create `src/main/resources/templates/home.html`:
 
 ```html
 <html>
@@ -106,7 +106,7 @@ public class HelloSpringController {
 }
 ```
 
-Now you should see the login form at http://localhost:8080 because `name` is null. Let's create the POST route now:
+Now you should see the login form at `http://localhost:8080` because `name` is null. Let's create the POST route now:
 
 ```java
 @Controller
