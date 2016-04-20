@@ -48,3 +48,39 @@ public class GameTrackerController {
     ...
 }
 ```
+
+The links we added to the main page should now work. Just for fun, let's add a filter for release year. Add `findByReleaseYear` to your `GameRepository`:
+
+```java
+public interface GameRepository extends CrudRepository<Game, Integer> {
+    List<Game> findByGenre(String genre);
+    List<Game> findByReleaseYear(int year);
+}
+```
+
+Then add the necessary parameter to the `/` route. Note that we used a boxed integer (`Integer`) rather than the primitive version (`int`). This is because the boxed version can be set to null, whereas the primitive version must have a value set. We want this parameter to be optional, and the only way to make it so is to allow it to be set to null:
+
+```java
+@Controller
+public class GameTrackerController {
+    ...
+    
+    @RequestMapping(path = "/", method = RequestMethod.GET)
+    public String home(Model model, String genre, Integer releaseYear) {
+        List<Game> gameList;
+        if (genre != null) {
+            gameList = games.findByGenre(genre);
+        } else if (releaseYear != null) {
+            gameList = games.findByReleaseYear(releaseYear);
+        } else {
+            gameList = games.findAll();
+        }
+        model.addAttribute("games", gameList);
+        return "home";
+    }
+    
+    ...
+}
+```
+
+You can test that out by adding a game with a given release year, like `1995`, and then going to `http://localhost:8080/?releaseYear=1995`.
