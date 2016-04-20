@@ -85,7 +85,7 @@ public class GameTrackerController {
 
 You can test that out by adding a game with a given release year, like `1995`, and then going to `http://localhost:8080/?releaseYear=1995`.
 
-There are many endless ways to write query methods. Reference [the documentation](http://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation) to learn the rules. Here is an example of the possibilities. Notice that you can also use raw SQL with the `@Query` annotation if all else fails:
+There are many endless ways to write query methods. Reference [the documentation](http://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation) to learn the rules. Here is an example of the possibilities:
 
 ```java
 public interface GameRepository extends CrudRepository<Game, Integer> {
@@ -97,8 +97,5 @@ public interface GameRepository extends CrudRepository<Game, Integer> {
     Game findFirstByGenre(String genre);
     int countByGenre(String genre);
     List<Game> findByGenreOrderByNameAsc(String genre);
-
-    @Query("SELECT g FROM Game g WHERE g.platform LIKE ?1%")
-    List<Game> findByPlatformStartsWith(String platform);
 }
 ```
