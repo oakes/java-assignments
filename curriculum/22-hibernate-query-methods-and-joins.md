@@ -297,7 +297,7 @@ public class GameTrackerController {
         if (users.count() == 0) {
             User user = new User();
             user.name = "Zach";
-            user.password = PasswordHash.createHash("hunter2");
+            user.password = "hunter2";
             users.save(user);
         }
     }
