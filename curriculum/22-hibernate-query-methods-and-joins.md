@@ -103,8 +103,6 @@ public interface GameRepository extends CrudRepository<Game, Integer> {
 Let's add a search feature. To begin, we'll add the necessary form to the HTML page:
 
 ```html
-<html>
-<body>
 ...
 
 <form action="/" method="get">
@@ -129,3 +127,53 @@ public interface GameRepository extends CrudRepository<Game, Integer> {
 ```
 
 Note that it is fairly strict about how the query is written. We need to write the class name instead of the table name (thus, `Game` instead of `games`) and provide an alias (that's what the `g` is). We have to write the first argument as `?1`, and `%` as the wildcard character.
+
+Now let's add a way to log into the app and only show the games the current user submitted. To begin, create a `User` class:
+
+```java
+@Entity
+@Table(name = "users")
+public class User {
+    @Id
+    @GeneratedValue
+    int id;
+
+    @Column(nullable = false, unique = true)
+    String name;
+
+    @Column(nullable = false)
+    String password;
+
+    public User() {
+    }
+}
+```
+
+Note that we added `unique = true` to the username just as an additional constraint. Also keep in mind that the `name = "users"` bit is important. By default, Hibernate uses the class name as the table name, which would make the table name `user`. This is actually a special keyword in PostgreSQL, so you'll get a cryptic error message if you don't rename it to `users` like we did.
+
+Next, add login functionality to `home.html`:
+
+```java
+<html>
+<body>
+{{^user}}
+<form action="/login" method="post">
+    <input type="text" placeholder="Username" name="userName" required/>
+    <input type="password" placeholder="Password" name="password" required/>
+    <button type="submit">Login</button>
+</form>
+{{/user}}
+
+{{#user}}
+Welcome, {{name}}!
+<form action="/logout" method="post">
+    <button type="submit">Logout</button>
+</form>
+<br><br>
+
+...
+
+{{/user}}
+</body>
+</html>
+```
