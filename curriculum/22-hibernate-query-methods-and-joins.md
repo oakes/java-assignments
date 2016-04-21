@@ -128,4 +128,4 @@ public interface GameRepository extends CrudRepository<Game, Integer> {
 }
 ```
 
-Note that it is fairly strict about how the query is written. We need to write the class name instead of the table name (thus, `Game` instead of `games`) and provide an alias (that's what the `g` is). The parameter syntax requires us to write `?1` as the first argument, and the `%` is a wildcard character.
+Note that it is fairly strict about how the query is written. We need to write the class name instead of the table name (thus, `Game` instead of `games`) and provide an alias (that's what the `g` is). We have to write the first argument as `?1`, and `%` as the wildcard character.
