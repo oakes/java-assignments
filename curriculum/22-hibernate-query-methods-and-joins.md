@@ -177,3 +177,46 @@ Welcome, {{name}}!
 </body>
 </html>
 ```
+
+We will now need an interface called `UserRepository`:
+
+```java
+public interface UserRepository extends CrudRepository<User, Integer> {
+    User findFirstByName(String userName);
+}
+```
+
+We added a custom query method so we can try querying a user by name when they first attempt to login. We're going to hash the password they give us before putting it in the database. To make this simpler, download [PasswordStorage.java](https://raw.githubusercontent.com/defuse/password-hashing/master/PasswordStorage.java) and move it into the same directory as your other Java files (you may need to add the correct package name at the top if your IDE doesn't do it automatically). This class provides a simple mechanism for hashing passwords.
+
+Now the repository into `GameTrackerSpringController` and make the `/login` and `/logout` routes:
+
+```java
+@Controller
+public class GameTrackerController {
+    ...
+
+    @Autowired
+    UserRepository users;
+    
+    @RequestMapping(path = "/login", method = RequestMethod.POST)
+    public String login(HttpSession session, String userName, String password) throws Exception {
+        User user = users.findFirstByName(userName);
+        if (user == null) {
+            user = new User(userName, PasswordStorage.createHash(password));
+            users.save(user);
+        }
+        else if (!PasswordStorage.verifyPassword(password, user.getPasswordHash())) {
+            throw new Exception("Incorrect password");
+        }
+        session.setAttribute("userName", userName);
+        return "redirect:/";
+    }
+    
+    @RequestMapping(path = "/logout", method = RequestMethod.POST)
+    public String logout(HttpSession session) {
+        session.invalidate();
+        return "redirect:/";
+    }
+}
+```
+
