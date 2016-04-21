@@ -220,3 +220,90 @@ public class GameTrackerController {
 }
 ```
 
+Now let's link the user to the game they insert. First, add a `user` field in the `Game` entity and adjust the constructor to set it:
+
+```java
+@Entity
+public class Game {
+    ...
+
+    @ManyToOne
+    User user;
+    
+    public Game() {
+    }
+
+    public Game(String name, String platform, String genre, int releaseYear, User user) {
+        this.name = name;
+        this.platform = platform;
+        this.genre = genre;
+        this.releaseYear = releaseYear;
+        this.user = user;
+    }
+}
+```
+
+The `@ManyToOne` annotation causes this table to add a foreign key in the database called `user_id` for the purposes of doing joins. Now edit the `/` route to pass the username to the template:
+
+```java
+@Controller
+public class GameTrackerController {
+    ...
+
+    @RequestMapping(path = "/", method = RequestMethod.GET)
+    public String home(HttpSession session, Model model, String genre, Integer releaseYear, String platform) {
+        String userName = (String) session.getAttribute("userName");
+        User user = users.findFirstByName(userName);
+        if (user != null) {
+            model.addAttribute("user", user);
+        }
+        
+        ...
+    }
+    
+    ...
+}
+```
+
+Then change the `/add-game` route to include the user in the `Game` object that you save:
+
+```java
+@Controller
+public class GameTrackerController {
+    ...
+    
+    @RequestMapping(path = "/add-game", method = RequestMethod.POST)
+    public String addGame(HttpSession session, String gameName, String gamePlatform, String gameGenre, int gameYear) {
+        String userName = (String) session.getAttribute("userName");
+        User user = users.findFirstByName(userName);
+        Game game = new Game(gameName, gamePlatform, gameGenre, gameYear, user);
+        games.save(game);
+        return "redirect:/";
+    }
+    
+    ...
+}
+```
+
+After trying it out, you can look at the database with `psql` to confirm that the item was added to the `games` table and the `user_id` column has a number in it that points to the correct record in the `users` table.
+
+Lastly, let's learn how to add a user to the database right when the app starts up. To do so, we can make a method with the `@PostConstruct` annotation. Inside of it, we can check if the `users` table has anything in it, and if not, insert a default user:
+
+```java
+@Controller
+public class GameTrackerController {
+    ...
+    
+    @PostConstruct
+    public void init() {
+        if (users.count() == 0) {
+            User user = new User();
+            user.name = "Zach";
+            user.password = PasswordHash.createHash("hunter2");
+            users.save(user);
+        }
+    }
+    
+    ...
+}
+```
