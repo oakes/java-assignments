@@ -18,6 +18,7 @@ Parse the two csv files and store them in PostgreSQL via Spring Data. Then displ
     * DevTools
     * JPA
     * Mustache
+    * H2
     * PostgreSQL
   * Download and unzip the project
   * Import into IntelliJ
