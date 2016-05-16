@@ -12,9 +12,9 @@ We spent time going over how to create and instantiate a class. For this assignm
 // Stores a single tweet.
 
 public class Tweet {
-    public String text;
-    public String username;
-    public int timestamp;
-    public boolean isPrivate;
+    String text;
+    String username;
+    int timestamp;
+    boolean isPrivate;
 }
 ```
