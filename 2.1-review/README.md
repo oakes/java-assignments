@@ -13,12 +13,12 @@ Create a program to track items in an inventory. It should allow you to add an i
 * Print out the inventory items and then list the options.
 * If the user enters `1`, let them create a new item by entering its name.
 * If the user enters `2`, let them remove an item by its number.
-* If the user enters `3`, let them update the quanitity of that item.
+* If the user enters `3`, let them update the quantity of that item.
 * Optional: Create a login system with a few hard-coded usernames and passwords.
 
 ## Sample Output
 
-```bash
+```
 1. [10] Apples
 2. [5] Pears
 3. [7] Bananas
