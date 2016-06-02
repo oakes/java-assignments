@@ -13,7 +13,7 @@ TextureRegion down = grid[6][0];
 TextureRegion up = grid[6][1];
 TextureRegion right = grid[6][3];
 TextureRegion left = new TextureRegion(right);
-TextureRegion left.flip(true, false);
+left.flip(true, false);
 ```
 
 ## Requirements
