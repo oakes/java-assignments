@@ -4,7 +4,17 @@
 
 ## Description
 
-Create a libGDX project called `Minicraft`. Then download [minicraft-assets.zip](https://github.com/oakes/java-assignments/raw/master/curriculum/assets/minicraft-assets.zip) and put its contents in `core/assets`. Write the necessary code to make the player walk around.
+Create a libGDX project called `Minicraft`. Then download [minicraft-assets.zip](https://github.com/oakes/java-assignments/raw/master/curriculum/assets/minicraft-assets.zip) and put its contents in `core/assets`. Write the necessary code to make the player walk around. Use the following code to load the four player tiles in the `create` method:
+
+```java
+Texture tiles = new Texture("tiles.png");
+TextureRegion[][] grid = TextureRegion.split(tiles, 16, 16);
+TextureRegion down = grid[6][0];
+TextureRegion up = grid[6][1];
+TextureRegion right = grid[6][3];
+TextureRegion left = new TextureRegion(right);
+TextureRegion left.flip(true, false);
+```
 
 ## Requirements
 
