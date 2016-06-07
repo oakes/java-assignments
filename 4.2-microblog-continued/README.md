@@ -15,6 +15,7 @@ Add functionality to your microblog.
 * Add a form in `messages.html` which lets you delete a message by entering its number.
 * Add a form in `messages.html` which lets you edit a message by entering its number and the text you want to replace it with.
 * Optional: Make the microblog persist data on the disk by encoding the data as JSON in each POST route, and decoding it when the web app first runs.
+* Optional: Make each item have items own delete button next to it, so you can simply click the appropriate button rather than type in a number.
 
 ![screenshot 1](screenshot1.png)
 ![screenshot 2](screenshot2.png)
