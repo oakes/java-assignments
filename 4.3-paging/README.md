@@ -4,7 +4,7 @@
 
 ## Description
 
-Fork the [PeopleWeb](../projects/PeopleWeb) project. In this project, we're reading a CSV file full of data about people and parsing it into an `ArrayList<Person>`. Make the project use Spark to display this data in a large list. Once you are successfully displaying it, figure out how to make it show only 20 people at a time. You should provide a "Next" link at the bottom so the user can view the next 20 people in the list. It should be possible to cycle through all the users this way.
+Create a project called `PeopleWeb` with [this file](https://raw.githubusercontent.com/oakes/java-assignments/master/projects/People/people.csv) in the project root. In this project, we're reading a CSV file full of data about people and parsing it into an `ArrayList<Person>`. Make the project use Spark to display this data in a large list. Once you are successfully displaying it, figure out how to make it show only 20 people at a time. You should provide a "Next" link at the bottom so the user can view the next 20 people in the list. It should be possible to cycle through all the users this way.
 
 ## Requirements
 
