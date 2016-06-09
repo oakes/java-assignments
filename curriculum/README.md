@@ -14,7 +14,7 @@
     * Knowing what `String[] args` is
   * With a REPL, we can introduce these concepts one at a time and jump into a real project later
 
-## Week 1 - Intro
+## Week 1-2 - Console Apps
 
 * Data
   * Create scalar and compound variables in a REPL
@@ -32,9 +32,6 @@
   * Create methods that initialize data the same way we did in the REPL
   * Static vs non-static, public vs private
   * Control flow (conditionals, loops, recursion, exceptions)
-
-## Week 2 - Console apps
-
 * The main method
 * Packages
 * Imports
