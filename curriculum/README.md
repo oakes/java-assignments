@@ -70,4 +70,4 @@
 
 ## Week 8-9 - Clojure
 
-* See the [Clojure curriculum](https://github.com/oakes/clojure-assignments)
+* See the [Clojure curriculum](https://github.com/oakes/clojure-assignments/tree/master/curriculum)
