@@ -20,6 +20,7 @@ Create a project called `RegistrationForm`. Download [angular-spark.zip](https:/
   * `insertUser`
   * `updateUser`
   * `deleteUser`
+* Write tests for the four methods.
 * Create a GET route called `/user` that  calls `selectUsers` and returns the data as JSON.
 * Create a POST route called `/user` that parses `request.body()` into a `User` object and calls `insertUser` to put it in the database.
 * Create a PUT route called `/user` that parses `request.body()` into a `User` object and calls `updateUser` to update it in the database.
