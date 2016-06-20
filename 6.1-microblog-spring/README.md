@@ -11,7 +11,7 @@ Make a web application that allows you write and delete short messages. When you
 * Create a project from the Spring template
   * Go to [Spring Initializr](https://start.spring.io/)
   * Choose "Gradle Project"
-  * Group is `com.theironyard` and artifcat is `MicroblogSpring`
+  * Group is `com.theironyard` and artifact is `MicroblogSpring`
   * Click "Switch to the full version"
   * Check the following options:
     * Web
