@@ -14,10 +14,11 @@ Design your very own CRUD app using Spring. It must support user authentication 
   * If logged in, display the username and a logout button at the top.
   * Passwords MUST be stored securely.
   * Don't allow unauthenticated users to hit routes they shouldn't hit.
-* All data must be stored and manipulated using Spring Data (Hibernate).
+* All data must be stored and manipulated using Hibernate.
 * Create: If logged in, display a form to create a new entry.
 * Read: Whether logged in or not, list whatever entries were created by the users.
 * Update: If logged in, show an edit link next to the entries created by that user.
 * Delete: If logged in, show a delete button next to the entries created by that user.
+* Write tests for your POST routes.
 * Compile the project as a JAR file and upload it to the "Releases" section of your repo.
 * Optional: Add JavaScript and CSS (served statically via `resources/static`).
