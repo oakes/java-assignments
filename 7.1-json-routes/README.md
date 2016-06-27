@@ -1,4 +1,4 @@
-# JSON Spring
+# JSON Routes
 
 ![screenshot](screenshot.png)
 
