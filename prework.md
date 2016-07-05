@@ -12,7 +12,7 @@ Java will be the main language we work with during the class. Please work throug
 
 ### Clojure
 
-We'll be learning some Clojure later in the course to familiarize ourselves with the new industry trend towards functional programming. Please read through [Do Things: a Clojure Crash Course](http://www.braveclojure.com/do-things/). After that, watch [my talk about Clojure games](https://www.youtube.com/watch?v=0GzzFeS5cMc)!
+We'll be learning some Clojure later in the course to familiarize ourselves with the new industry trend towards functional programming. For now, just watch [my talk about Clojure games](https://www.youtube.com/watch?v=0GzzFeS5cMc)! If you want to read a comprehensive introduction to the language, try [Do Things: a Clojure Crash Course](http://www.braveclojure.com/do-things/), but don't worry if it is too much to absorb right now. We won't be dealing with it until later in the course.
 
 ### HTML & CSS
 
