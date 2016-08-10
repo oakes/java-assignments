@@ -11,7 +11,7 @@ This is an alternative curriculum. The primary differences from the standard cur
 * Control Flow
 * Dynamic Data Structures
 
-## Week 2 - Java Continued
+## Week 2 - Inheritance
 
 * Extending classes
 * Implementing interfaces
