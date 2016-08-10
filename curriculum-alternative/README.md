@@ -1,8 +1,4 @@
-This is an alternative curriculum. The primary differences from the standard curriculum are:
-
-1. The lessons are intended to be more standalone rather than multi-day projects.
-2. Several topics have been removed and the pace is slower.
-3. It uses Eclipse instead of IntelliJ.
+This is an alternative curriculum. Compared to the standard curriculum, several topics have been removed to slow down the pace, and it uses Eclipse instead of IntelliJ.
 
 ## Week 1 - Basics of Programming
 
